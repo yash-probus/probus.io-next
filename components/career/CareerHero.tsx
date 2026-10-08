@@ -1,0 +1,72 @@
+import Image from "next/image";
+import Link from "next/link";
+
+export default function CareerHero() {
+  return (
+    <section className="relative w-full overflow-hidden">
+      
+      {/* Breadcrumbs (Absolute Position over header/hero) */}
+      <div className="absolute top-[30px] left-0 w-full z-20">
+        <div className="container mx-auto px-4 md:px-[15px]">
+          <div className="text-white text-[14px] leading-[26px] font-sans font-medium flex items-center">
+            <Link href="/" className="hover:underline">Home</Link>
+            <span className="mx-2 text-[10px] opacity-80">&gt;</span>
+            <span className="font-semibold">Careers</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col md:flex-row w-full max-w-[1920px] mx-auto min-h-[400px] md:h-[600px]">
+        
+        {/* Left Side (Blue Background with Quotes) */}
+        <div className="w-full md:w-1/2 h-[400px] md:h-full relative order-last md:order-first flex items-center">
+          <Image 
+            src="/wp-content/themes/probus/assets/images/header-left.png" 
+            alt="Background" 
+            fill 
+            className="object-fill w-full h-full absolute inset-0"
+            priority
+          />
+          
+          <div className="relative w-full px-[30px] md:px-[15px] z-10 text-center">
+            <div className="w-[70%] mx-auto relative text-left">
+              
+              {/* Quote Top Left */}
+              <div className="hidden md:block absolute w-[70px] h-[70px] left-[-25px] top-[-70px] z-10">
+                <Image src="/wp-content/themes/probus/assets/images/3.svg" alt="Quote" fill className="object-contain" />
+              </div>
+              
+              <div className="relative z-20">
+                <p className="text-white text-[20px] md:text-[20px] leading-[30px] tracking-normal font-sans m-0 text-left">
+                  Learnt some of the best practices at global level in my three years at Probus
+                </p>
+              </div>
+
+              {/* Quote Bottom Right */}
+              <div className="hidden md:block absolute w-[70px] h-[70px] right-[-25px] bottom-[-20px] z-10">
+                <Image src="/wp-content/themes/probus/assets/images/2.svg" alt="Quote" fill className="object-contain" />
+              </div>
+            </div>
+            <div className="w-[70%] mx-auto relative text-left pt-[40px] z-20">
+                <button className="bg-transparent hover:bg-white text-white hover:text-[#033361] border border-white rounded-[30px] py-[10px] px-[25px] font-sans text-[16px] font-medium transition-all inline-block shadow-sm">
+                  View Job Opening
+                </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Side (Image) */}
+        <div className="w-full md:w-1/2 h-[400px] md:h-full relative">
+          <Image 
+            src="/wp-content/uploads/2025/06/tm2-1.jpg" 
+            alt="Careers at Probus" 
+            fill 
+            className="object-cover object-left"
+            priority
+          />
+        </div>
+
+      </div>
+    </section>
+  );
+}

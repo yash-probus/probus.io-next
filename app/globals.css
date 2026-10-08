@@ -1,0 +1,67 @@
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+@layer base {
+  body {
+    @apply font-sans font-light bg-white text-brand-dark;
+    font-size: 16px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-medium m-0 p-0;
+  }
+  
+  p {
+    @apply m-0 p-0 font-sans;
+  }
+  
+  a {
+    @apply no-underline;
+  }
+
+  ul, li {
+    @apply m-0 p-0;
+  }
+}
+
+/* Leverage IoT Ring Animation */
+.softhardRing img {
+    animation: ringSpin 20s ease-in-out infinite;
+    transform-origin: center center;
+}
+
+@keyframes ringSpin {
+    0%     { transform: rotate(0deg); }
+    17.5%  { transform: rotate(80deg); }
+    25%    { transform: rotate(80deg); }   /* pause — link 1 */
+    42.5%  { transform: rotate(170deg); }
+    50%    { transform: rotate(170deg); }  /* pause — link 2 */
+    67.5%  { transform: rotate(260deg); }
+    75%    { transform: rotate(260deg); }  /* pause — link 3 */
+    92.5%  { transform: rotate(350deg); }
+    100%   { transform: rotate(350deg); }  /* pause — link 4 */
+}
+
+.number-list a {
+    display: inline-block;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+    animation: linkFocus 20s ease-in-out infinite;
+}
+
+.number-list.n1 a { animation-delay: 0s; }
+.number-list.n2 a { animation-delay: 5s; }
+.number-list.n3 a { animation-delay: 10s; }
+.number-list.n4 a { animation-delay: 15s; }
+
+@keyframes linkFocus {
+    0%, 17.5%  { transform: scale(1); box-shadow: none; background-color: transparent; }
+    20%, 22.5% { transform: scale(1.18); box-shadow: 0 0 18px 6px rgba(0, 200, 255, 0.8); background-color: rgba(0, 200, 255, 0.15); }
+    25%, 100%  { transform: scale(1); box-shadow: none; background-color: transparent; }
+}
+
+.number-list a:hover {
+    transform: scale(1.18);
+    box-shadow: 0 0 18px 6px rgba(0, 200, 255, 0.8);
+    cursor: pointer;
+}
