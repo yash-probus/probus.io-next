@@ -4,8 +4,9 @@ import "./globals.css";
 
 const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
+  weight: ["300", "400", "500", "600", "700", "900"],
   variable: "--font-roboto",
+  display: "swap",
 });
 
 const playball = Playball({
@@ -30,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="overflow-x-hidden">
-      <body className={`${roboto.variable} ${playball.variable} font-sans antialiased w-full overflow-x-hidden min-h-screen flex flex-col`}>
+      <body className={`${roboto.variable} ${playball.variable}`}>
         <Header />
         <main className="flex-grow">
           {children}

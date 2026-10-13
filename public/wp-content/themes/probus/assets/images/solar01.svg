@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
+  <g id="Group_17697" data-name="Group 17697" transform="translate(-63 -1555)">
+    <g id="Group_15189" data-name="Group 15189" transform="translate(63 1544)">
+      <circle id="Ellipse_39" data-name="Ellipse 39" cx="27" cy="27" r="27" transform="translate(0 11)" fill="#12b3f6"/>
+    </g>
+    <g id="solar-energy-svgrepo-com" transform="translate(69.5 1562.5)">
+      <path id="Path_36330" data-name="Path 36330" d="M11.291,9.5a.97.97,0,0,0-.868.536L4.6,21.677a.97.97,0,0,0,.868,1.4H18.081v3.88h-.97a.97.97,0,0,0,0,1.94h3.88a.97.97,0,1,0,0-1.94h-.97v-3.88h8.731a.97.97,0,0,0,.868-.536L35.441,10.9a.97.97,0,0,0-.868-1.4Zm9.216,11.641,4.85-9.7H19.766l-4.851,9.7Zm-13.467,0,4.85-9.7H17.6l-4.85,9.7Zm21.113,0H22.676l4.85-9.7H33Z" transform="translate(0 5.473)" fill="#fff" fill-rule="evenodd"/>
+      <path id="Path_36331" data-name="Path 36331" d="M4.784,5.784a.97.97,0,0,1,1.372,0L8.1,7.724A.97.97,0,1,1,6.724,9.1l-1.94-1.94A.97.97,0,0,1,4.784,5.784Z" transform="translate(0 3.88)" fill="#fff" fill-rule="evenodd"/>
+      <path id="Path_36332" data-name="Path 36332" d="M5.784,3.784a.97.97,0,0,1,1.372,0l4.85,4.85a.97.97,0,1,1-1.372,1.372l-4.85-4.85A.97.97,0,0,1,5.784,3.784Z" transform="translate(0.94 2)" fill="#fff" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

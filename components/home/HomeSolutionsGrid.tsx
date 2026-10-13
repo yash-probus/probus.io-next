@@ -1,82 +1,196 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 
-export default function HomeSolutionsGrid() {
-  const cards = [
-    {
-      title: "Smart Metering Solutions",
-      desc: "Gain complete visibility and control over your energy consumption with our solutions",
-      img: "pricing.png",
-      link: "/smart-meter"
-    },
-    {
-      title: "Solar Solutions",
-      desc: "Embrace renewable energy with our scalable and customized solar solutions",
-      img: "oemsbiogas.png",
-      link: "/solar-solutions"
-    },
-    {
-      title: "Smart Grid Integration",
-      desc: "Seamlessly integrate into the intelligent grid of the future with our smart grid solutions",
-      img: "grid-1.png",
-      link: "/smart-grid-integration"
-    }
-  ];
+const cards = [
+  {
+    title: "Smart Metering Solutions",
+    desc: "Gain complete visibility and control over your energy consumption with our solutions",
+    img: "/wp-content/uploads/2025/06/pricing.png",
+    link: "/smart-meter-solutions",
+    btnClass: "needbtn1",
+    btnColor: "#6BA9E4",
+  },
+  {
+    title: "Solar Solutions",
+    desc: "Embrace renewable energy with our scalable and customized solar solutions",
+    img: "/wp-content/uploads/2025/06/oemsbiogas.png",
+    link: "/solar-solutions",
+    btnClass: "needbtn2",
+    btnColor: "#FFAA36",
+  },
+  {
+    title: "Smart Grid Integration",
+    desc: "Seamlessly integrate into the intelligent grid of the future with our smart grid solutions",
+    img: "/wp-content/uploads/2025/06/grid-1.png",
+    link: "/smart-grid-integration",
+    btnClass: "needbtn3",
+    btnColor: "#F3B384",
+  },
+];
 
+const ArrowSvg = ({ color }: { color: string }) => (
+  <svg
+    viewBox="0 0 448 512"
+    fill={color}
+    xmlns="http://www.w3.org/2000/svg"
+    style={{ width: "20px", height: "auto" }}
+  >
+    <path d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z" />
+  </svg>
+);
+
+export default function HomeSolutionsGrid() {
   return (
-    <section className="bg-white">
-      <div className="container mx-auto px-4 md:px-[15px] max-w-[1140px] pt-[70px]">
-        <div className="text-center mb-[40px]">
-          <h2 className="text-[#000000] text-[32px] md:text-[38px] font-bold leading-[1.3] font-sans mb-[15px]">
-            Transform your Energy Efficiency Needs
-          </h2>
-          <p className="text-[#000000] font-normal text-[18px] md:text-[20px] font-sans leading-[1.6] max-w-[800px] mx-auto px-[15px]">
-            Explore our comprehensive range of energy solutions and take the first step towards a more sustainable future
-          </p>
+    /* .sub-section.home-needs.pb-0 */
+    <section
+      className="home-needs"
+      style={{
+        padding: "55px 0 0 0",
+        backgroundImage: "url(/wp-content/themes/probus/assets/images/bg-hslolution.png)",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "top left",
+      }}
+    >
+      {/* Heading */}
+      <div className="container" style={{ maxWidth: "1140px", margin: "0 auto", padding: "0 15px" }}>
+        <div style={{ display: "flex", flexWrap: "wrap", margin: "0 -15px" }}>
+          <div style={{ width: "100%", padding: "0 15px", boxSizing: "border-box" }}>
+            <div className="headingmain" style={{ marginBottom: "20px" }}>
+              <div className="text-center">
+                <h6 style={{ font: "14px/19px 'Roboto', sans-serif", color: "#636363", marginBottom: "5px", textTransform: "uppercase", margin: 0, padding: 0, display: "none" }}>
+                  Solutions
+                </h6>
+                <h2 style={{ fontSize: "30px", position: "relative", zIndex: 1, lineHeight: "44px", marginBottom: "12px", fontWeight: 500, margin: 0, padding: 0 }}>
+                  Transform your <span style={{ color: "#000000" }}>Energy Efficiency Needs</span>
+                </h2>
+                <p style={{ fontSize: "16px", lineHeight: "26px", fontWeight: 400 }}>
+                  Explore our comprehensive range of energy solutions and take the first step towards a more sustainable future
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      
-      <div className="flex flex-wrap w-full max-w-[1920px] mx-auto mt-[30px] md:mt-[40px]">
+
+      {/* .needthree */}
+      <div
+        className="needthree"
+        style={{
+          margin: "20px 0 0 0",
+          width: "100%",
+          maxWidth: "1920px",
+          display: "flex",
+          flexWrap: "wrap",
+        }}
+      >
         {cards.map((card, idx) => (
-          <div key={idx} className="w-full md:w-1/3 relative group">
-            <div className="w-full relative z-[2]">
-              <Image 
-                src={`/wp-content/uploads/2025/06/${card.img}`} 
-                alt={card.title} 
-                width={800}
-                height={600}
-                className="w-full h-auto block relative z-[2] transition-transform duration-[400ms] ease-in-out group-hover:scale-[1.04] group-hover:z-[3]" 
+          <div
+            key={idx}
+            className="itemsBox"
+            style={{
+              position: "relative",
+              width: "33.3%",
+              transition: "all .4s ease",
+              overflow: "hidden",
+            }}
+          >
+            {/* Image */}
+            <div className="Items-img">
+              <img
+                src={card.img}
+                alt={card.title}
+                style={{
+                  maxWidth: "100%",
+                  position: "relative",
+                  zIndex: 2,
+                  transition: "all .4s ease",
+                  display: "block",
+                  width: "100%",
+                }}
+                className="needsImg"
               />
             </div>
-            
-            <div className="absolute top-0 left-0 p-[20px_25px] xl:p-[40px_45px] text-white z-[4] w-full h-full flex flex-col justify-start pointer-events-none">
-              <h3 className="text-[22px] xl:text-[24px] leading-[30px] xl:leading-[44px] font-bold mb-[12px] font-sans drop-shadow-sm pointer-events-auto">
+
+            {/* Content overlay */}
+            <div
+              className="content"
+              style={{
+                padding: "40px 45px",
+                color: "#fff",
+                position: "absolute",
+                top: 0,
+                left: 0,
+                zIndex: 4,
+                width: "100%",
+                boxSizing: "border-box",
+              }}
+            >
+              <h3 style={{ fontSize: "24px", lineHeight: "44px", marginBottom: "12px", fontWeight: 500, color: "#fff", margin: "0 0 12px 0", padding: 0 }}>
                 {card.title}
               </h3>
-              <p className="text-[16px] leading-[24px] mb-[20px] font-normal font-sans max-w-[95%] drop-shadow-sm pointer-events-auto">
+              <p style={{ fontSize: "16px", lineHeight: "24px", marginBottom: "20px", color: "#fff", margin: "0 0 20px 0", padding: 0 }}>
                 {card.desc}
               </p>
-              <div className="mt-0 flex pointer-events-auto">
-                <Link 
-                  href={card.link} 
-                  className="bg-white rounded-[20px] h-[40px] inline-flex items-center px-[11px] group-hover:px-[20px] transition-all duration-300 ease-in-out"
+              <Link
+                href={card.link}
+                className={card.btnClass}
+                style={{
+                  borderRadius: "20px",
+                  background: "#fff",
+                  padding: "10px 11px",
+                  transition: "all 0.1s ease-in-out",
+                  display: "inline-flex",
+                  height: "40px",
+                  alignItems: "center",
+                  textDecoration: "none",
+                  color: card.btnColor,
+                  gap: "0px",
+                }}
+              >
+                <span
+                  className="needsSpan"
+                  style={{
+                    transition: "all .3s ease-out",
+                    fontSize: "16px",
+                    lineHeight: "19px",
+                    whiteSpace: "nowrap",
+                    paddingRight: "10px",
+                    opacity: 0,
+                    width: 0,
+                    overflow: "hidden",
+                    display: "inline-block",
+                    color: card.btnColor,
+                  }}
                 >
-                  <div className="overflow-hidden flex items-center transition-all duration-300 ease-in-out max-w-0 group-hover:max-w-[100px] opacity-0 group-hover:opacity-100 mr-0 group-hover:mr-[8px]">
-                    <span className="text-[#6BA9E4] text-[16px] font-medium whitespace-nowrap">
-                      Know More
-                    </span>
-                  </div>
-                  <div className="w-[20px] h-[20px] shrink-0 bg-white rounded-full flex items-center justify-center">
-                    <svg className="w-[14px] h-[14px] fill-[#6BA9E4]" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z" />
-                    </svg>
-                  </div>
-                </Link>
-              </div>
+                  Know More
+                </span>
+                <ArrowSvg color={card.btnColor} />
+              </Link>
             </div>
           </div>
         ))}
       </div>
+
+      <style>{`
+        .itemsBox:hover .needsImg {
+          transform: scale(1.04);
+          z-index: 3;
+        }
+        .itemsBox:hover .content a {
+          padding: 10px 20px !important;
+        }
+        .itemsBox:hover .needsSpan {
+          opacity: 1 !important;
+          width: auto !important;
+        }
+        @media (max-width: 768px) {
+          .itemsBox { width: 100% !important; }
+          .needthree { flex-direction: column; }
+          .content { padding: 20px 20px !important; }
+        }
+      `}</style>
     </section>
   );
 }

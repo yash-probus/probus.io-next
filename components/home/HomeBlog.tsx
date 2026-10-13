@@ -1,80 +1,322 @@
-import Image from "next/image";
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
+
+const blogs = [
+  {
+    type: "Blog",
+    title:
+      "How IoT-Based Smart Grid Integration Improves Outage Management and Fault Detection",
+    img: "/wp-content/uploads/2026/04/Blog-04-1024x536.png",
+    link: "/blogs/iot-smart-grid-integration-outage-management-fault-detection",
+  },
+  {
+    type: "Blog",
+    title:
+      "PLC vs RF Mesh vs 4G: Which Communication Technology Is Right for Your AMI Network?",
+    img: "/wp-content/uploads/2026/04/blog-03-1024x536.png",
+    link: "/blogs/plc-vs-rf-mesh-vs-4g-ami-communication-technology-comparison",
+  },
+  {
+    type: "Blog",
+    title:
+      "Smart Metering Rollout Under RDSS: What Every DISCOM Needs to Know in 2026",
+    img: "/wp-content/uploads/2026/04/Blog-02-1024x534.png",
+    link: "/blogs/smart-metering-rollout-rdss-what-every-discom-needs-to-know-2026",
+  },
+  {
+    type: "Blog",
+    title:
+      "How Wireless Solar String Monitoring Reduces O&M Costs for Large-Scale Plants",
+    img: "/wp-content/uploads/2026/04/Blog-01-1024x536.png",
+    link: "/blogs/wireless-solar-string-monitoring-reduces-om-costs-large-scale-plants",
+  },
+];
 
 export default function HomeBlog() {
-  const blogs = [
-    {
-      type: "Blog",
-      title: "How IoT-Based Smart Grid Integration Improves Outage Management and Fault Detection",
-      img: "/wp-content/uploads/2026/04/Blog-04-1024x536.png",
-      link: "/blogs/iot-smart-grid-integration-outage-management-fault-detection"
-    },
-    {
-      type: "Blog",
-      title: "PLC vs RF Mesh vs 4G: Which Communication Technology is Right for Your AMI Network?",
-      img: "/wp-content/uploads/2026/04/blog-03-1024x536.png",
-      link: "/blogs/plc-vs-rf-mesh-vs-4g-ami-communication-technology-comparison"
-    },
-    {
-      type: "Blog",
-      title: "Smart Metering Rollout Under RDSS: What Every DISCOM Needs to Know in 2026",
-      img: "/wp-content/uploads/2026/04/Blog-02-1024x534.png",
-      link: "/blogs/smart-metering-rollout-rdss-what-every-discom-needs-to-know-2026"
-    }
-  ];
+  const [startIndex, setStartIndex] = useState(0);
+  const maxIndex = blogs.length - 3; // 4 - 3 = 1
+
+  const handlePrev = () => {
+    setStartIndex((prev) => Math.max(0, prev - 1));
+  };
+
+  const handleNext = () => {
+    setStartIndex((prev) => Math.min(maxIndex, prev + 1));
+  };
 
   return (
-    <section className="py-[60px] md:py-[100px] bg-white">
-      <div className="container mx-auto px-4 md:px-[15px] max-w-[1140px] relative">
-        {/* Title and (Optional) Slider Arrows */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between mb-[50px]">
-          <div className="text-center md:text-left flex-1">
-            <h2 className="text-[#000000] text-[28px] md:text-[35px] font-bold leading-tight font-sans">
-              Explore innovative energy insights
-            </h2>
-          </div>
-          {/* Static Slider Arrows (Visual match for old website) */}
-          <div className="hidden md:flex gap-2 mt-4 md:mt-0 justify-center md:justify-end">
-            <div className="w-[32px] h-[32px] rounded-full border border-[#9d9d9d] bg-[#9d9d9d] hover:bg-[#033361] hover:border-[#033361] flex items-center justify-center cursor-pointer transition-colors duration-300">
-              <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 320 512" height="12px" width="12px" xmlns="http://www.w3.org/2000/svg" className="text-white"><path d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
-            </div>
-            <div className="w-[32px] h-[32px] rounded-full border border-[#9d9d9d] bg-[#9d9d9d] hover:bg-[#033361] hover:border-[#033361] flex items-center justify-center cursor-pointer transition-colors duration-300">
-              <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 320 512" height="12px" width="12px" xmlns="http://www.w3.org/2000/svg" className="text-white"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
-            </div>
-          </div>
-        </div>
-        
-        <div className="flex flex-wrap -mx-[15px]">
-          {blogs.map((blog, idx) => (
-            <div key={idx} className="w-full md:w-1/3 px-[15px] mb-[30px]">
-              <div className="w-full flex items-start bg-white shadow-[0px_0px_6px_#0000001a] rounded-[6px] p-[14px_15px] transition-all duration-300 ease-in-out group hover:shadow-[0px_0px_12px_#0000002a]">
-                {/* Left Side (Image) */}
-                <div className="h-[160px] w-1/2 rounded-[6px] overflow-hidden relative shrink-0 block">
-                  <Image 
-                    src={blog.img} 
-                    alt={blog.title} 
-                    fill 
-                    className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-[1.1]" 
-                  />
-                </div>
-                
-                {/* Right Side (Content) */}
-                <div className="w-1/2 pl-[15px] flex flex-col justify-start text-left box-border">
-                  <h4 className="text-[#707070] text-[13px] uppercase font-light leading-[22px] mb-[4px] font-sans">
-                    {blog.type}
-                  </h4>
-                  <p className="text-[#000000] text-[16px] font-medium leading-[23px] font-sans mb-[5px] pr-[5px] line-clamp-4 group-hover:text-black">
-                    {blog.title}
-                  </p>
-                  <Link href={blog.link} className="text-[#097DF5] text-[15px] font-medium font-sans leading-[24px] mt-[12px] md:mt-[25px] inline-block group-hover:underline">
-                    Know More
-                  </Link>
-                </div>
+    <section
+      className="sub-section home-resource"
+      style={{
+        background: "#FBFBFB",
+        padding: "55px 0",
+        fontFamily: "'Roboto', sans-serif",
+      }}
+    >
+      <div
+        className="container"
+        style={{ maxWidth: "1140px", margin: "0 auto", padding: "0 15px", position: "relative" }}
+      >
+        {/* Header row */}
+        <div className="row" style={{ position: "relative" }}>
+          <div className="col-12" style={{ width: "100%" }}>
+            <div className="headingmain" style={{ marginBottom: "20px" }}>
+              <div className="text-center" style={{ textAlign: "center" }}>
+                <h6
+                  style={{
+                    font: "14px/19px 'Roboto', sans-serif",
+                    position: "relative",
+                    color: "#636363",
+                    marginBottom: "5px",
+                    textTransform: "uppercase",
+                    display: "none",
+                  }}
+                >
+                  Blogs
+                </h6>
+                <h2
+                  style={{
+                    fontSize: "30px",
+                    position: "relative",
+                    zIndex: 1,
+                    lineHeight: "44px",
+                    marginBottom: "12px",
+                    fontWeight: 500,
+                    color: "#000000",
+                  }}
+                >
+                  Explore innovative energy insights
+                </h2>
               </div>
             </div>
-          ))}
+          </div>
+
+          {/* Slider Arrows — positioned top right exactly like WordPress .slick-nav */}
+          <div
+            className="slider-nav-arrows"
+            style={{
+              position: "absolute",
+              right: "15px",
+              top: "10px",
+              display: "flex",
+              alignItems: "center",
+              gap: "15px",
+              zIndex: 10,
+            }}
+          >
+            <button
+              type="button"
+              onClick={handlePrev}
+              disabled={startIndex === 0}
+              aria-label="Previous slide"
+              className="slick-nav-btn prev-btn"
+              style={{
+                width: "32px",
+                height: "32px",
+                borderRadius: "50%",
+                border: "none",
+                backgroundColor: startIndex === 0 ? "#d0d0d0" : "#9d9d9d",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                cursor: startIndex === 0 ? "default" : "pointer",
+                transition: "background-color 0.3s ease",
+                padding: 0,
+              }}
+            >
+              <svg width="12" height="12" viewBox="0 0 320 512" fill="#ffffff">
+                <path d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z" />
+              </svg>
+            </button>
+            <button
+              type="button"
+              onClick={handleNext}
+              disabled={startIndex === maxIndex}
+              aria-label="Next slide"
+              className="slick-nav-btn next-btn"
+              style={{
+                width: "32px",
+                height: "32px",
+                borderRadius: "50%",
+                border: "none",
+                backgroundColor: startIndex === maxIndex ? "#d0d0d0" : "#9d9d9d",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                cursor: startIndex === maxIndex ? "default" : "pointer",
+                transition: "background-color 0.3s ease",
+                padding: 0,
+              }}
+            >
+              <svg width="12" height="12" viewBox="0 0 320 512" fill="#ffffff">
+                <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        {/* Carousel Window */}
+        <div
+          className="hresource-carousel-window"
+          style={{
+            overflow: "hidden",
+            width: "100%",
+            marginTop: "10px",
+          }}
+        >
+          <div
+            className="hresource-slider"
+            style={{
+              display: "flex",
+              transform: `translateX(-${startIndex * 33.3333}%)`,
+              transition: "transform 0.5s ease-in-out",
+              margin: "0 -10px",
+            }}
+          >
+            {blogs.map((b, idx) => (
+              <div
+                key={idx}
+                className="h-resource-slide"
+                style={{
+                  minWidth: "33.3333%",
+                  maxWidth: "33.3333%",
+                  padding: "0 10px",
+                  boxSizing: "border-box",
+                }}
+              >
+                <div
+                  className="h-resource"
+                  style={{
+                    background: "#ffffff",
+                    boxShadow: "0px 0px 6px #0000001A",
+                    borderRadius: "6px",
+                    padding: "14px 15px",
+                    transition: "all 0.3s ease-in-out",
+                    boxSizing: "border-box",
+                  }}
+                >
+                  <div
+                    className="infobox_wrapper"
+                    style={{
+                      width: "100%",
+                      display: "flex",
+                      alignItems: "flex-start",
+                    }}
+                  >
+                    <div
+                      className="infobox_icon_container"
+                      style={{
+                        height: "160px",
+                        display: "block",
+                        overflow: "hidden",
+                        width: "50%",
+                        borderRadius: "6px",
+                        flexShrink: 0,
+                      }}
+                    >
+                      <img
+                        src={b.img}
+                        alt={b.title}
+                        className="blog-thumb"
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "cover",
+                          transition: "all .3s ease-in-out",
+                          display: "block",
+                        }}
+                      />
+                    </div>
+                    <div
+                      className="contntright"
+                      style={{
+                        width: "50%",
+                        boxSizing: "border-box",
+                        paddingLeft: "15px",
+                      }}
+                    >
+                      <h4
+                        className="infobox_title"
+                        style={{
+                          fontSize: "13px",
+                          color: "#707070",
+                          lineHeight: "22px",
+                          paddingBottom: "4px",
+                          fontWeight: 300,
+                          margin: 0,
+                        }}
+                      >
+                        {b.type}
+                      </h4>
+                      <p
+                        className="time"
+                        style={{
+                          fontSize: "16px",
+                          color: "#000000",
+                          lineHeight: "23px",
+                          paddingBottom: "5px",
+                          fontWeight: 500,
+                          paddingRight: "5px",
+                          margin: 0,
+                        }}
+                      >
+                        {b.title}
+                      </p>
+                      <Link
+                        href={b.link}
+                        className="know-more"
+                        style={{
+                          fontSize: "15px",
+                          color: "#097DF5",
+                          lineHeight: "24px",
+                          paddingBottom: "5px",
+                          fontWeight: 500,
+                          display: "inline-block",
+                          marginTop: "12px",
+                          textDecoration: "none",
+                        }}
+                      >
+                        Know More
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
+
+      <style jsx>{`
+        .h-resource:hover .blog-thumb {
+          transform: scale(1.1);
+        }
+        .h-resource:hover .know-more {
+          text-decoration: underline !important;
+        }
+        .slick-nav-btn:hover:not(:disabled) {
+          background-color: #033361 !important;
+        }
+        @media (max-width: 991px) {
+          .h-resource-slide {
+            min-width: 50% !important;
+            max-width: 50% !important;
+          }
+        }
+        @media (max-width: 600px) {
+          .h-resource-slide {
+            min-width: 100% !important;
+            max-width: 100% !important;
+          }
+          .slider-nav-arrows {
+            position: static !important;
+            justify-content: center !important;
+            margin-bottom: 15px !important;
+          }
+        }
+      `}</style>
     </section>
   );
 }

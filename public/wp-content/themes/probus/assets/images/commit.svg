@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
+  <g id="Group_17580" data-name="Group 17580" transform="translate(0 -6)">
+    <path id="Path_36389" data-name="Path 36389" d="M27,0A27,27,0,1,1,0,27,27,27,0,0,1,27,0Z" transform="translate(0 6)" fill="#033361"/>
+    <g id="green-charge-svgrepo-com" transform="translate(9.55 14.5)">
+      <path id="Path_36271" data-name="Path 36271" d="M16.921,1.5h3.011v9.034H16.921A3.011,3.011,0,0,1,13.91,7.523V4.511A3.011,3.011,0,0,1,16.921,1.5Z" transform="translate(6.609)" fill="none" stroke="#fff" stroke-width="1.91"/>
+      <line id="Line_118" data-name="Line 118" x1="6.023" transform="translate(26.542 2.998)" fill="none" stroke="#fff" stroke-width="1.91"/>
+      <line id="Line_119" data-name="Line 119" x1="6.023" transform="translate(26.542 9.021)" fill="none" stroke="#fff" stroke-width="1.91"/>
+      <path id="Path_36272" data-name="Path 36272" d="M31.051,18.66a14.3,14.3,0,1,1-14.3-14.3h3.768" transform="translate(0 1.649)" fill="none" stroke="#fff" stroke-width="1.91"/>
+      <path id="Path_36273" data-name="Path 36273" d="M7.236,10.09H11.1a6.669,6.669,0,0,1,6.669,6.669v3.879H13.889A6.669,6.669,0,0,1,7.22,13.969V10.09Z" transform="translate(2.751 4.954)" fill="none" stroke="#fff" stroke-width="1.91"/>
+      <line id="Line_120" data-name="Line 120" x1="9.034" y1="9.034" transform="translate(14.496 19.553)" fill="none" stroke="#fff" stroke-width="1.91"/>
+    </g>
+  </g>
+</svg>

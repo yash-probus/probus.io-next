@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
+  <g id="Group_17579" data-name="Group 17579" transform="translate(0 -11)">
+    <path id="Path_36388" data-name="Path 36388" d="M27,0A27,27,0,1,1,0,27,27,27,0,0,1,27,0Z" transform="translate(0 11)" fill="#033361"/>
+    <g id="dart-mission-goal-success-svgrepo-com" transform="translate(12 23)">
+      <line id="Line_117" data-name="Line 117" y1="6" x2="7" transform="translate(14 9)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_36260" data-name="Path 36260" d="M30.847,6.423H26.423V2L22,6.423v4.423h4.423Z" transform="translate(-0.989 -2)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <circle id="Ellipse_43" data-name="Ellipse 43" cx="6.5" cy="6.5" r="6.5" transform="translate(8 9)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_36261" data-name="Path 36261" d="M29.54,9.635a14.1,14.1,0,0,1,2.212,7.741A14.376,14.376,0,1,1,17.376,3a14.1,14.1,0,0,1,7.741,2.212" transform="translate(-3 -1.894)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

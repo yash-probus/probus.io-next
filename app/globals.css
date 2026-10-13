@@ -2,25 +2,48 @@
 @config "../tailwind.config.ts";
 
 @layer base {
+  /* Matches WordPress: body { font-family: 'Roboto'; font-size: 16px; font-weight: 300; max-width: 1800px; margin: 0 auto; } */
   body {
-    @apply font-sans font-light bg-white text-brand-dark;
+    font-family: var(--font-roboto), 'Roboto', sans-serif;
     font-size: 16px;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-medium m-0 p-0;
-  }
-  
-  p {
-    @apply m-0 p-0 font-sans;
-  }
-  
-  a {
-    @apply no-underline;
+    font-weight: 300;
+    background-color: #fff;
+    color: #232330;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0;
   }
 
+  /* Matches WordPress: h1, h2 { font-weight: 500; } */
+  h1, h2 {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+  }
+
+  /* Matches WordPress: h3, h4, h5, h6 { font-weight: 500; } */
+  h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+  }
+
+  /* Matches WordPress: p { font-family: 'Roboto'; padding: 0; margin: 0; } */
+  p {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-roboto), 'Roboto', sans-serif;
+  }
+
+  /* Matches WordPress: a { text-decoration: none; } */
+  a {
+    text-decoration: none;
+  }
+
+  /* Matches WordPress: ul, li { margin: 0; padding: 0; } */
   ul, li {
-    @apply m-0 p-0;
+    margin: 0;
+    padding: 0;
   }
 }
 

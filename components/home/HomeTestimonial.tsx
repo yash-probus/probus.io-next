@@ -1,80 +1,245 @@
-import Image from "next/image";
+"use client";
 
 export default function HomeTestimonial() {
   return (
-    <section 
-      className="pb-[160px] bg-no-repeat w-full bg-white"
-      style={{ backgroundImage: 'url(/wp-content/themes/probus/assets/images/bg-htesti.png)', backgroundPosition: 'right 0px bottom -60px' }}
+    <section
+      className="testimonial-wrap hbg"
+      style={{
+        paddingBottom: "160px",
+        backgroundImage: "url(/wp-content/themes/probus/assets/images/bg-htesti.png)",
+        backgroundPosition: "right 0px bottom -60px",
+        backgroundRepeat: "no-repeat",
+        backgroundColor: "#ffffff",
+      }}
     >
-      <div className="bg-[#0795F8] pt-[70px]">
-        <div className="container mx-auto px-4 md:px-[15px] max-w-[1140px]">
-          <div className="flex flex-wrap -mx-[15px] items-start">
-            
-            {/* Left Col */}
-            <div className="w-full lg:w-5/12 px-[15px] mb-[40px] lg:mb-0 relative">
-              <div className="text-left">
-                <h6 className="text-white uppercase font-medium tracking-wide mb-2 inline-block border-b-[3px] border-white pb-1 text-[13px] font-sans">
-                  TESTIMONIALS
-                </h6>
-                <h2 className="text-white text-[32px] md:text-[40px] font-bold leading-[50px] mt-[10px] font-sans pr-10">
-                  Collaborating for success and change
-                </h2>
+      <div
+        className="testimonail-box"
+        style={{
+          background: "#0795F8",
+          paddingTop: "54px",
+        }}
+      >
+        <div
+          className="container"
+          style={{ maxWidth: "1140px", margin: "0 auto", padding: "0 15px" }}
+        >
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              margin: "0 -15px",
+              alignItems: "flex-start",
+            }}
+          >
+            {/* Left col — .col-lg-5 */}
+            <div
+              className="col-lg-5"
+              style={{
+                width: "100%",
+                padding: "0 15px",
+                boxSizing: "border-box",
+              }}
+            >
+              <div className="headingmain" style={{ marginBottom: "20px" }}>
+                <div className="text-left">
+                  <h6
+                    className="withline text-white"
+                    style={{
+                      font: "14px/19px 'Roboto', sans-serif",
+                      position: "relative",
+                      color: "#ffffff",
+                      marginBottom: "5px",
+                      textTransform: "uppercase",
+                      paddingLeft: "39px",
+                      display: "block",
+                    }}
+                  >
+                    <span
+                      style={{
+                        position: "absolute",
+                        top: "50%",
+                        transform: "translateY(-50%)",
+                        left: 0,
+                        backgroundColor: "#FFFFFF",
+                        width: "30px",
+                        height: "1px",
+                      }}
+                    />
+                    TESTIMONIALS
+                  </h6>
+                  <h2
+                    className="text-white"
+                    style={{
+                      fontSize: "30px",
+                      lineHeight: "44px",
+                      color: "#ffffff",
+                      fontWeight: 500,
+                      margin: "0 0 12px 0",
+                      fontFamily: "'Roboto', sans-serif",
+                    }}
+                  >
+                    Collaborating for success and change
+                  </h2>
+                </div>
               </div>
-              
-              <div className="mt-[60px] md:mb-[-100px] relative z-10 w-[95%]">
-                <Image 
-                  src="/wp-content/uploads/2025/06/testmain.png" 
-                  alt="Collaborating for success and change" 
-                  width={500} 
-                  height={350} 
-                  className="w-full h-auto rounded-[12px] shadow-lg"
+
+              <div
+                className="testimain_img"
+                style={{
+                  marginBottom: "-100px",
+                  marginTop: "85px",
+                  position: "relative",
+                  zIndex: 2,
+                }}
+              >
+                <img
+                  src="/wp-content/uploads/2025/06/testmain.png"
+                  alt="Collaborating for success and change"
+                  style={{
+                    maxWidth: "100%",
+                    borderRadius: "12px",
+                    display: "block",
+                  }}
                 />
               </div>
             </div>
-            
-            {/* Right Col */}
-            <div className="w-full lg:w-7/12 px-[15px] md:pl-[60px] relative mt-[30px] lg:mt-0">
-              <div className="max-w-[550px] mx-auto relative mb-[50px]">
-                
-                {/* SVG Quote Before */}
-                <div className="hidden md:block absolute w-[70px] h-[70px] -left-[100px] top-[0px] z-10">
-                  <Image src="/wp-content/themes/probus/assets/images/3.svg" alt="Quote" fill className="object-contain" />
-                </div>
 
-                {/* SVG Quote After */}
-                <div className="hidden md:block absolute w-[70px] h-[70px] -right-[50px] bottom-[30px] z-10">
-                  <Image src="/wp-content/themes/probus/assets/images/2.svg" alt="Quote" fill className="object-contain" />
-                </div>
-
-                <div className="pt-[40px]">
-                  <div className="relative">
-                    <p className="text-[22px] leading-[36px] text-white font-light font-sans z-10 relative m-0 italic pr-8">
-                      Probus is truly agile – flexible and fast. Commit till the end to deliver tasks even with all the situational challenges on the field. A true partner to make you successful.
-                    </p>
+            {/* Right col — .col-lg-7 */}
+            <div
+              className="col-lg-7"
+              style={{
+                width: "100%",
+                padding: "0 15px",
+                boxSizing: "border-box",
+              }}
+            >
+              <div
+                className="testimoni_slider"
+                style={{
+                  maxWidth: "520px",
+                  margin: "0 auto 50px auto",
+                  position: "relative",
+                }}
+              >
+                <div
+                  className="testimonials_item"
+                  style={{
+                    padding: "60px 0 0 0",
+                  }}
+                >
+                  <div
+                    className="testimonials_content_wrap"
+                    style={{
+                      position: "relative",
+                    }}
+                  >
+                    {/* Quotation mark graphics */}
+                    <img
+                      src="/wp-content/themes/probus/assets/images/3.svg"
+                      alt=""
+                      style={{
+                        position: "absolute",
+                        left: "-50px",
+                        top: "-20px",
+                        width: "40px",
+                        opacity: 0.5,
+                      }}
+                    />
+                    <div
+                      className="testimonials_quote"
+                      style={{
+                        fontSize: "20px",
+                        lineHeight: "32px",
+                        color: "#ffffff",
+                        fontStyle: "italic",
+                        fontFamily: "'Roboto', sans-serif",
+                        fontWeight: 300,
+                      }}
+                    >
+                      Probus is truly agile – flexible and fast. Commit till the end to
+                      deliver tasks even with all the situational challenges on the
+                      field. A true partner to make you successful.
+                    </div>
                   </div>
-                  
-                  <div className="flex items-center mt-[40px]">
-                    <div className="w-[70px] h-[70px] rounded-full overflow-hidden shrink-0 mr-[20px] bg-white border-[3px] border-white">
-                      <Image 
-                        src="/wp-content/uploads/2025/06/anil_vaishy.png" 
-                        alt="Anil Vaishy" 
-                        width={70} 
-                        height={70} 
-                        className="w-full h-full object-cover"
+
+                  <div
+                    className="testimonials_meta_wrap"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      marginTop: "30px",
+                    }}
+                  >
+                    <div
+                      className="testimonials_image"
+                      style={{ marginRight: "16px" }}
+                    >
+                      <img
+                        src="/wp-content/uploads/2025/06/test_member.png"
+                        alt="Anil Vashy"
+                        style={{
+                          width: "65px",
+                          height: "65px",
+                          borderRadius: "50%",
+                          objectFit: "cover",
+                          border: "2px solid #ffffff",
+                        }}
                       />
                     </div>
-                    <div>
-                      <h3 className="text-white text-[16px] leading-[20px] font-bold m-0 font-sans mb-[5px]">Anil Vaishy</h3>
-                      <span className="text-white text-[14px] leading-[20px] font-normal opacity-90 block">VP SCADA BSES Yamuna Power</span>
+                    <div className="testimonials_name_wrap">
+                      <h3
+                        className="testimonials_name"
+                        style={{
+                          fontSize: "18px",
+                          lineHeight: "24px",
+                          fontWeight: 600,
+                          color: "#ffffff",
+                          margin: 0,
+                          fontFamily: "'Roboto', sans-serif",
+                        }}
+                      >
+                        Anil Vashy
+                      </h3>
+                      <span
+                        className="testimonials_status"
+                        style={{
+                          fontSize: "14px",
+                          lineHeight: "20px",
+                          color: "rgba(255, 255, 255, 0.8)",
+                          display: "block",
+                          fontFamily: "'Roboto', sans-serif",
+                        }}
+                      >
+                        AVP SCADA BSES Yamuna Power
+                      </span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @media (min-width: 992px) {
+          .col-lg-5 {
+            width: 41.666667% !important;
+          }
+          .col-lg-7 {
+            width: 58.333333% !important;
+          }
+        }
+        @media (max-width: 991px) {
+          .testimain_img {
+            margin-top: 30px !important;
+            margin-bottom: 20px !important;
+          }
+          .testimonials_item {
+            padding: 20px 0 0 0 !important;
+          }
+        }
+      `}</style>
     </section>
   );
 }
