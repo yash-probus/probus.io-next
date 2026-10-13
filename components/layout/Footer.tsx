@@ -27,10 +27,11 @@ export default function Footer() {
         <div
           className="container"
           style={{
-            maxWidth: "1140px",
+            maxWidth: "1800px",
             margin: "0 auto",
-            padding: "0 15px",
+            padding: "0 75px",
             boxSizing: "border-box",
+            width: "100%",
           }}
         >
           <div
@@ -45,7 +46,9 @@ export default function Footer() {
             <div
               className="col-about"
               style={{
-                width: "32%",
+                width: "28%",
+                minWidth: "300px",
+                maxWidth: "380px",
                 padding: "0 15px",
                 boxSizing: "border-box",
                 marginBottom: "20px",
@@ -78,6 +81,7 @@ export default function Footer() {
                     lineHeight: "26px",
                     fontWeight: 300,
                     margin: "0 0 15px 0",
+                    maxWidth: "340px",
                   }}
                 >
                   Pioneering the future of sustainable energy with cutting-edge
@@ -89,7 +93,7 @@ export default function Footer() {
                   <Link
                     href="/contact-us"
                     style={{
-                      marginTop: "10px",
+                      marginTop: "15px",
                       display: "inline-block",
                       transition: "all 0.3s ease-in-out",
                       fontSize: "15px",
@@ -98,7 +102,7 @@ export default function Footer() {
                       backgroundColor: "#ffffff",
                       borderRadius: "20px",
                       border: "1px solid #ffffff",
-                      padding: "4px 20px",
+                      padding: "5px 22px",
                       fontWeight: 500,
                       textDecoration: "none",
                     }}
@@ -110,11 +114,11 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Column 2 — Navigation Links (spreading across the remaining 68%) */}
+            {/* Column 2 — Navigation Links (col-lg-5 matching WordPress) */}
             <div
               className="col-nav"
               style={{
-                width: "68%",
+                width: "48%",
                 padding: "0 15px",
                 boxSizing: "border-box",
               }}
@@ -125,27 +129,27 @@ export default function Footer() {
                   display: "flex",
                   alignItems: "flex-start",
                   width: "100%",
-                  marginTop: "10px",
-                  paddingLeft: "30px",
+                  marginTop: "25px",
+                  paddingLeft: "50px",
                   boxSizing: "border-box",
                 }}
               >
                 {/* Nav Col 1: About Us, Partners, Careers */}
                 <ul
                   style={{
-                    width: "32%",
+                    width: "30%",
                     listStyle: "none",
                     margin: 0,
                     padding: 0,
                   }}
                 >
-                  <li style={{ listStyle: "none", margin: "0 0 20px 0" }}>
+                  <li style={{ listStyle: "none", margin: "0 0 28px 0" }}>
                     <Link
                       href="/about-us"
                       style={{
                         color: "#ffffff",
-                        fontSize: "15px",
-                        lineHeight: "24px",
+                        fontSize: "16px",
+                        lineHeight: "28px",
                         transition: "all 0.3s ease-in-out",
                         display: "block",
                         textDecoration: "none",
@@ -155,13 +159,13 @@ export default function Footer() {
                       About Us
                     </Link>
                   </li>
-                  <li style={{ listStyle: "none", margin: "0 0 20px 0" }}>
+                  <li style={{ listStyle: "none", margin: "0 0 28px 0" }}>
                     <Link
                       href="/partners"
                       style={{
                         color: "#ffffff",
-                        fontSize: "15px",
-                        lineHeight: "24px",
+                        fontSize: "16px",
+                        lineHeight: "28px",
                         transition: "all 0.3s ease-in-out",
                         display: "block",
                         textDecoration: "none",
@@ -171,13 +175,13 @@ export default function Footer() {
                       Partners
                     </Link>
                   </li>
-                  <li style={{ listStyle: "none", margin: "0 0 20px 0" }}>
+                  <li style={{ listStyle: "none", margin: "0 0 28px 0" }}>
                     <Link
                       href="/career"
                       style={{
                         color: "#ffffff",
-                        fontSize: "15px",
-                        lineHeight: "24px",
+                        fontSize: "16px",
+                        lineHeight: "28px",
                         transition: "all 0.3s ease-in-out",
                         display: "block",
                         textDecoration: "none",
@@ -192,7 +196,7 @@ export default function Footer() {
                 {/* Nav Col 2: Solutions + Sub-items */}
                 <ul
                   style={{
-                    width: "38%",
+                    width: "40%",
                     listStyle: "none",
                     margin: 0,
                     padding: 0,
@@ -203,8 +207,8 @@ export default function Footer() {
                       href="/solution"
                       style={{
                         color: "#ffffff",
-                        fontSize: "15px",
-                        lineHeight: "24px",
+                        fontSize: "16px",
+                        lineHeight: "28px",
                         transition: "all 0.3s ease-in-out",
                         display: "block",
                         textDecoration: "none",
@@ -217,7 +221,7 @@ export default function Footer() {
                       style={{
                         listStyle: "none",
                         padding: 0,
-                        margin: "12px 0 0 0",
+                        margin: "15px 0 0 0",
                       }}
                     >
                       <li style={{ listStyle: "none", margin: "0 0 10px 0" }}>
@@ -226,7 +230,7 @@ export default function Footer() {
                           style={{
                             color: "#D8D8D8",
                             fontSize: "14px",
-                            lineHeight: "22px",
+                            lineHeight: "28px",
                             transition: "all 0.3s ease-in-out",
                             display: "block",
                             textDecoration: "none",
@@ -242,7 +246,7 @@ export default function Footer() {
                           style={{
                             color: "#D8D8D8",
                             fontSize: "14px",
-                            lineHeight: "22px",
+                            lineHeight: "28px",
                             transition: "all 0.3s ease-in-out",
                             display: "block",
                             textDecoration: "none",
@@ -258,7 +262,7 @@ export default function Footer() {
                           style={{
                             color: "#D8D8D8",
                             fontSize: "14px",
-                            lineHeight: "22px",
+                            lineHeight: "28px",
                             transition: "all 0.3s ease-in-out",
                             display: "block",
                             textDecoration: "none",
@@ -281,13 +285,13 @@ export default function Footer() {
                     padding: 0,
                   }}
                 >
-                  <li style={{ listStyle: "none", margin: "0 0 20px 0" }}>
+                  <li style={{ listStyle: "none", margin: "0 0 28px 0" }}>
                     <Link
                       href="/blogs"
                       style={{
                         color: "#ffffff",
-                        fontSize: "15px",
-                        lineHeight: "24px",
+                        fontSize: "16px",
+                        lineHeight: "28px",
                         transition: "all 0.3s ease-in-out",
                         display: "block",
                         textDecoration: "none",
@@ -297,13 +301,13 @@ export default function Footer() {
                       Blog
                     </Link>
                   </li>
-                  <li style={{ listStyle: "none", margin: "0 0 20px 0" }}>
+                  <li style={{ listStyle: "none", margin: "0 0 28px 0" }}>
                     <Link
                       href="/contact-us"
                       style={{
                         color: "#ffffff",
-                        fontSize: "15px",
-                        lineHeight: "24px",
+                        fontSize: "16px",
+                        lineHeight: "28px",
                         transition: "all 0.3s ease-in-out",
                         display: "block",
                         textDecoration: "none",
@@ -313,14 +317,14 @@ export default function Footer() {
                       Contact Us
                     </Link>
                   </li>
-                  <li style={{ listStyle: "none", margin: "0 0 20px 0" }}>
+                  <li style={{ listStyle: "none", margin: "0 0 28px 0" }}>
                     <a
                       href="/wp-content/uploads/2026/08/CERC-Trading-Lic.-Application.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{
                         color: "#ffffff",
-                        fontSize: "15px",
+                        fontSize: "16px",
                         lineHeight: "22px",
                         transition: "all 0.3s ease-in-out",
                         display: "block",
@@ -342,21 +346,21 @@ export default function Footer() {
           <div
             className="footerbottom"
             style={{
-              padding: "24px 0 28px 0",
+              padding: "30px 0",
               borderTop: "1px solid #6c7174",
               color: "#ffffff",
               fontSize: "14px",
-              lineHeight: "24px",
-              marginTop: "25px",
+              lineHeight: "28px",
+              marginTop: "30px",
               display: "flex",
               flexWrap: "wrap",
               justifyContent: "space-between",
               alignItems: "center",
+              width: "100%",
             }}
           >
             <div style={{ textAlign: "left" }}>
-              Copyright © {currentYear} Probus Smart Things Pvt Ltd. All rights
-              reserved.
+              © 2024 Probus Smart Things Pvt. Ltd.
             </div>
             <div className="botmbx" style={{ textAlign: "right" }}>
               <Link
@@ -364,7 +368,7 @@ export default function Footer() {
                 style={{
                   color: "#ffffff",
                   fontSize: "14px",
-                  lineHeight: "24px",
+                  lineHeight: "28px",
                   textDecoration: "none",
                 }}
                 className="f-link"
@@ -373,16 +377,16 @@ export default function Footer() {
               </Link>
               <span style={{ margin: "0 8px", color: "#6c7174" }}>|</span>
               <Link
-                href="/terms-conditions"
+                href="/terms-and-conditions"
                 style={{
                   color: "#ffffff",
                   fontSize: "14px",
-                  lineHeight: "24px",
+                  lineHeight: "28px",
                   textDecoration: "none",
                 }}
                 className="f-link"
               >
-                Terms &amp; Conditions
+                Terms and Conditions
               </Link>
             </div>
           </div>
@@ -398,8 +402,12 @@ export default function Footer() {
           text-decoration: underline !important;
         }
         @media (max-width: 991px) {
+          .container {
+            padding: 0 30px !important;
+          }
           .col-about {
             width: 100% !important;
+            max-width: 100% !important;
           }
           .col-nav {
             width: 100% !important;
@@ -410,6 +418,9 @@ export default function Footer() {
           }
         }
         @media (max-width: 600px) {
+          .container {
+            padding: 0 15px !important;
+          }
           .fnavbx {
             flex-direction: column !important;
           }
