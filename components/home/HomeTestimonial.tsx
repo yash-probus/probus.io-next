@@ -21,7 +21,13 @@ export default function HomeTestimonial() {
       >
         <div
           className="container"
-          style={{ maxWidth: "1140px", margin: "0 auto", padding: "0 15px" }}
+          style={{
+            maxWidth: "1800px",
+            margin: "0 auto",
+            padding: "0 75px",
+            boxSizing: "border-box",
+            width: "100%",
+          }}
         >
           <div
             style={{
@@ -35,36 +41,20 @@ export default function HomeTestimonial() {
             <div
               className="col-lg-5"
               style={{
-                width: "100%",
+                width: "41.666667%",
                 padding: "0 15px",
                 boxSizing: "border-box",
               }}
             >
               <div className="headingmain" style={{ marginBottom: "20px" }}>
                 <div className="text-left">
+                  {/* Matches WordPress .headingmain h6 { display: none; } */}
                   <h6
                     className="withline text-white"
                     style={{
-                      font: "14px/19px 'Roboto', sans-serif",
-                      position: "relative",
-                      color: "#ffffff",
-                      marginBottom: "5px",
-                      textTransform: "uppercase",
-                      paddingLeft: "39px",
-                      display: "block",
+                      display: "none",
                     }}
                   >
-                    <span
-                      style={{
-                        position: "absolute",
-                        top: "50%",
-                        transform: "translateY(-50%)",
-                        left: 0,
-                        backgroundColor: "#FFFFFF",
-                        width: "30px",
-                        height: "1px",
-                      }}
-                    />
                     TESTIMONIALS
                   </h6>
                   <h2
@@ -90,6 +80,7 @@ export default function HomeTestimonial() {
                   marginTop: "85px",
                   position: "relative",
                   zIndex: 2,
+                  width: "85%",
                 }}
               >
                 <img
@@ -108,7 +99,7 @@ export default function HomeTestimonial() {
             <div
               className="col-lg-7"
               style={{
-                width: "100%",
+                width: "58.333333%",
                 padding: "0 15px",
                 boxSizing: "border-box",
               }}
@@ -121,6 +112,38 @@ export default function HomeTestimonial() {
                   position: "relative",
                 }}
               >
+                {/* Quotation Marks: 3.svg on top-left, 2.svg on bottom-right matching WordPress ::before and ::after */}
+                <div
+                  className="quote-decor-left"
+                  style={{
+                    position: "absolute",
+                    left: "-130px",
+                    top: "0px",
+                    width: "100px",
+                    height: "100px",
+                    backgroundImage: "url(/wp-content/themes/probus/assets/images/3.svg)",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "100px auto",
+                    zIndex: 1,
+                    pointerEvents: "none",
+                  }}
+                />
+                <div
+                  className="quote-decor-right"
+                  style={{
+                    position: "absolute",
+                    right: "-130px",
+                    bottom: "-15px",
+                    width: "100px",
+                    height: "100px",
+                    backgroundImage: "url(/wp-content/themes/probus/assets/images/2.svg)",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "100px auto",
+                    zIndex: 1,
+                    pointerEvents: "none",
+                  }}
+                />
+
                 <div
                   className="testimonials_item"
                   style={{
@@ -133,27 +156,16 @@ export default function HomeTestimonial() {
                       position: "relative",
                     }}
                   >
-                    {/* Quotation mark graphics */}
-                    <img
-                      src="/wp-content/themes/probus/assets/images/3.svg"
-                      alt=""
-                      style={{
-                        position: "absolute",
-                        left: "-50px",
-                        top: "-20px",
-                        width: "40px",
-                        opacity: 0.5,
-                      }}
-                    />
                     <div
                       className="testimonials_quote"
                       style={{
                         fontSize: "20px",
-                        lineHeight: "32px",
+                        lineHeight: "30px",
                         color: "#ffffff",
-                        fontStyle: "italic",
+                        fontStyle: "normal",
                         fontFamily: "'Roboto', sans-serif",
                         fontWeight: 300,
+                        letterSpacing: 0,
                       }}
                     >
                       Probus is truly agile – flexible and fast. Commit till the end to
@@ -167,12 +179,12 @@ export default function HomeTestimonial() {
                     style={{
                       display: "flex",
                       alignItems: "center",
-                      marginTop: "30px",
+                      marginTop: "40px",
                     }}
                   >
                     <div
                       className="testimonials_image"
-                      style={{ marginRight: "16px" }}
+                      style={{ marginRight: "12px" }}
                     >
                       <img
                         src="/wp-content/uploads/2025/06/test_member.png"
@@ -183,6 +195,7 @@ export default function HomeTestimonial() {
                           borderRadius: "50%",
                           objectFit: "cover",
                           border: "2px solid #ffffff",
+                          display: "block",
                         }}
                       />
                     </div>
@@ -190,12 +203,13 @@ export default function HomeTestimonial() {
                       <h3
                         className="testimonials_name"
                         style={{
-                          fontSize: "18px",
-                          lineHeight: "24px",
+                          fontSize: "16px",
+                          lineHeight: "28px",
                           fontWeight: 600,
                           color: "#ffffff",
                           margin: 0,
                           fontFamily: "'Roboto', sans-serif",
+                          display: "block",
                         }}
                       >
                         Anil Vashy
@@ -204,10 +218,11 @@ export default function HomeTestimonial() {
                         className="testimonials_status"
                         style={{
                           fontSize: "14px",
-                          lineHeight: "20px",
-                          color: "rgba(255, 255, 255, 0.8)",
+                          lineHeight: "28px",
+                          color: "#ffffff",
                           display: "block",
                           fontFamily: "'Roboto', sans-serif",
+                          fontWeight: 300,
                         }}
                       >
                         AVP SCADA BSES Yamuna Power
@@ -222,21 +237,61 @@ export default function HomeTestimonial() {
       </div>
 
       <style jsx>{`
-        @media (min-width: 992px) {
-          .col-lg-5 {
-            width: 41.666667% !important;
+        @media (max-width: 1200px) {
+          .container {
+            padding: 0 30px !important;
           }
-          .col-lg-7 {
-            width: 58.333333% !important;
+          .quote-decor-left {
+            left: -80px !important;
+            width: 70px !important;
+            height: 70px !important;
+            background-size: 70px auto !important;
+          }
+          .quote-decor-right {
+            right: -80px !important;
+            width: 70px !important;
+            height: 70px !important;
+            background-size: 70px auto !important;
           }
         }
         @media (max-width: 991px) {
+          .container {
+            padding: 0 20px !important;
+          }
+          .col-lg-5,
+          .col-lg-7 {
+            width: 100% !important;
+          }
           .testimain_img {
             margin-top: 30px !important;
             margin-bottom: 20px !important;
+            width: 100% !important;
           }
           .testimonials_item {
             padding: 20px 0 0 0 !important;
+          }
+          .quote-decor-left {
+            left: -30px !important;
+            top: -20px !important;
+            width: 50px !important;
+            height: 50px !important;
+            background-size: 50px auto !important;
+          }
+          .quote-decor-right {
+            right: -20px !important;
+            bottom: -20px !important;
+            width: 50px !important;
+            height: 50px !important;
+            background-size: 50px auto !important;
+          }
+        }
+        @media (max-width: 600px) {
+          .container {
+            padding: 0 15px !important;
+          }
+          .quote-decor-left,
+          .quote-decor-right {
+            display: none !important;
           }
         }
       `}</style>

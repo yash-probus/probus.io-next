@@ -57,12 +57,19 @@ export default function HomeBlog() {
     >
       <div
         className="container"
-        style={{ maxWidth: "1140px", margin: "0 auto", padding: "0 15px", position: "relative" }}
+        style={{
+          maxWidth: "1800px",
+          margin: "0 auto",
+          padding: "0 75px",
+          position: "relative",
+          width: "100%",
+          boxSizing: "border-box",
+        }}
       >
         {/* Header row */}
         <div className="row" style={{ position: "relative" }}>
           <div className="col-12" style={{ width: "100%" }}>
-            <div className="headingmain" style={{ marginBottom: "20px" }}>
+            <div className="headingmain" style={{ marginBottom: "25px" }}>
               <div className="text-center" style={{ textAlign: "center" }}>
                 <h6
                   style={{
@@ -98,7 +105,7 @@ export default function HomeBlog() {
             className="slider-nav-arrows"
             style={{
               position: "absolute",
-              right: "15px",
+              right: "0",
               top: "10px",
               display: "flex",
               alignItems: "center",
@@ -172,7 +179,7 @@ export default function HomeBlog() {
               display: "flex",
               transform: `translateX(-${startIndex * 33.3333}%)`,
               transition: "transform 0.5s ease-in-out",
-              margin: "0 -10px",
+              margin: "0 -15px",
             }}
           >
             {blogs.map((b, idx) => (
@@ -182,7 +189,7 @@ export default function HomeBlog() {
                 style={{
                   minWidth: "33.3333%",
                   maxWidth: "33.3333%",
-                  padding: "0 10px",
+                  padding: "0 15px",
                   boxSizing: "border-box",
                 }}
               >
@@ -190,11 +197,13 @@ export default function HomeBlog() {
                   className="h-resource"
                   style={{
                     background: "#ffffff",
-                    boxShadow: "0px 0px 6px #0000001A",
-                    borderRadius: "6px",
-                    padding: "14px 15px",
+                    boxShadow: "0px 4px 18px rgba(0, 0, 0, 0.08)",
+                    borderRadius: "10px",
+                    padding: "20px 22px",
                     transition: "all 0.3s ease-in-out",
                     boxSizing: "border-box",
+                    minHeight: "260px",
+                    display: "flex",
                   }}
                 >
                   <div
@@ -202,18 +211,19 @@ export default function HomeBlog() {
                     style={{
                       width: "100%",
                       display: "flex",
-                      alignItems: "flex-start",
+                      alignItems: "stretch",
                     }}
                   >
                     <div
                       className="infobox_icon_container"
                       style={{
-                        height: "160px",
+                        minHeight: "210px",
                         display: "block",
                         overflow: "hidden",
-                        width: "50%",
-                        borderRadius: "6px",
+                        width: "48%",
+                        borderRadius: "8px",
                         flexShrink: 0,
+                        position: "relative",
                       }}
                     >
                       <img
@@ -232,54 +242,58 @@ export default function HomeBlog() {
                     <div
                       className="contntright"
                       style={{
-                        width: "50%",
+                        width: "52%",
                         boxSizing: "border-box",
-                        paddingLeft: "15px",
+                        paddingLeft: "20px",
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "space-between",
                       }}
                     >
-                      <h4
-                        className="infobox_title"
-                        style={{
-                          fontSize: "13px",
-                          color: "#707070",
-                          lineHeight: "22px",
-                          paddingBottom: "4px",
-                          fontWeight: 300,
-                          margin: 0,
-                        }}
-                      >
-                        {b.type}
-                      </h4>
-                      <p
-                        className="time"
-                        style={{
-                          fontSize: "16px",
-                          color: "#000000",
-                          lineHeight: "23px",
-                          paddingBottom: "5px",
-                          fontWeight: 500,
-                          paddingRight: "5px",
-                          margin: 0,
-                        }}
-                      >
-                        {b.title}
-                      </p>
-                      <Link
-                        href={b.link}
-                        className="know-more"
-                        style={{
-                          fontSize: "15px",
-                          color: "#097DF5",
-                          lineHeight: "24px",
-                          paddingBottom: "5px",
-                          fontWeight: 500,
-                          display: "inline-block",
-                          marginTop: "12px",
-                          textDecoration: "none",
-                        }}
-                      >
-                        Know More
-                      </Link>
+                      <div>
+                        <h4
+                          className="infobox_title"
+                          style={{
+                            fontSize: "14px",
+                            color: "#707070",
+                            lineHeight: "22px",
+                            paddingBottom: "4px",
+                            fontWeight: 400,
+                            margin: 0,
+                          }}
+                        >
+                          {b.type}
+                        </h4>
+                        <p
+                          className="time"
+                          style={{
+                            fontSize: "20px",
+                            color: "#000000",
+                            lineHeight: "28px",
+                            fontWeight: 700,
+                            paddingRight: "5px",
+                            margin: "4px 0 0 0",
+                          }}
+                        >
+                          {b.title}
+                        </p>
+                      </div>
+                      <div style={{ marginTop: "16px" }}>
+                        <Link
+                          href={b.link}
+                          className="know-more"
+                          style={{
+                            fontSize: "16px",
+                            color: "#097DF5",
+                            lineHeight: "24px",
+                            fontWeight: 600,
+                            display: "inline-block",
+                            textDecoration: "none",
+                          }}
+                        >
+                          Know More
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -290,8 +304,11 @@ export default function HomeBlog() {
       </div>
 
       <style jsx>{`
+        .h-resource:hover {
+          box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.12) !important;
+        }
         .h-resource:hover .blog-thumb {
-          transform: scale(1.1);
+          transform: scale(1.08);
         }
         .h-resource:hover .know-more {
           text-decoration: underline !important;
@@ -299,13 +316,24 @@ export default function HomeBlog() {
         .slick-nav-btn:hover:not(:disabled) {
           background-color: #033361 !important;
         }
+        @media (max-width: 1200px) {
+          .container {
+            padding: 0 30px !important;
+          }
+        }
         @media (max-width: 991px) {
+          .container {
+            padding: 0 20px !important;
+          }
           .h-resource-slide {
             min-width: 50% !important;
             max-width: 50% !important;
           }
         }
         @media (max-width: 600px) {
+          .container {
+            padding: 0 15px !important;
+          }
           .h-resource-slide {
             min-width: 100% !important;
             max-width: 100% !important;
@@ -314,6 +342,19 @@ export default function HomeBlog() {
             position: static !important;
             justify-content: center !important;
             margin-bottom: 15px !important;
+          }
+          .infobox_wrapper {
+            flex-direction: column !important;
+          }
+          .infobox_icon_container {
+            width: 100% !important;
+            height: 180px !important;
+            min-height: 180px !important;
+          }
+          .contntright {
+            width: 100% !important;
+            padding-left: 0 !important;
+            margin-top: 15px !important;
           }
         }
       `}</style>

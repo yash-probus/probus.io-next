@@ -2,25 +2,37 @@
 
 import Link from "next/link";
 
-const partnerLogos = [
-  "/wp-content/uploads/2025/06/p1-1-1.png",
-  "/wp-content/uploads/2025/06/p2-1.png",
-  "/wp-content/uploads/2025/06/p3-1.png",
-  "/wp-content/uploads/2025/06/p4-1.png",
-  "/wp-content/uploads/2025/06/p5-1.png",
-  "/wp-content/uploads/2025/06/p6-1.png",
-  "/wp-content/uploads/2025/06/p7-1.png",
-  "/wp-content/uploads/2025/06/p8-1.png",
-  "/wp-content/uploads/2025/06/p9-1.png",
+const row1Logos = [
+  { src: "/wp-content/uploads/2025/06/p1-1-1.png", alt: "Google" },
+  { src: "/wp-content/uploads/2025/06/p2-1.png", alt: "AWS" },
+  { src: "/wp-content/uploads/2025/06/p3-1.png", alt: "Silicon Labs" },
+  { src: "/wp-content/uploads/2025/06/p4-1.png", alt: "Wirepas" },
+  { src: "/wp-content/uploads/2025/06/p5-1.png", alt: "DLMS" },
+];
+
+const row2Logos = [
+  { src: "/wp-content/uploads/2025/06/p6-1.png", alt: "Wi-SUN Alliance" },
+  { src: "/wp-content/uploads/2025/06/p7-1.png", alt: "Renesas" },
+  { src: "/wp-content/uploads/2025/06/p8-1.png", alt: "NXP" },
+  { src: "/wp-content/uploads/2025/06/p9-1.png", alt: "HPL" },
 ];
 
 export default function HomePartners() {
   return (
     <section className="sub-section home-partners" style={{ padding: "55px 0", backgroundColor: "#fff" }}>
-      <div className="container" style={{ maxWidth: "1140px", margin: "0 auto", padding: "0 15px" }}>
+      <div
+        className="container"
+        style={{
+          maxWidth: "1800px",
+          margin: "0 auto",
+          padding: "0 75px",
+          width: "100%",
+          boxSizing: "border-box",
+        }}
+      >
         <div className="row">
           <div className="col-lg-12">
-            <div className="headingmain" style={{ marginBottom: "20px" }}>
+            <div className="headingmain" style={{ marginBottom: "25px" }}>
               <div className="text-center" style={{ textAlign: "center" }}>
                 <p
                   style={{
@@ -44,39 +56,87 @@ export default function HomePartners() {
               style={{
                 width: "100%",
                 display: "flex",
-                alignItems: "flex-end",
-                justifyContent: "center",
-                flexWrap: "wrap",
-                margin: "0 -35px",
+                flexDirection: "column",
+                alignItems: "center",
               }}
             >
-              {partnerLogos.map((logo, index) => (
-                <div
-                  key={index}
-                  className="partner-item"
-                  style={{
-                    height: "53px",
-                    margin: "20px 35px",
-                    display: "flex",
-                    alignItems: "flex-end",
-                    justifyContent: "center",
-                  }}
-                >
-                  <img
-                    src={logo}
-                    alt={`Partner ${index + 1}`}
+              {/* Row 1 — 5 logos matching www */}
+              <div
+                className="partner-row partner-row-1"
+                style={{
+                  display: "flex",
+                  alignItems: "flex-end",
+                  justifyContent: "center",
+                  flexWrap: "wrap",
+                  width: "100%",
+                }}
+              >
+                {row1Logos.map((item, index) => (
+                  <div
+                    key={index}
+                    className="partner-item"
                     style={{
-                      maxWidth: "100%",
-                      height: "100%",
-                      objectFit: "contain",
-                      display: "block",
+                      height: "56px",
+                      margin: "15px 32px",
+                      display: "flex",
+                      alignItems: "flex-end",
+                      justifyContent: "center",
                     }}
-                  />
-                </div>
-              ))}
+                  >
+                    <img
+                      src={item.src}
+                      alt={item.alt}
+                      style={{
+                        maxWidth: "100%",
+                        height: "100%",
+                        objectFit: "contain",
+                        display: "block",
+                      }}
+                    />
+                  </div>
+                ))}
+              </div>
+
+              {/* Row 2 — 4 logos matching www */}
+              <div
+                className="partner-row partner-row-2"
+                style={{
+                  display: "flex",
+                  alignItems: "flex-end",
+                  justifyContent: "center",
+                  flexWrap: "wrap",
+                  width: "100%",
+                  marginTop: "8px",
+                }}
+              >
+                {row2Logos.map((item, index) => (
+                  <div
+                    key={index}
+                    className="partner-item"
+                    style={{
+                      height: "56px",
+                      margin: "15px 32px",
+                      display: "flex",
+                      alignItems: "flex-end",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <img
+                      src={item.src}
+                      alt={item.alt}
+                      style={{
+                        maxWidth: "100%",
+                        height: "100%",
+                        objectFit: "contain",
+                        display: "block",
+                      }}
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
 
-            <div className="homePbtn" style={{ marginTop: "35px", textAlign: "center" }}>
+            <div className="homePbtn" style={{ marginTop: "40px", textAlign: "center" }}>
               <Link
                 href="/partners"
                 className="bth-Blue"
@@ -91,7 +151,7 @@ export default function HomePartners() {
                   fontFamily: "'Roboto', sans-serif",
                   fontWeight: 500,
                   borderRadius: "30px",
-                  padding: "5px 20px",
+                  padding: "6px 24px",
                   textDecoration: "none",
                 }}
               >
@@ -107,18 +167,22 @@ export default function HomePartners() {
           background-color: #fff !important;
           color: #033361 !important;
         }
-        @media (max-width: 767px) {
-          .partnerlists {
-            margin: 0 !important;
+        @media (max-width: 1200px) {
+          .container {
+            padding: 0 30px !important;
           }
-          .partnerlists .partner-item {
-            height: 39px !important;
-            margin: 15px 18px !important;
+          .partner-item {
+            margin: 12px 20px !important;
+            height: 48px !important;
           }
         }
-        @media (min-width: 1601px) {
-          .partnerlists .partner-item {
-            height: 75px !important;
+        @media (max-width: 767px) {
+          .container {
+            padding: 0 15px !important;
+          }
+          .partner-item {
+            margin: 10px 14px !important;
+            height: 38px !important;
           }
         }
       `}</style>
