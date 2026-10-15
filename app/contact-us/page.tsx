@@ -1,7 +1,5 @@
 import { Metadata } from "next";
-import ContactHero from "@/components/contact/ContactHero";
-import ContactInfo, { ContactMap } from "@/components/contact/ContactInfo";
-import ContactForm from "@/components/contact/ContactForm";
+import { ContactHero, ContactInfo, ContactMap, ContactForm } from "@/components/contact";
 
 export const metadata: Metadata = {
   title: "Contact Us - Probus",

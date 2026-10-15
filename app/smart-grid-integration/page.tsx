@@ -1,10 +1,11 @@
-import SolutionDetailHero from "@/components/solution/SolutionDetailHero";
-import SmartGridContentTop from "@/components/solution/SmartGridContentTop";
-import SmartGridContentBottom from "@/components/solution/SmartGridContentBottom";
-import LeverageIoT from "@/components/solution/LeverageIoT";
-import KeyProjects from "@/components/solution/KeyProjects";
-import HomePartners from "@/components/home/HomePartners";
-import HomeTestimonial from "@/components/home/HomeTestimonial";
+import {
+  SolutionDetailHero,
+  SmartGridContentTop,
+  SmartGridContentBottom,
+  LeverageIoT,
+  KeyProjects,
+} from "@/components/solution";
+import { PartnersShowcase, TestimonialSection } from "@/components/common";
 
 export const metadata = {
   title: "Probus Smart Grid Technology | Scalable Projects & IoT Integration",
@@ -37,8 +38,8 @@ export default function SmartGridIntegrationPage() {
       <LeverageIoT steps={leverageSteps} />
       <SmartGridContentBottom />
       <KeyProjects />
-      <HomePartners />
-      <HomeTestimonial />
+      <PartnersShowcase />
+      <TestimonialSection />
     </>
   );
 }

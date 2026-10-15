@@ -1,4 +1,6 @@
 import Image from "next/image";
+import SectionHeading from "@/components/common/SectionHeading";
+import Container from "@/components/common/Container";
 
 export default function CompanyOverview() {
   const items = [
@@ -21,7 +23,7 @@ export default function CompanyOverview() {
 
   return (
     <section className="py-[65px] bg-white">
-      <div className="container mx-auto px-4 md:px-[15px] max-w-7xl">
+      <Container size="wide">
         <div className="flex flex-wrap -mx-4 items-center">
           
           <div className="w-full lg:w-1/2 px-4 mb-10 lg:mb-0">
@@ -38,14 +40,11 @@ export default function CompanyOverview() {
           
           <div className="w-full lg:w-1/2 px-4">
             <div className="mb-0">
-              <div className="text-left mb-[30px]">
-                <h6 className="text-[#0A080C] uppercase font-medium tracking-wide mb-2 inline-block border-b-2 border-black pb-1 text-[13px]">
-                  COMPANY OVERVIEW
-                </h6>
-                <h2 className="text-[#0A080C] text-[32px] md:text-[40px] font-medium leading-tight mt-2 font-sans">
-                  WE MAKE THINGS TALK
-                </h2>
-              </div>
+              <SectionHeading
+                badge="COMPANY OVERVIEW"
+                title="WE MAKE THINGS TALK"
+                align="left"
+              />
               
               <ul className="list-none mt-[30px] p-0 m-0">
                 {items.map((item, idx) => (
@@ -74,7 +73,7 @@ export default function CompanyOverview() {
           </div>
           
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

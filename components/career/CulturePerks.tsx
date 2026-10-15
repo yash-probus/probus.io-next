@@ -3,6 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import SectionHeading from "@/components/common/SectionHeading";
+import Container from "@/components/common/Container";
 
 export default function CulturePerks() {
   const slides = [
@@ -17,9 +19,7 @@ export default function CulturePerks() {
 
   return (
     <section className="py-[40px] md:py-[65px] bg-white relative">
-      {/* Optional faint background pattern behind the whole section if needed, but original uses bgrightbottom class which we can skip or add if needed */}
-      
-      <div className="container mx-auto px-4 md:px-[15px] max-w-7xl">
+      <Container size="wide">
         <div className="flex flex-wrap -mx-4 items-center">
           
           {/* Left Slider */}
@@ -71,14 +71,11 @@ export default function CulturePerks() {
 
           {/* Right Content */}
           <div className="w-full lg:w-1/2 px-4">
-            <div className="text-left mb-[30px]">
-              <h6 className="text-[#0A080C] uppercase font-medium tracking-wide mb-2 inline-block border-b-2 border-black pb-1 text-[13px]">
-                COMPANY OVERVIEW
-              </h6>
-              <h2 className="text-[#0A080C] text-[32px] md:text-[40px] font-medium leading-tight mt-2 font-sans">
-                Why work at Probus?
-              </h2>
-            </div>
+            <SectionHeading
+              badge="COMPANY OVERVIEW"
+              title="Why work at Probus?"
+              align="left"
+            />
             
             <ul className="list-none p-0 m-0 mt-[30px]">
               <li className="flex items-start mb-[25px]">
@@ -109,7 +106,7 @@ export default function CulturePerks() {
           </div>
           
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

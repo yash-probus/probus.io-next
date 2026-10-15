@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 const slides = [
@@ -100,16 +101,12 @@ export default function HomeHero() {
                     overflow: "hidden",
                   }}
                 >
-                  <img
+                  <Image
                     src={s.img}
                     alt=""
-                    className="full-image hide768"
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      objectFit: "cover",
-                      display: "block",
-                    }}
+                    fill
+                    priority={index === 0}
+                    className="full-image hide768 object-cover"
                   />
 
                   {s.video && (

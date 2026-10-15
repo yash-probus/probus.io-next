@@ -1,10 +1,12 @@
 import { Metadata } from "next";
-import AboutHero from "@/components/about/AboutHero";
-import CompanyOverview from "@/components/about/CompanyOverview";
-import LeadershipTeam from "@/components/about/LeadershipTeam";
-import CoreStrengths from "@/components/about/CoreStrengths";
-import CompanyJourney from "@/components/about/CompanyJourney";
-import Testimonials from "@/components/about/Testimonials";
+import {
+  AboutHero,
+  CompanyOverview,
+  LeadershipTeam,
+  CoreStrengths,
+  CompanyJourney,
+  Testimonials,
+} from "@/components/about";
 
 export const metadata: Metadata = {
   title: "Smart Meter Manufacturing Company with Smart Grid IoT Solutions",

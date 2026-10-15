@@ -1,8 +1,10 @@
 import { Metadata } from "next";
-import PartnersHero from "@/components/partners/PartnersHero";
-import PartnersIntro from "@/components/partners/PartnersIntro";
-import PartnersGrid from "@/components/partners/PartnersGrid";
-import PartnersCta from "@/components/partners/PartnersCta";
+import {
+  PartnersHero,
+  PartnersIntro,
+  PartnersGrid,
+  PartnersCta,
+} from "@/components/partners";
 
 export const metadata: Metadata = {
   title: "Probus | Smart Energy Meter Solutions & Smart Metering Services",

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
+import MobileNav from "./MobileNav";
 
 export default function Header() {
   const headerRef = useRef<HTMLDivElement>(null);
@@ -254,16 +255,8 @@ export default function Header() {
               </ul>
             </nav>
 
-            {/* Mobile Menu Button */}
-            <button
-              className="lg:hidden p-2 transition-colors"
-              style={{ color: "#636363" }}
-              aria-label="Toggle Menu"
-            >
-              <svg style={{ width: "24px", height: "24px" }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
+            {/* Mobile Navigation */}
+            <MobileNav />
           </div>
         </div>
       </header>

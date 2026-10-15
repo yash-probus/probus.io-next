@@ -1,4 +1,6 @@
 import Image from "next/image";
+import SectionHeading from "@/components/common/SectionHeading";
+import Container from "@/components/common/Container";
 
 export default function CompanyJourney() {
   const journeys = [
@@ -39,15 +41,13 @@ export default function CompanyJourney() {
 
   return (
     <section className="py-[40px] md:py-[65px] bg-white overflow-hidden">
-      <div className="container mx-auto px-4 md:px-[15px] max-w-7xl">
-        <div className="text-left mb-[60px]">
-          <h6 className="text-[#0A080C] uppercase font-medium tracking-wide mb-2 inline-block border-b-2 border-black pb-1 text-[13px]">
-            OUR JOURNEY
-          </h6>
-          <h2 className="text-[#0A080C] text-[32px] md:text-[40px] font-medium leading-tight mt-2 font-sans">
-            Building the future together
-          </h2>
-        </div>
+      <Container size="wide">
+        <SectionHeading
+          badge="OUR JOURNEY"
+          title="Building the future together"
+          align="left"
+          className="mb-[60px]"
+        />
 
         <div className="relative mt-[60px] max-w-[1200px] mx-auto hidden md:block">
           {/* Horizontal Line connecting the dots */}
@@ -122,7 +122,7 @@ export default function CompanyJourney() {
           ))}
         </div>
 
-      </div>
+      </Container>
     </section>
   );
 }

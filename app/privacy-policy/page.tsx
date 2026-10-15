@@ -1,4 +1,5 @@
-import Link from "next/link";
+import PageHero from "@/components/common/PageHero";
+import Container from "@/components/common/Container";
 
 export const metadata = {
   title: "Privacy Policy - Probus",
@@ -11,23 +12,17 @@ export const metadata = {
 export default function PrivacyPolicyPage() {
   return (
     <>
-      <section className="relative w-full bg-[#033361] h-[300px] flex items-center justify-center text-center">
-         <div className="absolute inset-0 bg-black/40 z-[1]" />
-         <div className="relative z-10 text-white mt-8">
-            <h1 className="text-[36px] font-bold font-sans">Privacy Policy</h1>
-         </div>
-         {/* Breadcrumbs */}
-         <div className="absolute bottom-0 left-0 w-full py-3 z-10" style={{ background: "rgba(0, 0, 0, 0.4)" }}>
-           <div className="container mx-auto px-4 md:px-[15px] max-w-[1140px] flex items-center justify-center md:justify-start text-white text-[14px] font-sans">
-             <Link href="/" className="hover:text-[#0795F8] transition-colors">Home</Link>
-             <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 320 512" height="12px" width="12px" xmlns="http://www.w3.org/2000/svg" className="mx-2"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
-             <span>Privacy Policy</span>
-           </div>
-         </div>
-      </section>
+      <PageHero
+        title="Privacy Policy"
+        height="h-[300px]"
+        breadcrumbs={[
+          { label: "Home", href: "/" },
+          { label: "Privacy Policy" },
+        ]}
+      />
 
       <section className="py-12 bg-white">
-        <div className="prose prose-lg max-w-[1140px] mx-auto px-4 text-gray-700 leading-relaxed font-sans">
+        <Container className="prose prose-lg text-gray-700 leading-relaxed font-sans">
           <h2>1. Introduction</h2>
           <p>
             Welcome to Probus Smart Things. As part of our commitment to your privacy, we have established this Privacy Policy. We value the trust you place in us and respect your privacy in handling personal identification information relating to you and your use of our website, probus.io, and our services. This Privacy Policy applies to all of the products, services, and websites offered by Probus Smart Things Pvt. Ltd.
@@ -83,7 +78,7 @@ export default function PrivacyPolicyPage() {
             info@probus.io<br />
             011 4103 3012
           </p>
-        </div>
+        </Container>
       </section>
     </>
   );

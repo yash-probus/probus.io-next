@@ -1,12 +1,16 @@
 {
-  "name": "next-temp",
-  "version": "0.1.0",
+  "name": "probus-io",
+  "version": "1.0.0",
+  "description": "Official web application for Probus Smart Things",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "type-check": "tsc --noEmit",
+    "extract:blogs": "node scripts/extract-blogs.js"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.20",

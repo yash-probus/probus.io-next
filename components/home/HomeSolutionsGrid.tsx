@@ -98,9 +98,11 @@ export default function HomeSolutionsGrid() {
           >
             {/* Image */}
             <div className="Items-img">
-              <img
+              <Image
                 src={card.img}
                 alt={card.title}
+                width={500}
+                height={400}
                 style={{
                   maxWidth: "100%",
                   position: "relative",

@@ -1,8 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useEffect, useState } from "react";
+import Breadcrumbs from "@/components/common/Breadcrumbs";
+import Container from "@/components/common/Container";
 
 export default function SolutionHero() {
   const [text, setText] = useState("");
@@ -55,20 +56,22 @@ export default function SolutionHero() {
       
       {/* Breadcrumbs */}
       <div className="absolute top-[40px] left-0 w-full z-20">
-        <div className="max-w-[1140px] mx-auto px-4 md:px-[15px] text-left">
-          <div className="flex items-center space-x-2 text-white font-semibold text-[13px] md:text-[14px] font-sans">
-            <Link href="/" className="hover:underline">Home</Link>
-            <span>&gt;</span>
-            <span>Solutions</span>
-          </div>
-        </div>
+        <Container className="text-left">
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Solutions" },
+            ]}
+            theme="light"
+          />
+        </Container>
       </div>
       
-      <div className="relative z-20 w-full max-w-[1140px] mx-auto px-4 md:px-[15px]">
+      <Container className="relative z-20">
         <h2 className="text-white text-[32px] md:text-[45px] font-bold font-sans tracking-wide">
           {text}<span className="animate-pulse">|</span>
         </h2>
-      </div>
+      </Container>
     </section>
   );
 }

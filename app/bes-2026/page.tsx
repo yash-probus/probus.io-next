@@ -1,9 +1,11 @@
 import { Metadata } from "next";
-import BesHero from "@/components/bes-2026/BesHero";
-import BesOverview from "@/components/bes-2026/BesOverview";
-import BesSolutionsSpotlight from "@/components/bes-2026/BesSolutionsSpotlight";
-import BesBoothLocation from "@/components/bes-2026/BesBoothLocation";
-import BesMeetingForm from "@/components/bes-2026/BesMeetingForm";
+import {
+  BesHero,
+  BesOverview,
+  BesSolutionsSpotlight,
+  BesBoothLocation,
+  BesMeetingForm,
+} from "@/components/bes-2026";
 
 export const metadata: Metadata = {
   title: "Bharat Electricity Summit 2026 | Probus",

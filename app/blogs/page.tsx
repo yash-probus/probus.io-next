@@ -1,8 +1,9 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import fs from 'fs';
-import path from 'path';
+import { getBlogs } from '@/lib/blogs';
+import Breadcrumbs from '@/components/common/Breadcrumbs';
+import Container from '@/components/common/Container';
 
 export const metadata: Metadata = {
   title: 'Blogs - Probus',
@@ -13,19 +14,7 @@ export const metadata: Metadata = {
 };
 
 export default function BlogsPage() {
-  const blogsPath = path.join(process.cwd(), 'content', 'blogs.json');
-  let blogs = [];
-  try {
-    if (fs.existsSync(blogsPath)) {
-      blogs = JSON.parse(fs.readFileSync(blogsPath, 'utf8'));
-    }
-  } catch (err) {
-    console.error('Error loading blogs:', err);
-  }
-
-  // Sort by date descending
-  blogs.sort((a: any, b: any) => new Date(b.date).getTime() - new Date(a.date).getTime());
-
+  const blogs = getBlogs();
   const featuredBlogs = blogs.slice(0, 3);
   const regularBlogs = blogs.slice(3);
 
@@ -45,19 +34,21 @@ export default function BlogsPage() {
       
       {/* Breadcrumbs */}
       <section className="w-full">
-        <div className="max-w-[1140px] mx-auto px-[15px] pt-8 pb-6">
-          <div className="text-black text-[14px] font-bold flex items-center gap-2">
-            <Link href="/" className="hover:text-[#097DF5]">Home</Link>
-            <span className="text-[10px]">&gt;</span>
-            <span>Blogs</span>
-          </div>
-        </div>
+        <Container className="pt-8 pb-6">
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Blogs" },
+            ]}
+            theme="dark"
+          />
+        </Container>
       </section>
 
       {/* Featured Slider Area */}
       <section className="w-full mb-12 overflow-hidden px-[15px] max-w-[1800px] mx-auto">
         <div className="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar gap-4 md:gap-5 h-[400px] md:h-[550px] pb-4">
-          {featuredBlogs.map((blog: any) => (
+          {featuredBlogs.map((blog) => (
             <div 
               key={blog.slug} 
               className="relative h-full rounded-[10px] overflow-hidden group transition-all duration-300 flex-shrink-0 w-[85%] md:w-[calc(33.333%-14px)] snap-center cursor-pointer"
@@ -110,7 +101,7 @@ export default function BlogsPage() {
 
             {/* Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-              {regularBlogs.map((blog: any) => (
+              {regularBlogs.map((blog) => (
                 <div key={blog.slug} className="flex flex-col border border-gray-100 rounded-[10px] overflow-hidden bg-white shadow-[0px_2px_10px_rgba(0,0,0,0.04)] group hover:shadow-[0px_5px_20px_rgba(0,0,0,0.08)] transition-all">
                   <Link href={`/blogs/${blog.slug}`} className="relative w-full aspect-[1.6/1] overflow-hidden block">
                     <Image

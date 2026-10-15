@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useRef } from "react";
+import { useRef } from "react";
+import SectionHeading from "@/components/common/SectionHeading";
 
 export default function LeadershipTeam() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -59,17 +60,13 @@ export default function LeadershipTeam() {
         
         {/* Left Heading */}
         <div className="w-full lg:w-[35%] xl:w-[40%] pr-[30px] md:pr-[70px] mb-10 lg:mb-0 relative">
-          <div className="text-left">
-            <h6 className="text-white uppercase font-medium tracking-wide mb-2 inline-block border-b-2 border-white pb-1 text-[13px]">
-              LEADERSHIP
-            </h6>
-            <h2 className="text-white text-[32px] md:text-[40px] font-medium leading-tight mt-2 mb-4 font-sans">
-              Meet the team with diverse backgrounds and expertise
-            </h2>
-            <p className="text-white text-[15px] leading-[28px] font-light">
-              Our team consists of passionate and experienced professionals who are dedicated to driving energy efficiency and sustainability.
-            </p>
-          </div>
+          <SectionHeading
+            badge="LEADERSHIP"
+            title="Meet the team with diverse backgrounds and expertise"
+            description="Our team consists of passionate and experienced professionals who are dedicated to driving energy efficiency and sustainability."
+            theme="light"
+            align="left"
+          />
           
           {/* Slider controls (Arrows) */}
           <div className="flex space-x-2 mt-8 absolute md:bottom-[-60px] left-0">

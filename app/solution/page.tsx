@@ -1,8 +1,10 @@
 import { Metadata } from "next";
-import SolutionHero from "@/components/solution/SolutionHero";
-import SolutionsList from "@/components/solution/SolutionsList";
-import TechArchitecture from "@/components/solution/TechArchitecture";
-import SolutionCta from "@/components/solution/SolutionCta";
+import {
+  SolutionHero,
+  SolutionsList,
+  TechArchitecture,
+  SolutionCta,
+} from "@/components/solution";
 
 export const metadata: Metadata = {
   title: "Smart Meter Technology in India with IoT & Smart Grids | Probus",

@@ -1,23 +1,24 @@
 import Image from "next/image";
-import Link from "next/link";
+import Breadcrumbs from "@/components/common/Breadcrumbs";
+import Container from "@/components/common/Container";
 
 export default function CareerHero() {
   return (
     <section className="relative w-full overflow-hidden">
-      
-      {/* Breadcrumbs (Absolute Position over header/hero) */}
+      {/* Breadcrumbs */}
       <div className="absolute top-[30px] left-0 w-full z-20">
-        <div className="container mx-auto px-4 md:px-[15px]">
-          <div className="text-white text-[14px] leading-[26px] font-sans font-medium flex items-center">
-            <Link href="/" className="hover:underline">Home</Link>
-            <span className="mx-2 text-[10px] opacity-80">&gt;</span>
-            <span className="font-semibold">Careers</span>
-          </div>
-        </div>
+        <Container>
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Careers" },
+            ]}
+            theme="light"
+          />
+        </Container>
       </div>
 
       <div className="flex flex-col md:flex-row w-full max-w-[1920px] mx-auto min-h-[400px] md:h-[600px]">
-        
         {/* Left Side (Blue Background with Quotes) */}
         <div className="w-full md:w-1/2 h-[400px] md:h-full relative order-last md:order-first flex items-center">
           <Image 
@@ -30,7 +31,6 @@ export default function CareerHero() {
           
           <div className="relative w-full px-[30px] md:px-[15px] z-10 text-center">
             <div className="w-[70%] mx-auto relative text-left">
-              
               {/* Quote Top Left */}
               <div className="hidden md:block absolute w-[70px] h-[70px] left-[-25px] top-[-70px] z-10">
                 <Image src="/wp-content/themes/probus/assets/images/3.svg" alt="Quote" fill className="object-contain" />
@@ -65,7 +65,6 @@ export default function CareerHero() {
             priority
           />
         </div>
-
       </div>
     </section>
   );

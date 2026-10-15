@@ -1,6 +1,4 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
+# Dependencies
 /node_modules
 /.pnp
 .pnp.*
@@ -10,35 +8,43 @@
 !.yarn/releases
 !.yarn/versions
 
-# testing
-/coverage
-
-# next.js
+# Next.js Build Outputs
 /.next/
 /out/
-
-# production
 /build
 
-# misc
+# Testing & Coverage
+/coverage
+
+# Environment Variables
+.env
+.env*.local
+
+# Vercel
+.vercel
+
+# TypeScript & Cache
+*.tsbuildinfo
+next-env.d.ts
+.turbo
+
+# System & OS Files
 .DS_Store
 *.pem
+Thumbs.db
 
-# debug
+# Archives & Temporary artifacts
+probus-app.tar.gz
+*.tar.gz
+*.tar
+*.zip
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
-
+# Static migration mirrors
 /www
 /wordpress
+image.png

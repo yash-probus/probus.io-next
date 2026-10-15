@@ -1,29 +1,20 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import fs from 'fs';
-import path from 'path';
-
-// Helper to get blogs
-function getBlogs() {
-  const blogsPath = path.join(process.cwd(), 'content', 'blogs.json');
-  if (fs.existsSync(blogsPath)) {
-    return JSON.parse(fs.readFileSync(blogsPath, 'utf8'));
-  }
-  return [];
-}
+import { getBlogs, getBlogBySlug } from '@/lib/blogs';
+import Breadcrumbs from '@/components/common/Breadcrumbs';
+import Container from '@/components/common/Container';
 
 export async function generateStaticParams() {
   const blogs = getBlogs();
-  return blogs.map((blog: any) => ({
+  return blogs.map((blog) => ({
     slug: blog.slug,
   }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const blogs = getBlogs();
-  const blog = blogs.find((b: any) => b.slug === slug);
+  const blog = getBlogBySlug(slug);
 
   if (!blog) {
     return { title: 'Post Not Found' };
@@ -47,8 +38,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const blogs = getBlogs();
-  const blog = blogs.find((b: any) => b.slug === slug);
+  const blog = getBlogBySlug(slug);
 
   if (!blog) {
     return (
@@ -78,14 +68,18 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   return (
     <>
       <section className="pt-[100px] bg-white">
-        <div className="container mx-auto px-[15px] max-w-[1140px]">
+        <Container>
           {/* Breadcrumbs */}
-          <div className="py-[35px] text-[#000000] text-[14px] font-semibold flex items-center flex-wrap leading-[26px]">
-            <Link href="/" className="text-[#000] hover:text-[#0795F8] transition-colors">Home</Link>
-            <span className="mx-2 text-[10px]">›</span>
-            <Link href="/blogs" className="text-[#000] hover:text-[#0795F8] transition-colors">Blogs</Link>
-            <span className="mx-2 text-[10px]">›</span>
-            <span>{blog.title}</span>
+          <div className="py-[35px]">
+            <Breadcrumbs
+              items={[
+                { label: "Home", href: "/" },
+                { label: "Blogs", href: "/blogs" },
+                { label: blog.title },
+              ]}
+              theme="dark"
+              separator="›"
+            />
           </div>
 
           <div className="flex flex-wrap lg:flex-nowrap pb-20">
@@ -105,7 +99,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               <div className="blogcontentwrap">
                 {blog.image && (
                   <div className="mb-8">
-                    <img src={blog.image} alt={blog.title} className="w-full h-auto object-cover" />
+                    <Image
+                      src={blog.image}
+                      alt={blog.title}
+                      width={1024}
+                      height={536}
+                      className="w-full h-auto object-cover"
+                      priority
+                    />
                   </div>
                 )}
 
@@ -135,7 +136,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
     </>
   );

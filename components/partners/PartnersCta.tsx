@@ -13,7 +13,7 @@ export default function PartnersCta() {
               Want to be a part of our success story?
             </h2>
             <p className="text-white text-[15px] md:text-[17px] font-normal font-sans mb-[40px]">
-              We're looking forward to bringing a change with you by our side
+              We&apos;re looking forward to bringing a change with you by our side
             </p>
             <div>
               <Link 

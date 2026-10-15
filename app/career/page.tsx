@@ -1,8 +1,10 @@
 import { Metadata } from "next";
-import CareerHero from "@/components/career/CareerHero";
-import CulturePerks from "@/components/career/CulturePerks";
-import OpenPositions from "@/components/career/OpenPositions";
-import CareerTestimonial from "@/components/career/CareerTestimonial";
+import {
+  CareerHero,
+  CulturePerks,
+  OpenPositions,
+  CareerTestimonial,
+} from "@/components/career";
 
 export const metadata: Metadata = {
   title: "Career - Probus",

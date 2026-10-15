@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import SectionHeading from "@/components/common/SectionHeading";
+import Container from "@/components/common/Container";
 
 export default function OpenPositions() {
   const jobs = [
@@ -56,12 +58,12 @@ export default function OpenPositions() {
 
   return (
     <section className="py-[40px] md:py-[65px] bg-white opening_wrap">
-      <div className="container mx-auto px-4 md:px-[15px] max-w-[1140px]">
-        <div className="text-center mb-[30px]">
-          <h2 className="text-[#000000] text-[28px] md:text-[35px] font-bold leading-tight font-sans">
-            We're looking for talented people like you
-          </h2>
-        </div>
+      <Container>
+        <SectionHeading
+          title="We're looking for talented people like you"
+          align="center"
+          titleClassName="text-[28px] md:text-[35px] font-bold"
+        />
 
         <div className="flex flex-wrap -mx-[15px] mt-[10px]">
           {jobs.map((job, idx) => (
@@ -105,7 +107,7 @@ export default function OpenPositions() {
             </div>
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

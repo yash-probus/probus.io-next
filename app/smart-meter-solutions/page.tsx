@@ -1,9 +1,10 @@
-import SolutionDetailHero from "@/components/solution/SolutionDetailHero";
-import SmartMeterContent from "@/components/solution/SmartMeterContent";
-import LeverageIoT from "@/components/solution/LeverageIoT";
-import KeyProjects from "@/components/solution/KeyProjects";
-import HomePartners from "@/components/home/HomePartners";
-import HomeTestimonial from "@/components/home/HomeTestimonial";
+import {
+  SolutionDetailHero,
+  SmartMeterContent,
+  LeverageIoT,
+  KeyProjects,
+} from "@/components/solution";
+import { PartnersShowcase, TestimonialSection } from "@/components/common";
 
 export const metadata = {
   title: "Smart metering solutions technology | Metering & Connectivity",
@@ -30,8 +31,8 @@ export default function SmartMeterSolutionsPage() {
       <SmartMeterContent />
       <LeverageIoT steps={leverageSteps} />
       <KeyProjects />
-      <HomePartners />
-      <HomeTestimonial />
+      <PartnersShowcase />
+      <TestimonialSection />
     </>
   );
 }

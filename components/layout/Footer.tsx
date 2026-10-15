@@ -4,8 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Footer() {
-  const currentYear = 2026;
-
   return (
     <footer
       style={{
@@ -64,9 +62,11 @@ export default function Footer() {
                     alignItems: "center",
                   }}
                 >
-                  <img
+                  <Image
                     src="/wp-content/uploads/2025/06/logo-footer.png"
                     alt="Probus Logo"
+                    width={150}
+                    height={55}
                     style={{
                       height: "55px",
                       width: "auto",

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const overviewImages = [
@@ -159,9 +160,11 @@ export default function HomeTechnology() {
                           marginBottom: "26px",
                         }}
                       >
-                        <img
+                        <Image
                           src={item.icon}
                           alt=""
+                          width={48}
+                          height={48}
                           style={{
                             marginRight: "11px",
                             width: "48px",
@@ -239,10 +242,12 @@ export default function HomeTechnology() {
                   }}
                 >
                   {overviewImages.map((src, index) => (
-                    <img
+                    <Image
                       key={index}
                       src={src}
                       alt="Overview preview"
+                      width={800}
+                      height={600}
                       style={{
                         position: index === 0 ? "relative" : "absolute",
                         top: index === 0 ? "auto" : 0,

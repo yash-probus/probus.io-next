@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function TechArchitecture() {
   return (
     <section className="py-20 md:py-32 bg-brand-dark relative overflow-hidden">

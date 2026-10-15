@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto, Playball } from "next/font/google";
+import { Header, Footer } from "@/components/layout";
+import { siteConfig } from "@/config/site";
 import "./globals.css";
 
 const roboto = Roboto({
@@ -13,16 +15,25 @@ const playball = Playball({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--font-playball",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://probus.io'),
-  title: "Probus - Smart Grid IoT Solutions",
-  description: "Probus stands among top smart meter manufacturing companies, delivering reliable smart grid IoT solutions.",
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: `${siteConfig.shortName} - Smart Grid IoT Solutions`,
+    template: `%s | ${siteConfig.shortName}`,
+  },
+  description: siteConfig.description,
+  openGraph: {
+    siteName: siteConfig.name,
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
-
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
 
 export default function RootLayout({
   children,
@@ -33,9 +44,7 @@ export default function RootLayout({
     <html lang="en" className="overflow-x-hidden">
       <body className={`${roboto.variable} ${playball.variable}`}>
         <Header />
-        <main className="flex-grow">
-          {children}
-        </main>
+        <main className="flex-grow">{children}</main>
         <Footer />
       </body>
     </html>

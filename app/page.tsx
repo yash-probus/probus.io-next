@@ -1,10 +1,12 @@
 import { Metadata } from "next";
-import HomeHero from "@/components/home/HomeHero";
-import HomeTechnology from "@/components/home/HomeTechnology";
-import HomeSolutionsGrid from "@/components/home/HomeSolutionsGrid";
-import HomePartners from "@/components/home/HomePartners";
-import HomeTestimonial from "@/components/home/HomeTestimonial";
-import HomeBlog from "@/components/home/HomeBlog";
+import {
+  HomeHero,
+  HomeTechnology,
+  HomeSolutionsGrid,
+  HomePartners,
+  HomeTestimonial,
+  HomeBlog,
+} from "@/components/home";
 
 export const metadata: Metadata = {
   title: "Smart Energy Solutions for Metering Solar and Grids",

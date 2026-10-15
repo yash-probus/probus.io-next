@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 const blogs = [
@@ -226,17 +227,11 @@ export default function HomeBlog() {
                         position: "relative",
                       }}
                     >
-                      <img
+                      <Image
                         src={b.img}
                         alt={b.title}
-                        className="blog-thumb"
-                        style={{
-                          width: "100%",
-                          height: "100%",
-                          objectFit: "cover",
-                          transition: "all .3s ease-in-out",
-                          display: "block",
-                        }}
+                        fill
+                        className="blog-thumb object-cover"
                       />
                     </div>
                     <div

@@ -1,4 +1,6 @@
 import Image from "next/image";
+import SectionHeading from "@/components/common/SectionHeading";
+import Container from "@/components/common/Container";
 
 export default function CoreStrengths() {
   const values = [
@@ -26,15 +28,13 @@ export default function CoreStrengths() {
 
   return (
     <section className="py-[40px] md:py-[65px] bg-white">
-      <div className="container mx-auto px-4 md:px-[15px] max-w-7xl">
-        <div className="text-center mb-[50px]">
-          <h6 className="text-[#0A080C] uppercase font-medium tracking-wide mb-2 inline-block border-b-2 border-black pb-1 text-[13px]">
-            Values
-          </h6>
-          <h2 className="text-[#0A080C] text-[32px] md:text-[40px] font-medium leading-tight mt-2 font-sans max-w-3xl mx-auto">
-            Our collaborative approach to helping our clients
-          </h2>
-        </div>
+      <Container size="wide">
+        <SectionHeading
+          badge="Values"
+          title="Our collaborative approach to helping our clients"
+          align="center"
+          titleClassName="max-w-3xl mx-auto"
+        />
 
         <div className="flex flex-wrap -mx-4 mt-[40px]">
           {values.map((val, idx) => (
@@ -61,7 +61,7 @@ export default function CoreStrengths() {
             </div>
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 }
