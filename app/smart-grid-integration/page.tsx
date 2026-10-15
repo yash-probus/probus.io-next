@@ -29,8 +29,8 @@ export default function SmartGridIntegrationPage() {
             sustainable energy solutions
           </>
         }
-        bgImage="/wp-content/uploads/2025/06/smart-grid.jpg"
-        bgImageMobile="/wp-content/uploads/2025/06/smart-grid-m.jpg"
+        bgImage="/images/uploads/2025/06/smart-grid.jpg"
+        bgImageMobile="/images/uploads/2025/06/smart-grid-m.jpg"
         videoSrc="https://v.ftcdn.net/07/74/08/67/700_F_774086711_mHwHpGiqdj3dYcSuUMSv3JrpHKikB7eW_ST.mp4"
         breadcrumb="Smart Grid Integration"
       />

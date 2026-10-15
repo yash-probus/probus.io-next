@@ -6,7 +6,7 @@ export default function BesHero() {
     <section className="relative w-full min-h-[90vh] flex items-center justify-center pt-24 overflow-hidden">
       <div className="absolute inset-0 z-0 bg-black">
         <Image
-          src="/wp-content/uploads/2026/03/Landing-page-banner-.png"
+          src="/images/uploads/2026/03/Landing-page-banner-.png"
           alt="Bharat Electricity Summit Banner"
           fill
           className="object-cover opacity-60"

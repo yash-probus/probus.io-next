@@ -6,7 +6,7 @@ export default function HomeTestimonial() {
       title="Collaborating for success and change"
       authorName="Anil Vashy"
       authorRole="AVP SCADA BSES Yamuna Power"
-      authorImage="/wp-content/uploads/2025/06/test_member.png"
+      authorImage="/images/uploads/2025/06/test_member.png"
       quote="Probus is truly agile – flexible and fast. Commit till the end to deliver tasks even with all the situational challenges on the field. A true partner to make you successful."
     />
   );

@@ -58,7 +58,7 @@ export default function BesBoothLocation() {
             {partners.map((partner, idx) => (
               <div key={idx} className="relative w-32 h-16 grayscale hover:grayscale-0 transition-all">
                 <Image 
-                  src={`/wp-content/uploads/2025/06/${partner}`} 
+                  src={`/images/uploads/2025/06/${partner}`} 
                   alt={`Partner ${idx + 1}`} 
                   fill 
                   className="object-contain" 

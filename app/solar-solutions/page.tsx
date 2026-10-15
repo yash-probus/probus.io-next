@@ -22,8 +22,8 @@ export default function SolarSolutionsPage() {
     <>
       <SolutionDetailHero 
         title="Wireless Solar String Monitoring"
-        bgImage="/wp-content/uploads/2025/06/solar-meter.jpg"
-        bgImageMobile="/wp-content/uploads/2025/06/solar-meter-m.jpg"
+        bgImage="/images/uploads/2025/06/solar-meter.jpg"
+        bgImageMobile="/images/uploads/2025/06/solar-meter-m.jpg"
         videoSrc="https://v.ftcdn.net/07/74/08/67/700_F_774086711_mHwHpGiqdj3dYcSuUMSv3JrpHKikB7eW_ST.mp4"
         breadcrumb="Solar Solutions"
       />

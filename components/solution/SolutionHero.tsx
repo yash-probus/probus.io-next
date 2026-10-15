@@ -38,14 +38,14 @@ export default function SolutionHero() {
     <section className="relative w-full h-[350px] md:h-[450px] overflow-hidden flex items-center justify-center text-center">
       <div className="absolute inset-0 z-0">
         <Image 
-          src="/wp-content/uploads/2025/06/solutionbg.jpg" 
+          src="/images/uploads/2025/06/solutionbg.jpg" 
           alt="Solutions Overview"
           fill
           className="object-cover hidden md:block"
           priority
         />
         <Image 
-          src="/wp-content/uploads/2025/06/solution-bgm.jpg" 
+          src="/images/uploads/2025/06/solution-bgm.jpg" 
           alt="Solutions Overview Mobile"
           fill
           className="object-cover md:hidden"

@@ -8,9 +8,9 @@ import Container from "@/components/common/Container";
 
 export default function CulturePerks() {
   const slides = [
-    "/wp-content/uploads/2025/06/careerslide1.jpg",
-    "/wp-content/uploads/2025/06/careerslide2.jpg",
-    "/wp-content/uploads/2025/06/developer-1.jpg"
+    "/images/uploads/2025/06/careerslide1.jpg",
+    "/images/uploads/2025/06/careerslide2.jpg",
+    "/images/uploads/2025/06/developer-1.jpg"
   ];
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -26,7 +26,7 @@ export default function CulturePerks() {
           <div className="w-full lg:w-1/2 px-4 mb-[40px] lg:mb-0">
             <div 
               className="relative mx-auto w-full max-w-[90%] lg:max-w-[80%] py-[20px] px-[15px] bg-no-repeat bg-center"
-              style={{ backgroundImage: 'url(/wp-content/themes/probus/assets/images/careersliderbg.jpg)', backgroundSize: '100% 100%' }}
+              style={{ backgroundImage: 'url(/images/careersliderbg.jpg)', backgroundSize: '100% 100%' }}
             >
               
               {/* Slider Box */}
@@ -45,7 +45,7 @@ export default function CulturePerks() {
                     rel="noopener noreferrer"
                     className="absolute bottom-[20px] left-[30px] z-10 w-[40px] h-[40px] bg-white rounded-full flex items-center justify-center hover:scale-110 transition-transform"
                   >
-                    <Image src="/wp-content/themes/probus/assets/images/linkedin.svg" alt="LinkedIn" width={24} height={24} />
+                    <Image src="/images/linkedin.svg" alt="LinkedIn" width={24} height={24} />
                   </Link>
                 </div>
               </div>
@@ -79,25 +79,25 @@ export default function CulturePerks() {
             
             <ul className="list-none p-0 m-0 mt-[30px]">
               <li className="flex items-start mb-[25px]">
-                <Image src="/wp-content/themes/probus/assets/images/check-career.svg" alt="Check" width={24} height={24} className="mr-[20px] shrink-0 mt-[2px]" />
+                <Image src="/images/check-career.svg" alt="Check" width={24} height={24} className="mr-[20px] shrink-0 mt-[2px]" />
                 <h5 className="text-[15px] leading-[24px] text-black font-normal m-0 font-sans">
                   Collaboration is at the heart of what we do. Tackle complex challenges and find innovative solutions to reshape the energy landscape.
                 </h5>
               </li>
               <li className="flex items-start mb-[25px]">
-                <Image src="/wp-content/themes/probus/assets/images/check-career.svg" alt="Check" width={24} height={24} className="mr-[20px] shrink-0 mt-[2px]" />
+                <Image src="/images/check-career.svg" alt="Check" width={24} height={24} className="mr-[20px] shrink-0 mt-[2px]" />
                 <h5 className="text-[15px] leading-[24px] text-black font-normal m-0 font-sans">
                   We believe in nurturing talent and fostering professional growth
                 </h5>
               </li>
               <li className="flex items-start mb-[25px]">
-                <Image src="/wp-content/themes/probus/assets/images/check-career.svg" alt="Check" width={24} height={24} className="mr-[20px] shrink-0 mt-[2px]" />
+                <Image src="/images/check-career.svg" alt="Check" width={24} height={24} className="mr-[20px] shrink-0 mt-[2px]" />
                 <h5 className="text-[15px] leading-[24px] text-black font-normal m-0 font-sans">
                   We value work-life balance and understand the importance of personal well-being.
                 </h5>
               </li>
               <li className="flex items-start mb-[25px]">
-                <Image src="/wp-content/themes/probus/assets/images/check-career.svg" alt="Check" width={24} height={24} className="mr-[20px] shrink-0 mt-[2px]" />
+                <Image src="/images/check-career.svg" alt="Check" width={24} height={24} className="mr-[20px] shrink-0 mt-[2px]" />
                 <h5 className="text-[15px] leading-[24px] text-black font-normal m-0 font-sans">
                   Get to play a vital role in developing and implementing energy-efficient solutions that reduce carbon footprints and promote sustainability.
                 </h5>

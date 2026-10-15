@@ -28,7 +28,7 @@ export default function PartnersCta() {
           {/* Right Image */}
           <div className="w-full md:w-1/2 h-[300px] md:h-[450px] relative">
             <Image 
-              src="/wp-content/uploads/2025/06/partnerwith.jpg" 
+              src="/images/uploads/2025/06/partnerwith.jpg" 
               alt="Handshake Partner with Probus" 
               fill 
               className="object-cover"

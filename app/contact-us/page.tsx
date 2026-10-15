@@ -25,7 +25,7 @@ export default function ContactUsPage() {
     <>
       <ContactHero />
       
-      <section className="py-[60px] md:py-[80px] bg-white relative z-10 bg-no-repeat bg-left-top" style={{ backgroundImage: "url('/wp-content/themes/probus/assets/images/bg-contactSec.png')" }}>
+      <section className="py-[60px] md:py-[80px] bg-white relative z-10 bg-no-repeat bg-left-top" style={{ backgroundImage: "url('/images/bg-contactSec.png')" }}>
         <div className="container mx-auto px-4 md:px-[15px] max-w-[1140px]">
           <div className="flex flex-wrap -mx-[15px] items-start">
             <div className="w-full lg:w-5/12 px-[15px] mb-[40px] lg:mb-0">

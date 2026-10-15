@@ -22,31 +22,31 @@ export default function LeadershipTeam() {
     {
       name: "Anand Singh",
       role: "Founder & CEO",
-      image: "/wp-content/uploads/2025/06/tm3-1.jpg",
+      image: "/images/uploads/2025/06/tm3-1.jpg",
       linkedin: "https://www.linkedin.com/in/anand-singh-9906bb3b/"
     },
     {
       name: "Sunny Kumar Jadoon",
       role: "Co-founder",
-      image: "/wp-content/uploads/2025/06/tm4.jpg",
+      image: "/images/uploads/2025/06/tm4.jpg",
       linkedin: "https://www.linkedin.com/in/sunny-kumar-jadoon-20a02028/"
     },
     {
       name: "Ahmed Raza",
       role: "Cofounder & CTO",
-      image: "/wp-content/uploads/2025/06/tm5.jpg",
+      image: "/images/uploads/2025/06/tm5.jpg",
       linkedin: "https://www.linkedin.com/in/ahmad-raza-0a6ab3106/"
     },
     {
       name: "Rahul Mishra",
       role: "COO",
-      image: "/wp-content/uploads/2025/06/tm6.jpg",
+      image: "/images/uploads/2025/06/tm6.jpg",
       linkedin: "https://www.linkedin.com/in/rahul-mishra-28b7015a/"
     },
     {
       name: "Ankit Vaish",
       role: "Co-founder & CFO",
-      image: "/wp-content/uploads/2025/06/tm7.jpg",
+      image: "/images/uploads/2025/06/tm7.jpg",
       linkedin: "https://www.linkedin.com/in/ankit-vaish-56289162/"
     }
   ];
@@ -54,7 +54,7 @@ export default function LeadershipTeam() {
   return (
     <section 
       className="py-[40px] md:py-[65px] bg-cover bg-no-repeat w-full"
-      style={{ backgroundImage: 'url(/wp-content/themes/probus/assets/images/leadership-bg.png)', backgroundSize: '100% 100%' }}
+      style={{ backgroundImage: 'url(/images/leadership-bg.png)', backgroundSize: '100% 100%' }}
     >
       <div className="ml-[15px] md:ml-[75px] mr-[-15px] md:mr-[-30px] flex flex-wrap items-start">
         
@@ -112,7 +112,7 @@ export default function LeadershipTeam() {
                     </div>
                     <Link href={member.linkedin} target="_blank" rel="noopener noreferrer" className="shrink-0 ml-2 mb-1">
                       <Image 
-                        src="/wp-content/themes/probus/assets/images/linkedin.svg" 
+                        src="/images/linkedin.svg" 
                         alt="LinkedIn" 
                         width={24} 
                         height={24} 

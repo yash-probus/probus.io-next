@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title: blog.title,
       description: blog.excerpt || blog.title,
       url: `/blogs/${slug}`,
-      images: [blog.image || '/wp-content/uploads/2026/04/Blog-01.png'],
+      images: [blog.image || '/images/uploads/2026/04/Blog-01.png'],
       type: 'article',
     },
   };

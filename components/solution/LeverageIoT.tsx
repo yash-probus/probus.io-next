@@ -19,7 +19,7 @@ export default function LeverageIoT({ steps }: LeverageIoTProps) {
         playsInline 
         className="absolute inset-0 w-full h-full object-cover z-0 opacity-10"
       >
-        <source src="/wp-content/themes/probus/assets/images/technology.mp4" type="video/mp4" />
+        <source src="/videos/technology.mp4" type="video/mp4" />
       </video>
       <div className="relative z-10">
         <div className="container mx-auto px-4 md:px-[15px] max-w-[1140px]">
@@ -50,7 +50,7 @@ export default function LeverageIoT({ steps }: LeverageIoTProps) {
               <div className="relative max-w-[500px] mx-auto min-h-[400px] flex items-center justify-center">
                 <div className="softhardRing relative w-[300px] h-[300px] md:w-[400px] md:h-[400px]">
                   <Image 
-                    src="/wp-content/themes/probus/assets/images/soft-hard-cercle.png" 
+                    src="/images/soft-hard-cercle.png" 
                     alt="Soft Hard Circle" 
                     fill 
                     className="object-contain"

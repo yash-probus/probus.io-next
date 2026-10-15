@@ -17,13 +17,13 @@ const defaultTestimonial = {
   badge: "TESTIMONIALS",
   showBadge: true,
   title: "Collaborating for success and change",
-  mainImage: "/wp-content/uploads/2025/06/testmain.png",
+  mainImage: "/images/uploads/2025/06/testmain.png",
   mainImageAlt: "Collaborating for success and change",
   quote:
     "Probus is truly agile – flexible and fast. Commit till the end to deliver tasks even with all the situational challenges on the field. A true partner to make you successful.",
   authorName: "Anil Vaishy",
   authorRole: "AVP SCADA BSES Yamuna Power",
-  authorImage: "/wp-content/uploads/2025/06/test_member.png",
+  authorImage: "/images/uploads/2025/06/test_member.png",
 };
 
 export default function TestimonialSection({
@@ -41,7 +41,7 @@ export default function TestimonialSection({
     <section
       className="pb-[140px] md:pb-[160px] bg-no-repeat w-full bg-white relative"
       style={{
-        backgroundImage: "url(/wp-content/themes/probus/assets/images/bg-htesti.png)",
+        backgroundImage: "url(/images/bg-htesti.png)",
         backgroundPosition: "right 0px bottom -60px",
       }}
     >
@@ -80,7 +80,7 @@ export default function TestimonialSection({
                 {/* SVG Quote Before */}
                 <div className="hidden md:block absolute w-[70px] lg:w-[100px] h-[70px] lg:h-[100px] -left-[90px] lg:-left-[130px] top-[0px] z-10 pointer-events-none">
                   <Image
-                    src="/wp-content/themes/probus/assets/images/3.svg"
+                    src="/images/3.svg"
                     alt="Quote Decor Left"
                     fill
                     className="object-contain"
@@ -90,7 +90,7 @@ export default function TestimonialSection({
                 {/* SVG Quote After */}
                 <div className="hidden md:block absolute w-[70px] lg:w-[100px] h-[70px] lg:h-[100px] -right-[90px] lg:-right-[130px] -bottom-[15px] z-10 pointer-events-none">
                   <Image
-                    src="/wp-content/themes/probus/assets/images/2.svg"
+                    src="/images/2.svg"
                     alt="Quote Decor Right"
                     fill
                     className="object-contain"

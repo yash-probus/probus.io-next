@@ -7,7 +7,7 @@ const cards = [
   {
     title: "Smart Metering Solutions",
     desc: "Gain complete visibility and control over your energy consumption with our solutions",
-    img: "/wp-content/uploads/2025/06/pricing.png",
+    img: "/images/uploads/2025/06/pricing.png",
     link: "/smart-meter-solutions",
     btnClass: "needbtn1",
     btnColor: "#6BA9E4",
@@ -15,7 +15,7 @@ const cards = [
   {
     title: "Solar Solutions",
     desc: "Embrace renewable energy with our scalable and customized solar solutions",
-    img: "/wp-content/uploads/2025/06/oemsbiogas.png",
+    img: "/images/uploads/2025/06/oemsbiogas.png",
     link: "/solar-solutions",
     btnClass: "needbtn2",
     btnColor: "#FFAA36",
@@ -23,7 +23,7 @@ const cards = [
   {
     title: "Smart Grid Integration",
     desc: "Seamlessly integrate into the intelligent grid of the future with our smart grid solutions",
-    img: "/wp-content/uploads/2025/06/grid-1.png",
+    img: "/images/uploads/2025/06/grid-1.png",
     link: "/smart-grid-integration",
     btnClass: "needbtn3",
     btnColor: "#F3B384",
@@ -48,7 +48,7 @@ export default function HomeSolutionsGrid() {
       className="home-needs"
       style={{
         padding: "55px 0 0 0",
-        backgroundImage: "url(/wp-content/themes/probus/assets/images/bg-hslolution.png)",
+        backgroundImage: "url(/images/bg-hslolution.png)",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "top left",
       }}

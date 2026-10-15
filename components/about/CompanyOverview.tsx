@@ -5,17 +5,17 @@ import Container from "@/components/common/Container";
 export default function CompanyOverview() {
   const items = [
     {
-      icon: "/wp-content/uploads/2025/06/vision.png",
+      icon: "/images/uploads/2025/06/vision.png",
       title: "VISION",
       description: "To connect and make information available"
     },
     {
-      icon: "/wp-content/uploads/2025/06/mission.png",
+      icon: "/images/uploads/2025/06/mission.png",
       title: "MISSION",
       description: "Increase 10X energy consumption with 50% reduction in losses and 40 million tonnes of decarbonization"
     },
     {
-      icon: "/wp-content/uploads/2025/06/commit.png",
+      icon: "/images/uploads/2025/06/commit.png",
       title: "COMMITMENT",
       description: "Striving for a greener planet for generations to come"
     }
@@ -29,7 +29,7 @@ export default function CompanyOverview() {
           <div className="w-full lg:w-1/2 px-4 mb-10 lg:mb-0">
             <div className="w-full h-auto">
               <Image 
-                src="/wp-content/uploads/2025/06/aboutoverview.jpg" 
+                src="/images/uploads/2025/06/aboutoverview.jpg" 
                 alt="Company Overview" 
                 width={800} 
                 height={600} 

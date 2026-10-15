@@ -9,7 +9,7 @@ export default function Footer() {
       style={{
         width: "100%",
         backgroundColor: "#121619",
-        backgroundImage: "url(/wp-content/themes/probus/assets/images/footerbg.png)",
+        backgroundImage: "url(/images/footerbg.png)",
         backgroundPosition: "center",
         backgroundRepeat: "repeat",
         position: "relative",
@@ -65,10 +65,10 @@ export default function Footer() {
                   }}
                 >
                   <Image
-                    src="/wp-content/uploads/2025/06/logo-footer.png"
+                    src="/images/uploads/2025/06/logo-footer.png"
                     alt="Probus Logo"
-                    width={150}
-                    height={55}
+                    width={248}
+                    height={128}
                     style={{
                       height: "55px",
                       width: "auto",
@@ -321,7 +321,7 @@ export default function Footer() {
                   </li>
                   <li style={{ listStyle: "none", margin: "0 0 28px 0" }}>
                     <a
-                      href="/wp-content/uploads/2026/08/CERC-Trading-Lic.-Application.pdf"
+                      href="/docs/CERC-Trading-Lic.-Application.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{

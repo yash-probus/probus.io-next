@@ -15,7 +15,7 @@ export default function ContactInfo() {
       <div className="space-y-[30px] pr-[20px] mt-[40px]">
         <div className="flex items-start gap-[15px]">
           <div className="w-[50px] h-[50px] relative flex-shrink-0 bg-[#033361] rounded-full flex items-center justify-center">
-            <Image src="/wp-content/uploads/2025/06/call-icon.png" alt="Phone" width={22} height={22} className="brightness-0 invert object-contain" />
+            <Image src="/images/uploads/2025/06/call-icon.png" alt="Phone" width={22} height={22} className="brightness-0 invert object-contain" />
           </div>
           <div className="pt-1">
             <h4 className="text-[11px] font-normal text-[#000000] font-sans mb-[2px]">Phone</h4>
@@ -25,7 +25,7 @@ export default function ContactInfo() {
 
         <div className="flex items-start gap-[15px]">
           <div className="w-[50px] h-[50px] relative flex-shrink-0 bg-[#033361] rounded-full flex items-center justify-center">
-            <Image src="/wp-content/uploads/2025/06/mail-icon.png" alt="Email" width={22} height={22} className="brightness-0 invert object-contain" />
+            <Image src="/images/uploads/2025/06/mail-icon.png" alt="Email" width={22} height={22} className="brightness-0 invert object-contain" />
           </div>
           <div className="pt-1">
             <h4 className="text-[11px] font-normal text-[#000000] font-sans mb-[2px]">Email</h4>
@@ -35,7 +35,7 @@ export default function ContactInfo() {
 
         <div className="flex items-start gap-[15px]">
           <div className="w-[50px] h-[50px] relative flex-shrink-0 bg-[#033361] rounded-full flex items-center justify-center">
-            <Image src="/wp-content/uploads/2025/06/location-icon-2.png" alt="Innovation Centre" width={22} height={22} className="brightness-0 invert object-contain" />
+            <Image src="/images/uploads/2025/06/location-icon-2.png" alt="Innovation Centre" width={22} height={22} className="brightness-0 invert object-contain" />
           </div>
           <div className="pt-1">
             <h4 className="text-[11px] font-normal text-[#000000] font-sans mb-[2px]">Innovation Centre</h4>
@@ -45,7 +45,7 @@ export default function ContactInfo() {
 
         <div className="flex items-start gap-[15px]">
           <div className="w-[50px] h-[50px] relative flex-shrink-0 bg-[#033361] rounded-full flex items-center justify-center">
-            <Image src="/wp-content/uploads/2025/06/location-icon-2.png" alt="Registered Address" width={22} height={22} className="brightness-0 invert object-contain" />
+            <Image src="/images/uploads/2025/06/location-icon-2.png" alt="Registered Address" width={22} height={22} className="brightness-0 invert object-contain" />
           </div>
           <div className="pt-1">
             <h4 className="text-[11px] font-normal text-[#000000] font-sans mb-[2px]">Registered Address</h4>
@@ -74,7 +74,7 @@ export function ContactMap() {
       {/* Floating Address Card overlay */}
       <div className="absolute top-1/2 -translate-y-1/2 left-[15px] md:left-[10%] lg:left-[calc(50%-550px)] bg-white rounded-[10px] shadow-[0_0_15px_rgba(0,0,0,0.1)] w-[280px] z-10 flex flex-col overflow-hidden">
         <div className="w-full h-[110px] relative">
-          <Image src="/wp-content/uploads/2025/06/addressimg.png" alt="Probus Smart Things" fill className="object-cover" />
+          <Image src="/images/uploads/2025/06/addressimg.png" alt="Probus Smart Things" fill className="object-cover" />
         </div>
         <div className="p-[20px_25px]">
           <h4 className="text-[14px] font-bold text-[#000000] mb-[5px] font-sans">Probus Smart Things Pvt. Ltd.</h4>

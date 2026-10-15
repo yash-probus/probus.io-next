@@ -9,28 +9,28 @@ const blogs = [
     type: "Blog",
     title:
       "How IoT-Based Smart Grid Integration Improves Outage Management and Fault Detection",
-    img: "/wp-content/uploads/2026/04/Blog-04-1024x536.png",
+    img: "/images/uploads/2026/04/Blog-04-1024x536.png",
     link: "/blogs/iot-smart-grid-integration-outage-management-fault-detection",
   },
   {
     type: "Blog",
     title:
       "PLC vs RF Mesh vs 4G: Which Communication Technology Is Right for Your AMI Network?",
-    img: "/wp-content/uploads/2026/04/blog-03-1024x536.png",
+    img: "/images/uploads/2026/04/blog-03-1024x536.png",
     link: "/blogs/plc-vs-rf-mesh-vs-4g-ami-communication-technology-comparison",
   },
   {
     type: "Blog",
     title:
       "Smart Metering Rollout Under RDSS: What Every DISCOM Needs to Know in 2026",
-    img: "/wp-content/uploads/2026/04/Blog-02-1024x534.png",
+    img: "/images/uploads/2026/04/Blog-02-1024x534.png",
     link: "/blogs/smart-metering-rollout-rdss-what-every-discom-needs-to-know-2026",
   },
   {
     type: "Blog",
     title:
       "How Wireless Solar String Monitoring Reduces O&M Costs for Large-Scale Plants",
-    img: "/wp-content/uploads/2026/04/Blog-01-1024x536.png",
+    img: "/images/uploads/2026/04/Blog-01-1024x536.png",
     link: "/blogs/wireless-solar-string-monitoring-reduces-om-costs-large-scale-plants",
   },
 ];
@@ -231,6 +231,7 @@ export default function HomeBlog() {
                         src={b.img}
                         alt={b.title}
                         fill
+                        sizes="(max-width: 600px) 100vw, (max-width: 991px) 50vw, (max-width: 1800px) 25vw, 360px"
                         className="blog-thumb object-cover"
                       />
                     </div>

@@ -7,22 +7,22 @@ export default function CoreStrengths() {
     {
       title: "TECHNICAL PROWESS",
       desc: "Our team has extensive technical knowledge and industry expertise, providing top-notch solutions for clients.",
-      image: "/wp-content/uploads/2025/06/value1.png"
+      image: "/images/uploads/2025/06/value1.png"
     },
     {
       title: "CLIENT-CENTRIC APPROACH",
       desc: "We prioritize client relationships, understand challenges, and deliver measurable results by understanding their needs.",
-      image: "/wp-content/uploads/2025/06/value2.png"
+      image: "/images/uploads/2025/06/value2.png"
     },
     {
       title: "CONTINUOUS LEARNING AND GROWTH",
       desc: "We foster continuous learning and professional growth in team through training, industry conferences, and knowledge-sharing for innovative solutions.",
-      image: "/wp-content/uploads/2025/06/value3.png"
+      image: "/images/uploads/2025/06/value3.png"
     },
     {
       title: "PASSION FOR SUSTAINABILITY",
       desc: "Our team consists of experienced professionals who focus on energy efficiency, sustainability, and delivering tailored solutions.",
-      image: "/wp-content/uploads/2025/06/value4.png"
+      image: "/images/uploads/2025/06/value4.png"
     }
   ];
 

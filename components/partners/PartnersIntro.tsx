@@ -5,17 +5,17 @@ export default function PartnersIntro() {
     {
       title: "Smart Meters?",
       desc: "We make communications NIC Cards, Gateways for Meters Technologies – RF Mesh, 4G, NBIoT, Hybrid – 4G + Bluetooth, NBIoT + Bluetooth Data Analytics for actionable insights",
-      img: "/wp-content/uploads/2025/06/icon03-1.png"
+      img: "/images/uploads/2025/06/icon03-1.png"
     },
     {
       title: "Solar O&M ?",
       desc: "String Monitoring for Central Inverter Solar Plant Advance Analytics for Soiling and clouding",
-      img: "/wp-content/uploads/2025/06/solar.png"
+      img: "/images/uploads/2025/06/solar.png"
     },
     {
       title: "Distribution Automation/ Energy Efficiency?",
       desc: "Industry -first wireless sensor suit for LV grid automation Massive scale data analytics for gird visibility and control",
-      img: "/wp-content/uploads/2025/06/icon04-1.png"
+      img: "/images/uploads/2025/06/icon04-1.png"
     }
   ];
 
@@ -37,7 +37,7 @@ export default function PartnersIntro() {
         <div className="relative w-full rounded-[10px] overflow-hidden bg-[#033361] p-[40px_30px] md:p-[60px_40px]">
           {/* Background Texture Image */}
           <Image 
-            src="/wp-content/uploads/2025/06/bg-partners-m1.jpg" 
+            src="/images/uploads/2025/06/bg-partners-m1.jpg" 
             alt="Partners Background" 
             fill 
             className="object-cover opacity-80 mix-blend-screen"

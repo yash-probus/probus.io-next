@@ -60,7 +60,7 @@ export default function Header() {
             <div className="logo_main">
               <Link href="/">
                 <Image
-                  src="/wp-content/uploads/2025/06/logo.png"
+                  src="/images/uploads/2025/06/logo.png"
                   alt="Probus Logo"
                   width={119}
                   height={34}
@@ -209,7 +209,7 @@ export default function Header() {
                   >
                     <div style={{ padding: "7px 30px" }}>
                       <a
-                        href="/wp-content/uploads/2026/08/CERC-Trading-Lic.-Application.pdf"
+                        href="/docs/CERC-Trading-Lic.-Application.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{ color: "inherit", display: "flex", alignItems: "center", fontSize: "15px", fontWeight: 500 }}

@@ -209,7 +209,7 @@ export default function MobileNav() {
                     Statutory Overview
                   </Link>
                   <a
-                    href="/wp-content/uploads/2026/08/CERC-Trading-Lic.-Application.pdf"
+                    href="/docs/CERC-Trading-Lic.-Application.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-1.5 text-[15px] text-slate-600 hover:text-brand-teal py-1.5 transition-colors"

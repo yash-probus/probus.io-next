@@ -6,18 +6,18 @@ import React from "react";
 import { PartnerLogo } from "@/types/common";
 
 const defaultRow1Logos: PartnerLogo[] = [
-  { src: "/wp-content/uploads/2025/06/p1-1-1.png", alt: "Google" },
-  { src: "/wp-content/uploads/2025/06/p2-1.png", alt: "AWS" },
-  { src: "/wp-content/uploads/2025/06/p3-1.png", alt: "Silicon Labs" },
-  { src: "/wp-content/uploads/2025/06/p4-1.png", alt: "Wirepas" },
-  { src: "/wp-content/uploads/2025/06/p5-1.png", alt: "DLMS" },
+  { src: "/images/uploads/2025/06/p1-1-1.png", alt: "Google" },
+  { src: "/images/uploads/2025/06/p2-1.png", alt: "AWS" },
+  { src: "/images/uploads/2025/06/p3-1.png", alt: "Silicon Labs" },
+  { src: "/images/uploads/2025/06/p4-1.png", alt: "Wirepas" },
+  { src: "/images/uploads/2025/06/p5-1.png", alt: "DLMS" },
 ];
 
 const defaultRow2Logos: PartnerLogo[] = [
-  { src: "/wp-content/uploads/2025/06/p6-1.png", alt: "Wi-SUN Alliance" },
-  { src: "/wp-content/uploads/2025/06/p7-1.png", alt: "Renesas" },
-  { src: "/wp-content/uploads/2025/06/p8-1.png", alt: "NXP" },
-  { src: "/wp-content/uploads/2025/06/p9-1.png", alt: "HPL" },
+  { src: "/images/uploads/2025/06/p6-1.png", alt: "Wi-SUN Alliance" },
+  { src: "/images/uploads/2025/06/p7-1.png", alt: "Renesas" },
+  { src: "/images/uploads/2025/06/p8-1.png", alt: "NXP" },
+  { src: "/images/uploads/2025/06/p9-1.png", alt: "HPL" },
 ];
 
 interface PartnersShowcaseProps {

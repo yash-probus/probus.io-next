@@ -4,7 +4,7 @@ export const siteConfig = {
   description:
     "Pioneering IoT and smart grid solutions for modern utility automation and sustainable energy distribution.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://probus.io",
-  ogImage: "https://probus.io/wp-content/uploads/2025/06/logo.png",
+  ogImage: "https://probus.io/images/uploads/2025/06/logo.png",
   contact: {
     email: "contact@probus.io",
     supportEmail: "info@probus.io",

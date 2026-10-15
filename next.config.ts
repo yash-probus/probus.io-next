@@ -130,7 +130,43 @@ const nextConfig: NextConfig = {
         destination: '/smart-grid-integration',
         permanent: true,
       },
-    ]
+    ];
+  },
+  async rewrites() {
+    return [
+      {
+        source: "/wp-content/themes/probus/assets/images/technology.mp4",
+        destination: "/videos/technology.mp4",
+      },
+      {
+        source: "/wp-content/themes/probus/assets/images/:path*",
+        destination: "/images/:path*",
+      },
+      {
+        source: "/wp-content/themes/probus/img/:path*",
+        destination: "/images/:path*",
+      },
+      {
+        source: "/wp-content/uploads/2026/08/CERC-Trading-Lic.-Application.pdf",
+        destination: "/docs/CERC-Trading-Lic.-Application.pdf",
+      },
+      {
+        source: "/wp-content/uploads/2025/06/hpvid.mp4",
+        destination: "/videos/hpvid.mp4",
+      },
+      {
+        source: "/wp-content/uploads/2025/06/hpvideo2.mov",
+        destination: "/videos/hpvideo2.mov",
+      },
+      {
+        source: "/wp-content/uploads/2025/06/hpvideo3.mp4",
+        destination: "/videos/hpvideo3.mp4",
+      },
+      {
+        source: "/wp-content/uploads/:path*",
+        destination: "/images/uploads/:path*",
+      },
+    ];
   },
 };
 

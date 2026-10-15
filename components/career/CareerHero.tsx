@@ -22,7 +22,7 @@ export default function CareerHero() {
         {/* Left Side (Blue Background with Quotes) */}
         <div className="w-full md:w-1/2 h-[400px] md:h-full relative order-last md:order-first flex items-center">
           <Image 
-            src="/wp-content/themes/probus/assets/images/header-left.png" 
+            src="/images/header-left.png" 
             alt="Background" 
             fill 
             className="object-fill w-full h-full absolute inset-0"
@@ -33,7 +33,7 @@ export default function CareerHero() {
             <div className="w-[70%] mx-auto relative text-left">
               {/* Quote Top Left */}
               <div className="hidden md:block absolute w-[70px] h-[70px] left-[-25px] top-[-70px] z-10">
-                <Image src="/wp-content/themes/probus/assets/images/3.svg" alt="Quote" fill className="object-contain" />
+                <Image src="/images/3.svg" alt="Quote" fill className="object-contain" />
               </div>
               
               <div className="relative z-20">
@@ -44,7 +44,7 @@ export default function CareerHero() {
 
               {/* Quote Bottom Right */}
               <div className="hidden md:block absolute w-[70px] h-[70px] right-[-25px] bottom-[-20px] z-10">
-                <Image src="/wp-content/themes/probus/assets/images/2.svg" alt="Quote" fill className="object-contain" />
+                <Image src="/images/2.svg" alt="Quote" fill className="object-contain" />
               </div>
             </div>
             <div className="w-[70%] mx-auto relative text-left pt-[40px] z-20">
@@ -58,7 +58,7 @@ export default function CareerHero() {
         {/* Right Side (Image) */}
         <div className="w-full md:w-1/2 h-[400px] md:h-full relative">
           <Image 
-            src="/wp-content/uploads/2025/06/tm2-1.jpg" 
+            src="/images/uploads/2025/06/tm2-1.jpg" 
             alt="Careers at Probus" 
             fill 
             className="object-cover object-left"

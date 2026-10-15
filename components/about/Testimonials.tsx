@@ -6,10 +6,10 @@ export default function Testimonials() {
       showBadge={true}
       badge="TESTIMONIALS"
       title="Collaborating for success and change"
-      mainImage="/wp-content/uploads/2025/06/testmain.png"
+      mainImage="/images/uploads/2025/06/testmain.png"
       authorName="Anil Vaishy"
       authorRole="VP SCADA BSES Yamuna Power"
-      authorImage="/wp-content/uploads/2025/06/anil_vaishy.png"
+      authorImage="/images/uploads/2025/06/anil_vaishy.png"
       quote="Probus is truly agile – flexible and fast. Commit till the end to deliver tasks even with all the situational challenges on the field. A true partner to make you successful."
     />
   );

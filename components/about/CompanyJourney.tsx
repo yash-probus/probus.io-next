@@ -6,7 +6,7 @@ export default function CompanyJourney() {
   const journeys = [
     {
       year: "2017",
-      image: "/wp-content/uploads/2025/06/2017.png",
+      image: "/images/uploads/2025/06/2017.png",
       items: [
         "India's first Wireless Distribution Grid Monitoring Platform Deployed across 3 leading utilities",
         "3 Patents"
@@ -14,7 +14,7 @@ export default function CompanyJourney() {
     },
     {
       year: "2020",
-      image: "/wp-content/uploads/2025/06/2020.png",
+      image: "/images/uploads/2025/06/2020.png",
       items: [
         "Distribution Grid Monitoring expands across 4 utilities including LV monitoring",
         "Raise Seed funding"
@@ -22,7 +22,7 @@ export default function CompanyJourney() {
     },
     {
       year: "2023",
-      image: "/wp-content/uploads/2025/06/2017.png", // Original HTML reuses 2017.png
+      image: "/images/uploads/2025/06/2017.png", // Original HTML reuses 2017.png
       items: [
         "450,000 LV assets being monitored on our analytical platform",
         "Deploy pathbreaking wireless solar string monitoring sensors",
@@ -31,7 +31,7 @@ export default function CompanyJourney() {
     },
     {
       year: "2027",
-      image: "/wp-content/uploads/2025/06/2020.png", // Original HTML reuses 2020.png
+      image: "/images/uploads/2025/06/2020.png", // Original HTML reuses 2020.png
       items: [
         "40 million assets on platform",
         "4 million tonnes of decarbonization"

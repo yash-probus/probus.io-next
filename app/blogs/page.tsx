@@ -54,9 +54,10 @@ export default function BlogsPage() {
               className="relative h-full rounded-[10px] overflow-hidden group transition-all duration-300 flex-shrink-0 w-[85%] md:w-[calc(33.333%-14px)] snap-center cursor-pointer"
             >
               <Image
-                src={blog.image || '/wp-content/uploads/2026/04/Blog-01.png'}
+                src={blog.image || '/images/uploads/2026/04/Blog-01.png'}
                 alt={blog.title}
                 fill
+                sizes="(max-width: 768px) 85vw, 33vw"
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#001736]/90 via-[#001736]/20 to-transparent" />
@@ -105,9 +106,10 @@ export default function BlogsPage() {
                 <div key={blog.slug} className="flex flex-col border border-gray-100 rounded-[10px] overflow-hidden bg-white shadow-[0px_2px_10px_rgba(0,0,0,0.04)] group hover:shadow-[0px_5px_20px_rgba(0,0,0,0.08)] transition-all">
                   <Link href={`/blogs/${blog.slug}`} className="relative w-full aspect-[1.6/1] overflow-hidden block">
                     <Image
-                      src={blog.image || '/wp-content/uploads/2026/04/Blog-01.png'}
+                      src={blog.image || '/images/uploads/2026/04/Blog-01.png'}
                       alt={blog.title}
                       fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 260px"
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute top-3 left-3 bg-black/60 backdrop-blur-sm text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded-sm">

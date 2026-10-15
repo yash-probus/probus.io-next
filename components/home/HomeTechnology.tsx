@@ -5,27 +5,27 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const overviewImages = [
-  "/wp-content/uploads/2025/06/overviewRimg-1.png",
-  "/wp-content/uploads/2025/06/overviewRimg1.png",
-  "/wp-content/uploads/2025/06/overviewRimg2.png",
-  "/wp-content/uploads/2025/06/overviewRimg3.png",
+  "/images/uploads/2025/06/overviewRimg-1.png",
+  "/images/uploads/2025/06/overviewRimg1.png",
+  "/images/uploads/2025/06/overviewRimg2.png",
+  "/images/uploads/2025/06/overviewRimg3.png",
 ];
 
 const features = [
   {
-    icon: "/wp-content/uploads/2025/06/icon01-1.png",
+    icon: "/images/uploads/2025/06/icon01-1.png",
     text: "EXPERTISE IN ENERGY EFFICIENCY",
   },
   {
-    icon: "/wp-content/uploads/2025/06/icon02-1.png",
+    icon: "/images/uploads/2025/06/icon02-1.png",
     text: "IOT-POWERED AUTOMATION",
   },
   {
-    icon: "/wp-content/uploads/2025/06/icon03-2.png",
+    icon: "/images/uploads/2025/06/icon03-2.png",
     text: "SMART METERING SOLUTIONS",
   },
   {
-    icon: "/wp-content/uploads/2025/06/icon04-2.png",
+    icon: "/images/uploads/2025/06/icon04-2.png",
     text: "SMART GRID INTEGRATION",
   },
 ];
@@ -69,7 +69,7 @@ export default function HomeTechnology() {
         }}
       >
         <source
-          src="/wp-content/themes/probus/assets/images/technology.mp4"
+          src="/videos/technology.mp4"
           type="video/mp4"
         />
       </video>

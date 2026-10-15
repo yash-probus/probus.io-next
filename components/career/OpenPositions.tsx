@@ -78,7 +78,7 @@ export default function OpenPositions() {
                 <ul className="list-none p-0 m-[15px_0] flex flex-col items-start gap-[12px]">
                   <li className="flex items-center text-[15px] text-[#000000] font-sans font-medium w-full">
                     <Image 
-                      src="/wp-content/themes/probus/assets/images/loc-opening-icon.svg" 
+                      src="/images/loc-opening-icon.svg" 
                       alt="Location" 
                       width={30} 
                       height={30} 
@@ -88,7 +88,7 @@ export default function OpenPositions() {
                   </li>
                   <li className="flex items-center text-[15px] text-[#000000] font-sans font-medium w-full">
                     <Image 
-                      src="/wp-content/themes/probus/assets/images/exp-opening-icon.svg" 
+                      src="/images/exp-opening-icon.svg" 
                       alt="Experience" 
                       width={30} 
                       height={30} 

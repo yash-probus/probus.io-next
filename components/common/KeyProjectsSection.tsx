@@ -4,18 +4,18 @@ import Container from "./Container";
 import SectionHeading from "./SectionHeading";
 
 const defaultLogos = [
-  "/wp-content/uploads/2025/06/key10.png",
-  "/wp-content/uploads/2025/06/key03-1.png",
-  "/wp-content/uploads/2025/06/key02-1-1.png",
-  "/wp-content/uploads/2025/06/key05-1.png",
-  "/wp-content/uploads/2025/06/key04-1.png",
-  "/wp-content/uploads/2025/06/key06.png",
-  "/wp-content/uploads/2025/06/key07.png",
-  "/wp-content/uploads/2025/06/key08.png",
-  "/wp-content/uploads/2025/06/key09.png",
-  "/wp-content/uploads/2025/06/key11.png",
-  "/wp-content/uploads/2025/06/key01-1.png",
-  "/wp-content/uploads/2025/06/key12.png",
+  "/images/uploads/2025/06/key10.png",
+  "/images/uploads/2025/06/key03-1.png",
+  "/images/uploads/2025/06/key02-1-1.png",
+  "/images/uploads/2025/06/key05-1.png",
+  "/images/uploads/2025/06/key04-1.png",
+  "/images/uploads/2025/06/key06.png",
+  "/images/uploads/2025/06/key07.png",
+  "/images/uploads/2025/06/key08.png",
+  "/images/uploads/2025/06/key09.png",
+  "/images/uploads/2025/06/key11.png",
+  "/images/uploads/2025/06/key01-1.png",
+  "/images/uploads/2025/06/key12.png",
 ];
 
 interface KeyProjectsSectionProps {

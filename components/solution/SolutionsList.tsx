@@ -6,41 +6,41 @@ export default function SolutionsList() {
     {
       title: "Smart Metering Solutions",
       desc: "Gain complete visibility and control over your energy consumption with our smart metering solutions.",
-      img: "/wp-content/uploads/2025/06/solution_01.jpg",
+      img: "/images/uploads/2025/06/solution_01.jpg",
       link: "/smart-meter-solutions",
       reverse: false,
       features: [
-        { icon: "/wp-content/uploads/2025/06/meter01.png", text: "REAL-TIME ENERGY MONITORING" },
-        { icon: "/wp-content/uploads/2025/06/meter02.png", text: "PATENTED COMMUNICATIONS NIC CARD – RF/NBIOT/4G (BLE INTEGRATED)" },
-        { icon: "/wp-content/uploads/2025/06/meter03.png", text: "AUTOMATED METER READING" },
-        { icon: "/wp-content/uploads/2025/06/meter04.png", text: "IOT-POWERED AUTOMATION" },
+        { icon: "/images/uploads/2025/06/meter01.png", text: "REAL-TIME ENERGY MONITORING" },
+        { icon: "/images/uploads/2025/06/meter02.png", text: "PATENTED COMMUNICATIONS NIC CARD – RF/NBIOT/4G (BLE INTEGRATED)" },
+        { icon: "/images/uploads/2025/06/meter03.png", text: "AUTOMATED METER READING" },
+        { icon: "/images/uploads/2025/06/meter04.png", text: "IOT-POWERED AUTOMATION" },
       ]
     },
     {
       title: "Smart Grid Integration",
       desc: "Seamlessly integrate into the intelligent grid of the future with our smart grid solutions.",
-      img: "/wp-content/uploads/2025/06/solution_03.jpg",
+      img: "/images/uploads/2025/06/solution_03.jpg",
       link: "/smart-grid-integration",
       reverse: true,
       bg: true,
       features: [
-        { icon: "/wp-content/uploads/2025/06/grid01-1.png", text: "GRID OPTIMIZATION AND STABILITY" },
-        { icon: "/wp-content/uploads/2025/06/meter04.png", text: "DEMAND RESPONSE MANAGEMENT" },
-        { icon: "/wp-content/uploads/2025/06/grid03.png", text: "ADVANCED GRID ANALYTICS" },
-        { icon: "/wp-content/uploads/2025/06/grid02.png", text: "INDUSTRY-FIRST WIRELESS SENSORS" },
+        { icon: "/images/uploads/2025/06/grid01-1.png", text: "GRID OPTIMIZATION AND STABILITY" },
+        { icon: "/images/uploads/2025/06/meter04.png", text: "DEMAND RESPONSE MANAGEMENT" },
+        { icon: "/images/uploads/2025/06/grid03.png", text: "ADVANCED GRID ANALYTICS" },
+        { icon: "/images/uploads/2025/06/grid02.png", text: "INDUSTRY-FIRST WIRELESS SENSORS" },
       ]
     },
     {
       title: "Solar Solutions",
       desc: "Embrace renewable energy with our scalable and customized solar solutions.",
-      img: "/wp-content/uploads/2025/06/solution_02.jpg",
+      img: "/images/uploads/2025/06/solution_02.jpg",
       link: "/solar-solutions",
       reverse: false,
       features: [
-        { icon: "/wp-content/uploads/2025/06/solar01.png", text: "TRULY WIRELESS STRING AND MODULE LEVEL MONITORING" },
-        { icon: "/wp-content/uploads/2025/06/solar03.png", text: "COST SAVINGS AND ROI" },
-        { icon: "/wp-content/uploads/2025/06/solar02.png", text: "REAL-TIME VISIBILITY – SOILING AND WEATHER IMPACT" },
-        { icon: "/wp-content/uploads/2025/06/meter04.png", text: "INCREASED OPERATIONAL PLANT PERFORMANCE" },
+        { icon: "/images/uploads/2025/06/solar01.png", text: "TRULY WIRELESS STRING AND MODULE LEVEL MONITORING" },
+        { icon: "/images/uploads/2025/06/solar03.png", text: "COST SAVINGS AND ROI" },
+        { icon: "/images/uploads/2025/06/solar02.png", text: "REAL-TIME VISIBILITY – SOILING AND WEATHER IMPACT" },
+        { icon: "/images/uploads/2025/06/meter04.png", text: "INCREASED OPERATIONAL PLANT PERFORMANCE" },
       ]
     }
   ];
