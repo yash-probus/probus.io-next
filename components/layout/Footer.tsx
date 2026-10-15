@@ -7,6 +7,7 @@ export default function Footer() {
   return (
     <footer
       style={{
+        width: "100%",
         backgroundColor: "#121619",
         backgroundImage: "url(/wp-content/themes/probus/assets/images/footerbg.png)",
         backgroundPosition: "center",
@@ -18,6 +19,7 @@ export default function Footer() {
       <div
         className="footertop"
         style={{
+          width: "100%",
           padding: "40px 0 0 0",
           borderTop: "1px solid #ffffff",
         }}

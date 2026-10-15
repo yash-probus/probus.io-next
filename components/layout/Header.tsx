@@ -26,39 +26,36 @@ export default function Header() {
 
   return (
     <>
-      <header>
-        {/* site-header: matches WordPress .site-header exactly */}
+      <header
+        ref={headerRef}
+        className="site-header"
+        style={{
+          background: "#fff",
+          boxShadow: "0px 0px 6px #0000001A",
+          color: "rgba(35, 35, 35, 1)",
+          minHeight: "80px",
+          position: "fixed",
+          left: 0,
+          right: 0,
+          top: 0,
+          zIndex: 99,
+          width: "100%",
+        }}
+      >
         <div
-          ref={headerRef}
-          className="site-header"
+          className="header-row_wrapper"
           style={{
-            background: "#fff",
-            boxShadow: "0px 0px 6px #0000001A",
-            color: "rgba(35, 35, 35, 1)",
-            padding: "0 75px",
-            minHeight: "80px",
-            position: "fixed",
-            left: 0,
-            right: 0,
-            top: 0,
-            zIndex: 99,
-            display: "flex",
-            alignItems: "center",
             width: "100%",
             maxWidth: "1800px",
             margin: "0 auto",
+            padding: "0 75px",
+            minHeight: "80px",
+            display: "flex",
+            flexFlow: "row nowrap",
+            alignItems: "center",
+            justifyContent: "space-between",
           }}
         >
-          <div
-            className="header-row_wrapper"
-            style={{
-              width: "100%",
-              display: "flex",
-              flexFlow: "row nowrap",
-              alignItems: "center",
-              justifyContent: "space-between",
-            }}
-          >
             {/* Logo */}
             <div className="logo_main">
               <Link href="/">
@@ -258,7 +255,6 @@ export default function Header() {
             {/* Mobile Navigation */}
             <MobileNav />
           </div>
-        </div>
       </header>
 
       <style>{`
@@ -286,7 +282,7 @@ export default function Header() {
 
         /* Mobile: reduce padding */
         @media (max-width: 768px) {
-          .site-header {
+          .header-row_wrapper {
             padding: 0 15px !important;
           }
         }

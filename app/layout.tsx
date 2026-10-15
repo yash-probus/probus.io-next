@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Roboto, Playball } from "next/font/google";
-import { Header, Footer } from "@/components/layout";
+import { Header, Footer, Preloader } from "@/components/layout";
 import { siteConfig } from "@/config/site";
 import "./globals.css";
 
@@ -43,6 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="overflow-x-hidden">
       <body className={`${roboto.variable} ${playball.variable}`}>
+        <Preloader />
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />

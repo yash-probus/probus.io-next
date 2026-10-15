@@ -2,15 +2,15 @@
 @config "../tailwind.config.ts";
 
 @layer base {
-  /* Matches WordPress: body { font-family: 'Roboto'; font-size: 16px; font-weight: 300; max-width: 1800px; margin: 0 auto; } */
   body {
     font-family: var(--font-roboto), 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 300;
     background-color: #fff;
     color: #232330;
-    max-width: 1800px;
-    margin: 0 auto;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
     padding: 0;
   }
 
