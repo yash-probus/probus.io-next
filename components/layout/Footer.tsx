@@ -362,7 +362,7 @@ export default function Footer() {
             }}
           >
             <div style={{ textAlign: "left" }}>
-              © 2024 Probus Smart Things Pvt. Ltd.
+              © {new Date().getFullYear()} Probus Smart Things Pvt. Ltd.
             </div>
             <div className="botmbx" style={{ textAlign: "right" }}>
               <Link

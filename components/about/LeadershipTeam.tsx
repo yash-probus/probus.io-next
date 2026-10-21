@@ -32,7 +32,7 @@ export default function LeadershipTeam() {
       linkedin: "https://www.linkedin.com/in/sunny-kumar-jadoon-20a02028/"
     },
     {
-      name: "Ahmed Raza",
+      name: "Ahmad Raza",
       role: "Cofounder & CTO",
       image: "/images/uploads/2025/06/tm5.jpg",
       linkedin: "https://www.linkedin.com/in/ahmad-raza-0a6ab3106/"
@@ -72,14 +72,14 @@ export default function LeadershipTeam() {
           <div className="flex space-x-2 mt-8 absolute md:bottom-[-60px] left-0">
             <button 
               onClick={() => scroll("left")}
-              className="w-[32px] h-[32px] rounded-full bg-white text-[#0795F8] flex items-center justify-center hover:bg-gray-100 shadow-md transition-colors"
+              className="w-[34px] h-[34px] rounded-full bg-white text-[#0795F8] flex items-center justify-center cursor-pointer shadow-md transition-all duration-200 hover:bg-[#033361] hover:text-white hover:scale-110 hover:shadow-lg active:scale-95 select-none font-bold text-[16px]"
               aria-label="Previous"
             >
               &lt;
             </button>
             <button 
               onClick={() => scroll("right")}
-              className="w-[32px] h-[32px] rounded-full bg-white text-[#0795F8] flex items-center justify-center hover:bg-gray-100 shadow-md transition-colors"
+              className="w-[34px] h-[34px] rounded-full bg-white text-[#0795F8] flex items-center justify-center cursor-pointer shadow-md transition-all duration-200 hover:bg-[#033361] hover:text-white hover:scale-110 hover:shadow-lg active:scale-95 select-none font-bold text-[16px]"
               aria-label="Next"
             >
               &gt;

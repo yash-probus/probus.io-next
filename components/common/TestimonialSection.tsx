@@ -22,13 +22,13 @@ const defaultTestimonial = {
   quote:
     "Probus is truly agile – flexible and fast. Commit till the end to deliver tasks even with all the situational challenges on the field. A true partner to make you successful.",
   authorName: "Anil Vaishy",
-  authorRole: "AVP SCADA BSES Yamuna Power",
-  authorImage: "/images/uploads/2025/06/test_member.png",
+  authorRole: "VP SCADA BSES Yamuna Power",
+  authorImage: "/images/uploads/2025/06/anil_vaishy.png",
 };
 
 export default function TestimonialSection({
   badge = defaultTestimonial.badge,
-  showBadge = false,
+  showBadge = defaultTestimonial.showBadge,
   title = defaultTestimonial.title,
   mainImage = defaultTestimonial.mainImage,
   mainImageAlt = defaultTestimonial.mainImageAlt,
