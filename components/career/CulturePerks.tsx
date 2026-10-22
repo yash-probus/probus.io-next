@@ -2,20 +2,62 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import SectionHeading from "@/components/common/SectionHeading";
 import Container from "@/components/common/Container";
 
 export default function CulturePerks() {
   const slides = [
-    "/images/uploads/2025/06/careerslide1.jpg",
-    "/images/uploads/2025/06/careerslide2.jpg",
-    "/images/uploads/2025/06/developer-1.jpg"
+    {
+      src: "/images/uploads/2025/06/careerslide1.jpg",
+      alt: "Life at Probus - Engineering Lab"
+    },
+    {
+      src: "/images/uploads/2025/06/careerslide2.jpg",
+      alt: "Life at Probus - Team Discussion"
+    },
+    {
+      src: "/images/uploads/2025/06/developer-1.jpg",
+      alt: "Life at Probus - Hardware Development"
+    }
   ];
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  const touchStartX = useRef<number | null>(null);
+  const touchEndX = useRef<number | null>(null);
 
   const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % slides.length);
   const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+
+  // Smooth auto-slide every 5 seconds (matches WordPress Slick autoplay), pauses on hover
+  useEffect(() => {
+    if (isPaused) return;
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [isPaused, slides.length]);
+
+  // Touch swipe support for mobile/tablet
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.targetTouches[0].clientX;
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    touchEndX.current = e.targetTouches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStartX.current || !touchEndX.current) return;
+    const distance = touchStartX.current - touchEndX.current;
+    if (distance > 50) {
+      nextSlide();
+    } else if (distance < -50) {
+      prevSlide();
+    }
+    touchStartX.current = null;
+    touchEndX.current = null;
+  };
 
   return (
     <section className="py-[40px] md:py-[65px] bg-white relative">
@@ -27,43 +69,62 @@ export default function CulturePerks() {
             <div 
               className="relative mx-auto w-full max-w-[90%] lg:max-w-[80%] py-[20px] px-[15px] bg-no-repeat bg-center"
               style={{ backgroundImage: 'url(/images/careersliderbg.jpg)', backgroundSize: '100% 100%' }}
+              onMouseEnter={() => setIsPaused(true)}
+              onMouseLeave={() => setIsPaused(false)}
+              onTouchStart={handleTouchStart}
+              onTouchMove={handleTouchMove}
+              onTouchEnd={handleTouchEnd}
             >
               
               {/* Slider Box */}
-              <div className="bg-white rounded-[5px] p-[12px] shadow-[0_0_10px_rgba(0,0,0,0.19)] relative">
-                <div className="relative w-full overflow-hidden">
-                  <Image 
-                    src={slides[currentSlide]} 
-                    alt="Life at Probus" 
-                    width={800} 
-                    height={500} 
-                    className="w-full h-auto object-cover rounded-[3px]"
-                  />
-                  <Link 
-                    href="https://www.linkedin.com/company/probus-smart-things/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="absolute bottom-[20px] left-[30px] z-10 w-[40px] h-[40px] bg-white rounded-full flex items-center justify-center hover:scale-110 transition-transform"
+              <div className="bg-white rounded-[5px] p-[12px] shadow-[0_0_10px_rgba(0,0,0,0.19)] relative overflow-hidden">
+                <div className="relative w-full overflow-hidden rounded-[3px]">
+                  <div 
+                    className="flex transition-transform duration-500 ease-in-out"
+                    style={{ transform: `translateX(-${currentSlide * 100}%)` }}
                   >
-                    <Image src="/images/linkedin.svg" alt="LinkedIn" width={24} height={24} />
-                  </Link>
+                    {slides.map((s, idx) => (
+                      <div key={idx} className="w-full shrink-0 relative aspect-[983/594]">
+                        <Image 
+                          src={s.src} 
+                          alt={s.alt} 
+                          fill
+                          priority={idx === 0}
+                          className="object-cover rounded-[3px]"
+                        />
+                        <Link 
+                          href="https://www.linkedin.com/company/probus-smart-things/" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="absolute bottom-[20px] left-[30px] z-10 w-[40px] h-[40px] bg-white rounded-full flex items-center justify-center hover:scale-110 transition-transform shadow-md"
+                          aria-label="Probus LinkedIn"
+                        >
+                          <Image src="/images/linkedin.svg" alt="LinkedIn" width={24} height={24} />
+                        </Link>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
 
               {/* Slider Arrows (Positioned Outside) */}
               <button 
                 onClick={prevSlide}
-                className="absolute top-1/2 -translate-y-1/2 left-[-20px] md:left-[-40px] w-[30px] h-[30px] bg-[#9d9d9d] hover:bg-[#033361] text-white flex items-center justify-center rounded-full transition-colors z-20"
-                aria-label="Previous"
+                className="absolute top-1/2 -translate-y-1/2 left-[-20px] md:left-[-35px] w-[32px] h-[32px] bg-[#9d9d9d] hover:bg-[#033361] text-white flex items-center justify-center rounded-full transition-colors z-20 shadow-md cursor-pointer"
+                aria-label="Previous Slide"
               >
-                &lt;
+                <svg className="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
               </button>
               <button 
                 onClick={nextSlide}
-                className="absolute top-1/2 -translate-y-1/2 right-[-20px] md:right-[-40px] w-[30px] h-[30px] bg-[#9d9d9d] hover:bg-[#033361] text-white flex items-center justify-center rounded-full transition-colors z-20"
-                aria-label="Next"
+                className="absolute top-1/2 -translate-y-1/2 right-[-20px] md:right-[-35px] w-[32px] h-[32px] bg-[#9d9d9d] hover:bg-[#033361] text-white flex items-center justify-center rounded-full transition-colors z-20 shadow-md cursor-pointer"
+                aria-label="Next Slide"
               >
-                &gt;
+                <svg className="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
               </button>
               
             </div>

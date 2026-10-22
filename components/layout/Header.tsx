@@ -257,12 +257,15 @@ export default function Header() {
       </header>
 
       <style>{`
-        /* Matches WordPress .site-header.is-sticky */
-        .site-header.is-sticky {
+        .site-header {
           position: fixed !important;
           left: 0 !important;
           right: 0 !important;
           width: 100% !important;
+        }
+
+        /* Matches WordPress .site-header.is-sticky */
+        .site-header.is-sticky {
           box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1) !important;
           animation: slideDown 0.35s ease-out;
         }

@@ -1,7 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import SectionHeading from "@/components/common/SectionHeading";
-import Container from "@/components/common/Container";
 
 export default function OpenPositions() {
   const jobs = [
@@ -57,57 +55,135 @@ export default function OpenPositions() {
   ];
 
   return (
-    <section className="py-[40px] md:py-[65px] bg-white opening_wrap">
-      <Container>
-        <SectionHeading
-          title="We're looking for talented people like you"
-          align="center"
-          titleClassName="text-[28px] md:text-[35px] font-bold"
-        />
-
-        <div className="flex flex-wrap -mx-[15px] mt-[10px]">
-          {jobs.map((job, idx) => (
-            <div key={idx} className="w-full md:w-1/2 lg:w-1/4 px-[15px] mb-[30px]">
-              <div className="shadow-[0px_0px_6px_#0000001A] rounded-[8px] border-b-[4px] border-b-[#033361] p-[38px_24px] h-full flex flex-col bg-white">
-                <h6 className="text-[#5F5F5F] text-[13px] font-normal leading-[28px] mb-0 font-sans">
-                  Full-time
-                </h6>
-                <h3 className="text-[#000000] text-[17px] leading-[24px] font-medium mb-[10px] font-sans h-auto">
-                  {job.title}
-                </h3>
-                <ul className="list-none p-0 m-[15px_0] flex flex-col items-start gap-[12px]">
-                  <li className="flex items-center text-[15px] text-[#000000] font-sans font-medium w-full">
-                    <Image 
-                      src="/images/loc-opening-icon.svg" 
-                      alt="Location" 
-                      width={30} 
-                      height={30} 
-                      className="mr-[8px] w-[30px] h-auto grayscale opacity-70 shrink-0" 
-                    />
-                    <span className="truncate">{job.location}</span>
-                  </li>
-                  <li className="flex items-center text-[15px] text-[#000000] font-sans font-medium w-full">
-                    <Image 
-                      src="/images/exp-opening-icon.svg" 
-                      alt="Experience" 
-                      width={30} 
-                      height={30} 
-                      className="mr-[8px] w-[30px] h-auto grayscale opacity-70 shrink-0" 
-                    />
-                    <span className="truncate">{job.experience}</span>
-                  </li>
-                </ul>
-                <p className="text-[#000000] text-[15px] leading-[23px] font-normal mb-[10px] font-sans line-clamp-3 overflow-hidden text-ellipsis flex-grow">
-                  {job.desc}
-                </p>
-                <Link href={job.link} className="text-[#097DF5] text-[15px] font-medium leading-[24px] hover:underline inline-block mt-auto font-sans">
-                  Apply Now
-                </Link>
-              </div>
+    <section className="sub-section opening_wrap" style={{ background: "#FBFBFB", padding: "65px 0" }}>
+      <div 
+        className="container" 
+        style={{ 
+          maxWidth: "100%", 
+          padding: "0 75px", 
+          margin: "0 auto", 
+          width: "100%", 
+          boxSizing: "border-box" 
+        }}
+      >
+        <div className="row" style={{ display: "flex", flexWrap: "wrap", margin: "0 -15px" }}>
+          <div style={{ width: "100%", padding: "0 15px", boxSizing: "border-box" }}>
+            <div className="headingmain" style={{ marginBottom: "20px", textAlign: "center" }}>
+              <h6 style={{ display: "none", fontSize: "14px", color: "#636363", marginBottom: "5px", textTransform: "uppercase" }}>
+                COMPANY OVERVIEW
+              </h6>
+              <h2 style={{ fontSize: "30px", lineHeight: "44px", fontWeight: 700, marginBottom: "12px", color: "#000" }}>
+                We&apos;re looking for talented people like you
+              </h2>
             </div>
-          ))}
+          </div>
         </div>
-      </Container>
+
+        <div className="openinglist-wrp" style={{ margin: "10px 0 30px 0" }}>
+          <div className="row" style={{ display: "flex", flexWrap: "wrap", margin: "0 -15px" }}>
+            {jobs.map((job, idx) => (
+              <div 
+                key={idx} 
+                className="col-md-6 col-lg-3 opening-col"
+                style={{
+                  padding: "0 15px",
+                  marginBottom: "30px",
+                  boxSizing: "border-box"
+                }}
+              >
+                <div 
+                  className="opening-list"
+                  style={{
+                    boxShadow: "0px 0px 6px #0000001A",
+                    height: "100%",
+                    borderRadius: "8px",
+                    borderBottom: "4px solid #033361",
+                    padding: "38px 24px",
+                    boxSizing: "border-box",
+                    backgroundColor: "#fff",
+                    display: "flex",
+                    flexDirection: "column",
+                  }}
+                >
+                  <h6 style={{ color: "#5F5F5F", fontSize: "13px", lineHeight: "28px", margin: 0, fontWeight: 400 }}>
+                    Full-time
+                  </h6>
+                  <h3 style={{ color: "#000000", fontSize: "17px", lineHeight: "24px", marginBottom: "10px", marginTop: 0, fontWeight: 500, minHeight: "48px" }}>
+                    {job.title}
+                  </h3>
+                  <ul style={{ listStyle: "none", margin: "15px 0", padding: 0 }}>
+                    <li style={{ listStyle: "none", margin: 0, display: "inline-flex", alignItems: "center", fontSize: "15px", lineHeight: "24px", fontWeight: 500, marginRight: "25px", color: "#000000" }}>
+                      <Image 
+                        src="/images/loc-opening-icon.svg" 
+                        alt="Location" 
+                        width={30} 
+                        height={30} 
+                        style={{ width: "30px", height: "auto", marginRight: "8px", filter: "grayscale(100%)", opacity: 0.7 }}
+                      />
+                      <span>{job.location}</span>
+                    </li>
+                    <li style={{ listStyle: "none", margin: 0, display: "inline-flex", alignItems: "center", fontSize: "15px", lineHeight: "24px", fontWeight: 500, color: "#000000" }}>
+                      <Image 
+                        src="/images/exp-opening-icon.svg" 
+                        alt="Experience" 
+                        width={30} 
+                        height={30} 
+                        style={{ width: "30px", height: "auto", marginRight: "8px", filter: "grayscale(100%)", opacity: 0.7 }}
+                      />
+                      <span>{job.experience}</span>
+                    </li>
+                  </ul>
+                  <p style={{
+                    color: "#000000",
+                    marginBottom: "10px",
+                    fontWeight: 400,
+                    display: "-webkit-box",
+                    maxWidth: "100%",
+                    height: "74px",
+                    fontSize: "15px",
+                    lineHeight: "23px",
+                    WebkitLineClamp: 3,
+                    WebkitBoxOrient: "vertical",
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                  }}>
+                    {job.desc}
+                  </p>
+                  <Link 
+                    href={job.link}
+                    style={{ fontSize: "15px", color: "#097DF5", lineHeight: "24px", fontWeight: 500, marginTop: "auto", display: "inline-block" }}
+                    className="hover:underline"
+                  >
+                    Apply Now
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <style>{`
+        .opening-col {
+          width: 25%;
+        }
+        @media (max-width: 991px) {
+          .opening-col {
+            width: 50% !important;
+          }
+          .opening_wrap .opening-list {
+            margin-bottom: 20px !important;
+          }
+        }
+        @media (max-width: 768px) {
+          .opening_wrap .container {
+            padding: 0 15px !important;
+          }
+          .opening-col {
+            width: 100% !important;
+          }
+        }
+      `}</style>
     </section>
   );
 }
