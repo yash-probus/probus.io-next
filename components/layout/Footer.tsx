@@ -2,8 +2,14 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { useState, useEffect } from "react";
 
 export default function Footer() {
+  const [currentYear, setCurrentYear] = useState<number | string>("2026");
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
   return (
     <footer
       style={{
@@ -361,8 +367,8 @@ export default function Footer() {
               width: "100%",
             }}
           >
-            <div style={{ textAlign: "left" }}>
-              © {new Date().getFullYear()} Probus Smart Things Pvt. Ltd.
+            <div style={{ textAlign: "left" }} suppressHydrationWarning>
+              © {currentYear} Probus Smart Things Pvt. Ltd.
             </div>
             <div className="botmbx" style={{ textAlign: "right" }}>
               <Link

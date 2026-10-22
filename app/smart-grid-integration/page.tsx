@@ -14,7 +14,7 @@ export const metadata = {
 
 export default function SmartGridIntegrationPage() {
   const leverageSteps = [
-    { title: "PRE-INSTALLATION", num: "1", href: "/pre-installation" },
+    { title: "PRE-INSTALLATION", num: "1", href: "/grid-pre-installation" },
     { title: "PROBUS HARDWARE", num: "2", href: "/grid-probus-hardware" },
     { title: "COMMISSIONING", num: "3", href: "/commissioning" },
     { title: "POST COMMISSIONING", num: "4", href: "/post-commissioning" },

@@ -12,10 +12,10 @@ export const metadata = {
 
 export default function SolarSolutionsPage() {
   const leverageSteps = [
-    { title: "PRE-INSTALLATION", num: "1", href: "/pre-installation" },
-    { title: "PROBUS HARDWARE", num: "2", href: "/probus-hardware" },
-    { title: "COMMISSIONING", num: "3", href: "/commissioning" },
-    { title: "MAINTENANCE", num: "4", href: "/maintenance" },
+    { title: "PRE-INSTALLATION", num: "1", href: "/solar-pre-installation" },
+    { title: "PROBUS HARDWARE", num: "2", href: "/solar-probus-hardware" },
+    { title: "COMMISSIONING", num: "3", href: "/solar-commissioning" },
+    { title: "MAINTENANCE", num: "4", href: "/solar-maintenance" },
   ];
 
   return (
