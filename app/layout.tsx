@@ -45,7 +45,7 @@ export default function RootLayout({
       <body className={`${roboto.variable} ${playball.variable}`}>
         <Preloader />
         <Header />
-        <main className="flex-grow">{children}</main>
+        <main className="flex-grow w-full">{children}</main>
         <Footer />
       </body>
     </html>
