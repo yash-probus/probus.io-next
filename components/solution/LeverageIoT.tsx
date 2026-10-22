@@ -53,6 +53,7 @@ export default function LeverageIoT({ steps }: LeverageIoTProps) {
                     src="/images/soft-hard-cercle.png" 
                     alt="Soft Hard Circle" 
                     fill 
+                    sizes="(max-width: 768px) 300px, 400px"
                     className="object-contain"
                   />
                   

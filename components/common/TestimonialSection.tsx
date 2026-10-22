@@ -83,6 +83,7 @@ export default function TestimonialSection({
                     src="/images/3.svg"
                     alt="Quote Decor Left"
                     fill
+                    sizes="(max-width: 1024px) 70px, 100px"
                     className="object-contain"
                   />
                 </div>
@@ -93,6 +94,7 @@ export default function TestimonialSection({
                     src="/images/2.svg"
                     alt="Quote Decor Right"
                     fill
+                    sizes="(max-width: 1024px) 70px, 100px"
                     className="object-contain"
                   />
                 </div>

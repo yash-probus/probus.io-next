@@ -46,6 +46,7 @@ export default function PageHero({
             src={bgImage}
             alt="Hero Background"
             fill
+            sizes="100vw"
             priority={priority}
             className={`object-cover ${bgImageMobile ? "hidden md:block" : ""}`}
           />
@@ -54,6 +55,7 @@ export default function PageHero({
               src={bgImageMobile}
               alt="Hero Background Mobile"
               fill
+              sizes="100vw"
               priority={priority}
               className="object-cover md:hidden"
             />

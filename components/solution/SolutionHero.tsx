@@ -41,6 +41,7 @@ export default function SolutionHero() {
           src="/images/uploads/2025/06/solutionbg.jpg" 
           alt="Solutions Overview"
           fill
+          sizes="100vw"
           className="object-cover hidden md:block"
           priority
         />
@@ -48,6 +49,7 @@ export default function SolutionHero() {
           src="/images/uploads/2025/06/solution-bgm.jpg" 
           alt="Solutions Overview Mobile"
           fill
+          sizes="100vw"
           className="object-cover md:hidden"
           priority
         />
