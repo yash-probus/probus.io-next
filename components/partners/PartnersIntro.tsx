@@ -40,6 +40,7 @@ export default function PartnersIntro() {
             src="/images/uploads/2025/06/bg-partners-m1.jpg" 
             alt="Partners Background" 
             fill 
+            sizes="(max-width: 1140px) 100vw, 1140px"
             className="object-cover opacity-80 mix-blend-screen"
           />
           

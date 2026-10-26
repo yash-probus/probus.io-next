@@ -2,8 +2,6 @@ import { Metadata } from "next";
 import {
   SolutionHero,
   SolutionsList,
-  TechArchitecture,
-  SolutionCta,
 } from "@/components/solution";
 
 export const metadata: Metadata = {
@@ -30,8 +28,6 @@ export default function SolutionPage() {
     <>
       <SolutionHero />
       <SolutionsList />
-      <TechArchitecture />
-      <SolutionCta />
     </>
   );
 }

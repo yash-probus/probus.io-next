@@ -31,6 +31,7 @@ export default function PartnersCta() {
               src="/images/uploads/2025/06/partnerwith.jpg" 
               alt="Handshake Partner with Probus" 
               fill 
+              sizes="(max-width: 768px) 100vw, (max-width: 1140px) 50vw, 570px"
               className="object-cover"
             />
           </div>

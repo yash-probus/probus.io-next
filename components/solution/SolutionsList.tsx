@@ -70,7 +70,13 @@ export default function SolutionsList() {
                   {section.features.map((feat, fIdx) => (
                     <div key={fIdx} className="flex items-start gap-[15px]">
                       <div className="flex-shrink-0 w-[45px] h-[45px] md:w-[55px] md:h-[55px] relative">
-                        <Image src={feat.icon} alt={feat.text} fill className="object-contain" />
+                        <Image 
+                          src={feat.icon} 
+                          alt={feat.text} 
+                          fill 
+                          sizes="(max-width: 768px) 45px, 55px"
+                          className="object-contain" 
+                        />
                       </div>
                       <p className="text-[#000000] font-bold text-[10px] md:text-[11px] uppercase tracking-wide leading-[16px] font-sans pt-[5px]">
                         {feat.text}
@@ -91,6 +97,7 @@ export default function SolutionsList() {
                     src={section.img} 
                     alt={section.title} 
                     fill 
+                    sizes="(max-width: 1024px) 100vw, (max-width: 1140px) 50vw, 570px"
                     className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-[1.05]"
                   />
                 </div>

@@ -96,6 +96,7 @@ export default function PartnersGrid() {
                     width={180}
                     height={60}
                     className="max-h-[50px] md:max-h-[60px] w-auto max-w-[180px] object-contain mix-blend-multiply"
+                    style={{ width: "auto", height: "auto" }}
                   />
                 </div>
               ))}
