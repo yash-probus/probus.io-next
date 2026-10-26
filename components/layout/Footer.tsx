@@ -2,14 +2,10 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+
 
 export default function Footer() {
-  const [currentYear, setCurrentYear] = useState<number | string>("2026");
-
-  useEffect(() => {
-    setCurrentYear(new Date().getFullYear());
-  }, []);
+  const currentYear = 2026;
   return (
     <footer
       style={{

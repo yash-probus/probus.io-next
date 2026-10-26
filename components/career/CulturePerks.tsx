@@ -164,6 +164,18 @@ export default function CulturePerks() {
                 </h5>
               </li>
             </ul>
+
+            <div className="mt-[35px]">
+              <Link 
+                href="/empowering-the-future-probus-smart-things-journey-in-smart-grid-innovation"
+                className="inline-flex items-center gap-2 bg-[#033361] hover:bg-[#022244] text-white px-7 py-3 rounded-[30px] font-sans text-[15px] font-medium transition-all shadow-sm"
+              >
+                Know More
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </Link>
+            </div>
           </div>
           
         </div>

@@ -74,11 +74,12 @@ export default function PartnersGrid() {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`py-[6px] px-[20px] text-[13px] font-medium font-sans transition-colors rounded-[20px] ${
+                className={`py-[6px] px-[20px] text-[13px] font-medium font-sans rounded-[20px] cursor-pointer transition-all duration-200 transform hover:scale-105 active:scale-95 shadow-sm hover:shadow ${
                   activeTab === tab.id
                     ? "bg-[#7A7A7A] text-white"
                     : "bg-[#C4C4C4] text-white hover:bg-[#7A7A7A]"
                 }`}
+                style={{ cursor: "pointer" }}
               >
                 {tab.label}
               </button>

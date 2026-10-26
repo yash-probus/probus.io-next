@@ -1,5 +1,8 @@
 services:
   app:
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: probus-app:latest
     container_name: probus-website
     restart: always

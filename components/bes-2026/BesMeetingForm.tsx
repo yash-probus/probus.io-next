@@ -79,7 +79,8 @@ export default function BesMeetingForm() {
                   <button 
                     type="submit" 
                     disabled={status === "submitting"}
-                    className="w-full md:w-auto bg-brand-orange hover:bg-brand-teal text-white font-medium px-16 py-4 rounded-full transition-colors duration-300 shadow-lg hover:shadow-xl disabled:opacity-70 disabled:cursor-not-allowed uppercase tracking-wider text-sm"
+                    className="w-full md:w-auto bg-brand-orange hover:bg-brand-teal text-white font-medium px-16 py-4 rounded-full transition-all duration-200 transform hover:scale-105 active:scale-95 shadow-lg hover:shadow-xl cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed uppercase tracking-wider text-sm"
+                    style={{ cursor: status === "submitting" ? "not-allowed" : "pointer" }}
                   >
                     {status === "submitting" ? "Processing..." : "Confirm Meeting"}
                   </button>

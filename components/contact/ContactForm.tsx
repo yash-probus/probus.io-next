@@ -70,7 +70,8 @@ export default function ContactForm() {
           <button 
             type="submit" 
             disabled={status === "submitting"}
-            className="bg-[#097DF5] hover:bg-[#033361] text-white font-normal text-[13px] px-[30px] h-[35px] rounded-[20px] transition-colors duration-300 shadow-sm disabled:opacity-70 disabled:cursor-not-allowed"
+            className="bg-[#097DF5] hover:bg-[#033361] text-white font-medium text-[13px] px-[30px] h-[35px] rounded-[20px] transition-all duration-200 transform hover:scale-105 active:scale-95 shadow-sm hover:shadow-md cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none"
+            style={{ cursor: status === "submitting" ? "not-allowed" : "pointer" }}
           >
             {status === "submitting" ? "Submitting..." : "Submit"}
           </button>

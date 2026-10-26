@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { getBlogs } from "@/lib/blogs";
+import { getAllJobs } from "@/lib/jobs";
 import { siteConfig } from "@/config/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -18,17 +19,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/bes-2026`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${siteUrl}/contact-us`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${siteUrl}/statutory-documents`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
+    { url: `${siteUrl}/empowering-the-future-probus-smart-things-journey-in-smart-grid-innovation`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${siteUrl}/privacy-policy`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
     { url: `${siteUrl}/terms-and-conditions`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
   ];
 
   const blogs = getBlogs();
-  const dynamicRoutes: MetadataRoute.Sitemap = blogs.map((blog) => ({
+  const blogRoutes: MetadataRoute.Sitemap = blogs.map((blog) => ({
     url: `${siteUrl}/blogs/${blog.slug}`,
     lastModified: blog.date ? new Date(blog.date) : new Date(),
     changeFrequency: "weekly",
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...dynamicRoutes];
+  const jobs = getAllJobs();
+  const jobRoutes: MetadataRoute.Sitemap = jobs.map((job) => ({
+    url: `${siteUrl}/jobs/${job.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.7,
+  }));
+
+  return [...staticRoutes, ...blogRoutes, ...jobRoutes];
 }

@@ -5,6 +5,8 @@ import { getBlogs, getBlogBySlug } from '@/lib/blogs';
 import Breadcrumbs from '@/components/common/Breadcrumbs';
 import Container from '@/components/common/Container';
 
+export const instant = false;
+
 export async function generateStaticParams() {
   const blogs = getBlogs();
   return blogs.map((blog) => ({

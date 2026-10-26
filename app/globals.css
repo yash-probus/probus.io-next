@@ -60,6 +60,20 @@
     margin: 0;
     padding: 0;
   }
+
+  /* Ensure all buttons, submit inputs, and interactive roles display pointer (hand) cursor */
+  button,
+  [role="button"],
+  input[type="submit"],
+  input[type="button"] {
+    cursor: pointer;
+  }
+
+  button:disabled,
+  input[type="submit"]:disabled,
+  input[type="button"]:disabled {
+    cursor: not-allowed;
+  }
 }
 
 /* Leverage IoT Ring Animation */

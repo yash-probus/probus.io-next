@@ -1,61 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import { getAllJobs } from "@/lib/jobs";
 
 export default function OpenPositions() {
-  const jobs = [
-    {
-      title: "Embedded Software Development Engineer-IV",
-      location: "Noida",
-      experience: "Exp. 7 Yrs of Above",
-      desc: "Job Profile: Embedded Software Development Engineer-IV Location: Noida Sector 125 Experience- 7 Yrs or Above Do you want to be a part of enabling the next wave of innovation in communication protocols, building sensors and cutting-edge hardware? Does working with IoT devices, sensors, wearables, controllers which can seamlessly merge the digital world with the physical [...]",
-      link: "/contact-us"
-    },
-    {
-      title: "Project Manager/Associate Project Manager",
-      location: "Noida",
-      experience: "Exp. Mid-senior level",
-      desc: "Do you want to be a part of enabling the next wave of innovation in communication protocols, building sensors and cutting-edge hardware? Does working with IoT devices, sensors, wearables, controllers which can seamlessly merge the digital world with the physical world around us interests you? Who we are? We are Probus Smart Things and are [...]",
-      link: "/contact-us"
-    },
-    {
-      title: "Embedded Software Development Engineer-II",
-      location: "Noida",
-      experience: "Exp. 4-6 Yrs",
-      desc: "Job Profile- Embedded Software Development Engineer-II Experience- 3.5-6 Yrs Location: Noida Sector 125 Do you want to be a part of enabling the next wave of innovation in communication protocols, building sensors and cutting-edge hardware? Does working with IoT devices, sensors, wearables, controllers which can seamlessly merge the digital world with the physical world around [...]",
-      link: "/contact-us"
-    },
-    {
-      title: "Associate Customer Success",
-      location: "Noida",
-      experience: "Exp. 1.5-4 Years",
-      desc: "Designation- Associate Customer Success/Associate Project Manager Experience- 1.5-4 Years Do you want to be a part of enabling the next wave of innovation in communication protocols, building sensors and cutting-edge hardware? Does working with IoT devices, sensors, wearables, controllers which can seamlessly merge the digital world with the physical world around us interests you? Who [...]",
-      link: "/contact-us"
-    },
-    {
-      title: "Business Development-Executive",
-      location: "Noida",
-      experience: "Exp. Fresher-2 Years",
-      desc: "Designation- Business Development-Executive Experience- Fresher-2 Years Do you want to be a part of enabling the next wave of innovation in communication protocols, building sensors and cutting-edge hardware? Does working with IoT devices, sensors, wearables, controllers which can seamlessly merge the digital world with the physical world around us interests you? Who we are? We [...]",
-      link: "/contact-us"
-    },
-    {
-      title: "Finance Manager",
-      location: "Noida",
-      experience: "Exp. 4-6 Yrs",
-      desc: "Designation- Finance Manager Experience- 4-6 Yrs Do you want to be a part of enabling the next wave of innovation in communication protocols, building sensors and cutting-edge hardware? Does working with IoT devices, sensors, wearables, controllers which can seamlessly merge the digital world with the physical world around us interests you? Who we are? We [...]",
-      link: "/contact-us"
-    },
-    {
-      title: "Program Manager",
-      location: "Noida Sector 125",
-      experience: "Exp. 5-7 Years",
-      desc: "Job-Profile- Program Manager Experience- 5-6 Years Location-Noida  Do you want to be a part of enabling the next wave of innovation in communication protocols, building sensors and cutting-edge hardware? Does working with IoT devices, sensors, wearables, and controllers that can seamlessly merge the digital world with the physical world around us interests you? Who [...]",
-      link: "/contact-us"
-    }
-  ];
+  const jobs = getAllJobs();
 
   return (
-    <section className="sub-section opening_wrap" style={{ background: "#FBFBFB", padding: "65px 0" }}>
+    <section id="open-positions" className="sub-section opening_wrap" style={{ background: "#FBFBFB", padding: "65px 0" }}>
       <div 
         className="container" 
         style={{ 
@@ -106,7 +57,7 @@ export default function OpenPositions() {
                   }}
                 >
                   <h6 style={{ color: "#5F5F5F", fontSize: "13px", lineHeight: "28px", margin: 0, fontWeight: 400 }}>
-                    Full-time
+                    {job.type}
                   </h6>
                   <h3 style={{ color: "#000000", fontSize: "17px", lineHeight: "24px", marginBottom: "10px", marginTop: 0, fontWeight: 500, minHeight: "48px" }}>
                     {job.title}
@@ -147,15 +98,24 @@ export default function OpenPositions() {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                   }}>
-                    {job.desc}
+                    {job.excerpt}
                   </p>
-                  <Link 
-                    href={job.link}
-                    style={{ fontSize: "15px", color: "#097DF5", lineHeight: "24px", fontWeight: 500, marginTop: "auto", display: "inline-block" }}
-                    className="hover:underline"
-                  >
-                    Apply Now
-                  </Link>
+                  <div style={{ marginTop: "auto", display: "flex", alignItems: "center", justifyContent: "space-between", paddingTop: "12px", borderTop: "1px solid #f0f0f0" }}>
+                    <Link 
+                      href={`/jobs/${job.slug}`}
+                      style={{ fontSize: "15px", color: "#097DF5", lineHeight: "24px", fontWeight: 500 }}
+                      className="hover:underline"
+                    >
+                      Apply Now
+                    </Link>
+                    <Link
+                      href="/empowering-the-future-probus-smart-things-journey-in-smart-grid-innovation"
+                      style={{ fontSize: "13px", color: "#666", lineHeight: "24px", fontWeight: 400 }}
+                      className="hover:text-[#033361] hover:underline"
+                    >
+                      Know More &rarr;
+                    </Link>
+                  </div>
                 </div>
               </div>
             ))}

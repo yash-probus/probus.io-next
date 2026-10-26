@@ -1,18 +1,32 @@
 Dockerfile
 .dockerignore
+docker-compose*.yml
 node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+*.log
 .next
 .git
 .gitignore
+.github
 README.md
+AGENTS.md
+.agents
+.gemini
+.vscode
+.idea
 .DS_Store
 *.pem
 image.png
+tsconfig.tsbuildinfo
+scripts
 
-# Ignore large legacy folders
+# Sensitive environment variables
+.env*
+!.env.example
+
+# Large legacy folders
 wordpress
 www

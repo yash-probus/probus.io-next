@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Breadcrumbs from "@/components/common/Breadcrumbs";
 import Container from "@/components/common/Container";
 
@@ -47,10 +48,19 @@ export default function CareerHero() {
                 <Image src="/images/2.svg" alt="Quote" fill className="object-contain" />
               </div>
             </div>
-            <div className="w-[70%] mx-auto relative text-left pt-[40px] z-20">
-                <button className="bg-transparent hover:bg-white text-white hover:text-[#033361] border border-white rounded-[30px] py-[10px] px-[25px] font-sans text-[16px] font-medium transition-all inline-block shadow-sm">
+            <div className="w-[70%] mx-auto relative text-left pt-[40px] z-20 flex flex-wrap gap-4 items-center">
+                <a 
+                  href="#open-positions" 
+                  className="bg-transparent hover:bg-white text-white hover:text-[#033361] border border-white rounded-[30px] py-[10px] px-[25px] font-sans text-[16px] font-medium transition-all inline-block shadow-sm"
+                >
                   View Job Opening
-                </button>
+                </a>
+                <Link
+                  href="/empowering-the-future-probus-smart-things-journey-in-smart-grid-innovation"
+                  className="bg-white/10 hover:bg-white text-white hover:text-[#033361] border border-white/60 rounded-[30px] py-[10px] px-[25px] font-sans text-[16px] font-medium transition-all inline-block shadow-sm"
+                >
+                  Know More
+                </Link>
             </div>
           </div>
         </div>

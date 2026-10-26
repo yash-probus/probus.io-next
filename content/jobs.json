@@ -1,0 +1,582 @@
+[
+  {
+    "slug": "embedded-software-development-engineer-iv",
+    "title": "Embedded Software Development Engineer-IV",
+    "jobId": "003",
+    "location": "Noida",
+    "type": "Full-time",
+    "experience": "Exp. 7 Yrs of Above",
+    "excerpt": "Job Profile: Embedded Software Development Engineer-IV Location: Noida Sector 125 Experience- 7 Yrs or Above Do you want to be a part of enabling the next wave of innovation in communication protocols, building sensors and cutting-edge hardware? Does working with IoT devices, sensors, wearables, controllers which can seamlessly merge the digital world with the physical [\u2026]",
+    "whoWeAre": [
+      "We are Probus Smart Things and are working on IoT solutions that can be used to solve massive scale problems by connecting things to people.",
+      "At Probus we are digitizing the electricity distribution grids to bring down network losses and ensure that electricity reaches every household.",
+      "We do this by building sensors, controllers, low power edge devices, connect and manage multiple sensors with our ecosystem.",
+      "Probus Smart Things has been awarded as the Startup of the Year 2018 and our wireless technology in 2020, has been awarded by India Smart Grid Forum, Government of India.",
+      "Probus has also been mentored by Cisco and Qualcomm in their startup accelerators.",
+      "We are a Venture Capital funded company and have raised our pre-series-A round in 2021.",
+      "We are looking for passionate engineers and professionals to build the hardware and software that runs on edge computing, system on chips, communicates with cloud servers, server-less containers, and everything in between."
+    ],
+    "we": [
+      "Are a team of technologists from diverse backgrounds",
+      "Obsess over design and product journey",
+      "Obsess over our customer\u2019s needs and experience",
+      "Are owners. We love building new innovative technologies, and improving our existing ones",
+      "Wear multiple hats. We enjoy the prototyping and tinkering stages, as well as the rigor of making solutions production-ready.",
+      "Are fast-growing, agile and collaborative"
+    ],
+    "you": [
+      "Enjoy seeing the impact your work has on real customers",
+      "Enjoy being a part of a creation that can shape the future of the world as we know it",
+      "Enjoy working with the cofounders and the founding team of a growing startup",
+      "Are comfortable in an agile environment and create order from ambiguity",
+      "Are excited about the incredible opportunity connected products represent",
+      "Build strong teams with others as passionate as you about this mission",
+      "Take ownership and doing whatever it takes to get the job done",
+      "Want to create applications at a massive scale used by millions of people",
+      "Use data to make decisions and validate assumptions",
+      "Learn from others and help grow those in your team to achieve their best"
+    ],
+    "culture": [
+      {
+        "title": "Trust",
+        "description": "We trust our team to the core in all their actions they perform in day-to-day work."
+      },
+      {
+        "title": "Clear Communication",
+        "description": "We are direct and succinct. We share information efficiently, improving collaboration and productivity. We practice active listening."
+      },
+      {
+        "title": "Efficient execution",
+        "description": "We have a bias for action. We complete high quality work quickly. We focus on the 20% of work that will get us 80% of the impact."
+      },
+      {
+        "title": "Act like an owner",
+        "description": "We take 100% responsibility for achieving the mission. We seek to improve all aspects of our company even in ways that are not explicitly part of our job."
+      },
+      {
+        "title": "Continuous learning",
+        "description": "We\u2019re humble, and value learning over being right. We embrace delivering and receiving candid feedback, and see every setback as an opportunity to learn."
+      },
+      {
+        "title": "Championship team",
+        "description": "We are a winning team, not a family, and have high expectations for performance and delivering results. We\u2019re stronger together so we choose to focus on what unites us, and not on what divides us."
+      }
+    ],
+    "responsibilities": [
+      "You would be working on product lifecycle, enabling the hardware to work as per its designed parameters, work on circuits, various processors, controllers, sensors, algorithms and communication protocols, including algorithm design and protocol testing and debugging to make it production ready.",
+      "Develop and maintain firmware for embedded systems, focusing on basic level data structures.",
+      "Utilize IDEs such as STM32, Eclipse, and KEIL for firmware development.",
+      "Have a strong understanding of version control systems (VCS) for efficient collaboration and code management.",
+      "Work with E Linux environments, ensuring seamless integration and functionality.",
+      "Optionally, contribute to projects involving real-time operating systems (RTOS) and baremetal programming.",
+      "Optional proficiency in Python and shell scripting for automation and scripting tasks.",
+      "You would directly contribute to and influence the ultimate client outcomes we care so much about.",
+      "Your development work will allow business assets (engines, factory equipment, trains, etc.), sensors, platforms, applications, and more to communicate with one another and drive action."
+    ],
+    "qualificationsTitle": "Qualifications Required",
+    "qualifications": [
+      "Bachelor/Postgraduate in Electronics and Communication Engineering(ECE).",
+      "Work experience of 7 years or above in Embedded software development.",
+      "Language \u2013 Embedded C, Embedded C++.",
+      "Python, shell scripting is optional.",
+      "Experience in metering and energy products",
+      "Extensive knowledge of MQTT, DLMS, MODBUS, RS232/485, IEC104/850 protocols, Embedded Linux.",
+      "Extensive experience working with ARM application processors.",
+      "Knowledge of BLE5.0 and WiFi protocols.",
+      "Knowledge of debugging of hardware.",
+      "Knowledge of RF(2.4 Ghz, 4G/LTE, and Sub-1 Ghz).",
+      "Capacity to work dedicatedly towards goal achievement",
+      "Familiarity with version control systems (e.g., Git, SVN).",
+      "Excellent analytical and problem-solving skills",
+      "Clear electronics basics"
+    ]
+  },
+  {
+    "slug": "project-manager-associate-project-manager",
+    "title": "Project Manager/Associate Project Manager",
+    "jobId": "004",
+    "location": "Noida",
+    "type": "Full Time",
+    "experience": "Exp. Mid-senior level",
+    "excerpt": "Do you want to be a part of enabling the next wave of innovation in communication protocols, building sensors and cutting-edge hardware? Does working with IoT devices, sensors, wearables, controllers which can seamlessly merge the digital world with the physical world around us interests you? Who we are? We are Probus Smart Things and are [\u2026]",
+    "whoWeAre": [
+      "We are Probus Smart Things and are working on IoT solutions that can be used to solve massive scale problems by connecting things to people.",
+      "At Probus we are digitizing the electricity distribution grids to bring down network losses and ensure that electricity reaches every household.",
+      "We do this by building sensors, controllers, low power edge devices, connect and manage multiple sensors with our ecosystem.",
+      "Probus Smart Things has been awarded as the Startup of the Year 2018 and our wireless technology in 2020, has been awarded by India Smart Grid Forum, Government of India.",
+      "Probus has also been mentored by Cisco and Qualcomm in their startup accelerators.",
+      "We are a Venture Capital funded company and have raised our pre-series-A round in 2021.",
+      "We are looking for passionate engineers and professionals to build the hardware and software that runs on edge computing, system on chips, communicates with cloud servers, server-less containers, and everything in between."
+    ],
+    "we": [
+      "Are a team of technologists from diverse backgrounds",
+      "Obsess over design and product journey",
+      "Obsess over our customer\u2019s needs and experience",
+      "Are owners. We love building new innovative technologies, and improving our existing ones",
+      "Wear multiple hats. We enjoy the prototyping and tinkering stages, as well as the rigor of making solutions production-ready.",
+      "Are fast-growing, agile and collaborative"
+    ],
+    "you": [
+      "Enjoy seeing the impact your work has on real customers",
+      "Enjoy being a part of a creation that can shape the future of the world as we know it",
+      "Enjoy working with the cofounders and the founding team of a growing startup",
+      "Are comfortable in an agile environment and create order from ambiguity",
+      "Are excited about the incredible opportunity connected products represent",
+      "Build strong teams with others as passionate as you about this mission",
+      "Take ownership and doing whatever it takes to get the job done",
+      "Want to create applications at a massive scale used by millions of people",
+      "Use data to make decisions and validate assumptions",
+      "Learn from others and help grow those in your team to achieve their best"
+    ],
+    "culture": [
+      {
+        "title": "Trust",
+        "description": "We trust our team to the core in all their actions they perform in day-to-day work."
+      },
+      {
+        "title": "Clear Communication",
+        "description": "We are direct and succinct. We share information efficiently, improving collaboration and productivity. We practice active listening."
+      },
+      {
+        "title": "Efficient execution",
+        "description": "We have a bias for action. We complete high quality work quickly. We focus on the 20% of work that will get us 80% of the impact."
+      },
+      {
+        "title": "Act like an owner",
+        "description": "We take 100% responsibility for achieving the mission. We seek to improve all aspects of our company even in ways that are not explicitly part of our job."
+      },
+      {
+        "title": "Continuous learning",
+        "description": "We\u2019re humble, and value learning over being right. We embrace delivering and receiving candid feedback, and see every setback as an opportunity to learn."
+      },
+      {
+        "title": "Championship team",
+        "description": "We are a winning team, not a family, and have high expectations for performance and delivering results. We\u2019re stronger together so we choose to focus on what unites us, and not on what divides us."
+      }
+    ],
+    "responsibilities": [
+      "During your time with Probus Smart Things, \uf0b7 Ensure maximum performance, providing purpose, direction, and motivate into internal team members",
+      "Lead projects from requirements definition through deployment, identifying schedules, scopes, budget estimations, and project implementation plans, including risk mitigation",
+      "To coordinate internal and external resources, ensuring projects remain within scope, schedule, and defined budgets, in collaboration with project staff from various functional departments",
+      "Analyze project progress and, when necessary, adapt scope, timelines, and costs to ensure that project team adheres to project requirements",
+      "Establish and maintain relationships with appropriate client stakeholders, providing day- to-day contact on project status and changes",
+      "Develop and maintain partnerships with outside resources\u2014including third-party vendors and researchers",
+      "Monitor and assign resources appropriately to streamline project efficiency and maximize deliverable output.",
+      "Report project outcomes and/or risks to the appropriate management channels as needed\u2014escalating issues as necessary based on project work plans"
+    ],
+    "qualificationsTitle": "Preferred Skills",
+    "qualifications": [
+      "Good Communication Skills",
+      "Critical Thinking and Analytical Skills.",
+      "Leadership Skills",
+      "Practicing Empathy.",
+      "Flexibility.",
+      "Problem-solving Skills.",
+      "Time Management Skills.",
+      "Effective Communication skills."
+    ]
+  },
+  {
+    "slug": "embedded-software-development-engineer-ii",
+    "title": "Embedded Software Development Engineer-II",
+    "jobId": "005",
+    "location": "Noida",
+    "type": "Full Time",
+    "experience": "Exp. 4-6 Yrs",
+    "excerpt": "Job Profile- Embedded Software Development Engineer-II Experience- 3.5-6 Yrs Location: Noida Sector 125 Do you want to be a part of enabling the next wave of innovation in communication protocols, building sensors and cutting-edge hardware? Does working with IoT devices, sensors, wearables, controllers which can seamlessly merge the digital world with the physical world around [\u2026]",
+    "whoWeAre": [
+      "We are Probus Smart Things and are working on IoT solutions that can be used to solve massive scale problems by connecting things to people.",
+      "At Probus we are digitizing the electricity distribution grids to bring down network losses and ensure that electricity reaches every household.",
+      "We do this by building sensors, controllers, low power edge devices, connect and manage multiple sensors with our ecosystem.",
+      "Probus Smart Things has been awarded as the Startup of the Year 2018 and our wireless technology in 2020, has been awarded by India Smart Grid Forum, Government of India.",
+      "Probus has also been mentored by Cisco and Qualcomm in their startup accelerators.",
+      "We are a Venture Capital funded company and have raised our pre-series-A round in 2021.",
+      "We are looking for passionate engineers and professionals to build the hardware and software that runs on edge computing, system on chips, communicates with cloud servers, server-less containers, and everything in between."
+    ],
+    "we": [
+      "Are a team of technologists from diverse backgrounds",
+      "Obsess over design and product journey",
+      "Obsess over our customer\u2019s needs and experience",
+      "Are owners. We love building new innovative technologies, and improving our existing ones",
+      "Wear multiple hats. We enjoy the prototyping and tinkering stages, as well as the rigor of making solutions production-ready.",
+      "Are fast-growing, agile and collaborative"
+    ],
+    "you": [
+      "Enjoy seeing the impact your work has on real customers",
+      "Enjoy being a part of a creation that can shape the future of the world as we know it",
+      "Enjoy working with the cofounders and the founding team of a growing startup",
+      "Are comfortable in an agile environment and create order from ambiguity",
+      "Are excited about the incredible opportunity connected products represent",
+      "Build strong teams with others as passionate as you about this mission",
+      "Take ownership and doing whatever it takes to get the job done",
+      "Want to create applications at a massive scale used by millions of people",
+      "Use data to make decisions and validate assumptions",
+      "Learn from others and help grow those in your team to achieve their best"
+    ],
+    "culture": [
+      {
+        "title": "Trust",
+        "description": "We trust our team to the core in all their actions they perform in day-to-day work."
+      },
+      {
+        "title": "Clear Communication",
+        "description": "We are direct and succinct. We share information efficiently, improving collaboration and productivity. We practice active listening."
+      },
+      {
+        "title": "Efficient execution",
+        "description": "We have a bias for action. We complete high quality work quickly. We focus on the 20% of work that will get us 80% of the impact."
+      },
+      {
+        "title": "Act like an owner",
+        "description": "We take 100% responsibility for achieving the mission. We seek to improve all aspects of our company even in ways that are not explicitly part of our job."
+      },
+      {
+        "title": "Continuous learning",
+        "description": "We\u2019re humble, and value learning over being right. We embrace delivering and receiving candid feedback, and see every setback as an opportunity to learn."
+      },
+      {
+        "title": "Championship team",
+        "description": "We are a winning team, not a family, and have high expectations for performance and delivering results. We\u2019re stronger together so we choose to focus on what unites us, and not on what divides us."
+      }
+    ],
+    "responsibilities": [
+      "You would be working on the product lifecycle, enabling the hardware to work as per its design parameters, work on circuits, various processors, controllers, sensors, algorithms and communication protocols, including algorithm design protocol testing, and debugging to make it production-ready.",
+      "You would directly contribute to and influence the ultimate client outcomes we care so much about.",
+      "Your development work will allow business assets (engines, factory equipment, trains, etc.), sensors, platforms, applications, and more to communicate with one another and drive action."
+    ],
+    "qualificationsTitle": "Qualifications Required",
+    "qualifications": [
+      "Bachelor/Postgraduate in Electronics and Communication Engineering(ECE).",
+      "Work experience of 3.5-6 years as an Embedded Developer.",
+      "Language \u2013 Embedded C, Embedded C++.",
+      "Experience in metering and energy products.",
+      "Extensive knowledge of MQTT, DLMS, MODBUS, RS232/485, IEC104/850 protocols, Embedded Linux.",
+      "Extensive experience working with ARM application processors.",
+      "Knowledge of BLE5.0 and WiFi protocols.",
+      "Knowledge of RF(2.4 Ghz, 4G/LTE, and Sub-1 Ghz).",
+      "Capacity to work dedicatedly towards goal achievement",
+      "Excellent analytical and problem-solving skills.",
+      "Clear electronics basics."
+    ]
+  },
+  {
+    "slug": "associate-customer-success",
+    "title": "Associate Customer Success",
+    "jobId": "006",
+    "location": "Noida",
+    "type": "Full Time",
+    "experience": "Exp. 1.5-4 Years",
+    "excerpt": "Designation- Associate Customer Success/Associate Project Manager Experience- 1.5-4 Years Do you want to be a part of enabling the next wave of innovation in communication protocols, building sensors and cutting-edge hardware? Does working with IoT devices, sensors, wearables, controllers which can seamlessly merge the digital world with the physical world around us interests you? Who [\u2026]",
+    "whoWeAre": [
+      "We are Probus Smart Things and are working on IoT solutions that can be used to solve massive scale problems by connecting things to people.",
+      "At Probus we are digitizing the electricity distribution grids to bring down network losses and ensure that electricity reaches every household.",
+      "We do this by building sensors, controllers, low power edge devices, connect and manage multiple sensors with our ecosystem.",
+      "Probus Smart Things has been awarded as the Startup of the Year 2018 and our wireless technology in 2020, has been awarded by India Smart Grid Forum, Government of India.",
+      "Probus has also been mentored by Cisco and Qualcomm in their startup accelerators.",
+      "We are a Venture Capital funded company and have raised our pre-series-A round in 2021.",
+      "We are looking for passionate engineers and professionals to build the hardware and software that runs on edge computing, system on chips, communicates with cloud servers, server-less containers, and everything in between."
+    ],
+    "we": [
+      "Are a team of technologists from diverse backgrounds",
+      "Obsess over design and product journey",
+      "Obsess over our customer\u2019s needs and experience",
+      "Are owners. We love building new innovative technologies, and improving our existing ones",
+      "Wear multiple hats. We enjoy the prototyping and tinkering stages, as well as the rigor of making solutions production-ready.",
+      "Are fast-growing, agile and collaborative"
+    ],
+    "you": [
+      "Enjoy seeing the impact your work has on real customers",
+      "Enjoy being a part of a creation that can shape the future of the world as we know it",
+      "Enjoy working with the cofounders and the founding team of a growing startup",
+      "Are comfortable in an agile environment and create order from ambiguity",
+      "Are excited about the incredible opportunity connected products represent",
+      "Build strong teams with others as passionate as you about this mission",
+      "Take ownership and doing whatever it takes to get the job done",
+      "Want to create applications at a massive scale used by millions of people",
+      "Use data to make decisions and validate assumptions",
+      "Learn from others and help grow those in your team to achieve their best"
+    ],
+    "culture": [
+      {
+        "title": "Trust",
+        "description": "We trust our team to the core in all their actions they perform in day-to-day work."
+      },
+      {
+        "title": "Clear Communication",
+        "description": "We are direct and succinct. We share information efficiently, improving collaboration and productivity. We practice active listening."
+      },
+      {
+        "title": "Efficient execution",
+        "description": "We have a bias for action. We complete high quality work quickly. We focus on the 20% of work that will get us 80% of the impact."
+      },
+      {
+        "title": "Act like an owner",
+        "description": "We take 100% responsibility for achieving the mission. We seek to improve all aspects of our company even in ways that are not explicitly part of our job."
+      },
+      {
+        "title": "Continuous learning",
+        "description": "We\u2019re humble, and value learning over being right. We embrace delivering and receiving candid feedback, and see every setback as an opportunity to learn."
+      },
+      {
+        "title": "Championship team",
+        "description": "We are a winning team, not a family, and have high expectations for performance and delivering results. We\u2019re stronger together so we choose to focus on what unites us, and not on what divides us."
+      }
+    ],
+    "responsibilities": [
+      "Client Support: Assist in managing client relationships by ensuring clear and effective communication, helping to meet client expectations and resolve issues promptly.",
+      "Team Coordination: Support the supervision of site/field teams, ensuring alignment with project goals and assisting with day-to-day operations.",
+      "Project Planning and Execution: Collaborate in developing detailed project plans while working with other project managers, including schedules, scopes, and learning budget estimations. Assist in tracking project progress and identifying potential risks.",
+      "Monitoring and Reporting: Assist in monitoring project progress, identifying potential issues, and helping to implement effective solutions. Contribute to the preparation of reports and presentations to communicate project status to stakeholders.",
+      "Customer Interaction: Provide support in handling customer interactions professionally, ensuring their needs are met and issues are resolved promptly.",
+      "SLA Support: learning SLAs and assisting in maintaining SLAs according to client requirements",
+      "IT Coordination: Help oversee the integration and management of IT systems related to the project, coordinating with IT teams to ensure technical requirements are met.",
+      "Field Management Support: Assist in proposing and managing field management services, including maintenance of DCUs and addressing power supply breakdowns."
+    ],
+    "qualificationsTitle": "Qualifications Required",
+    "qualifications": [
+      "Bachelor/Post Graduate degree in Engineering.",
+      "Basic understanding of utilities, or distribution grid.",
+      "Experience in customer/client management, site/field team and IT team coordination, Project Management, EPC profile.",
+      "Leadership and team management capabilities.",
+      "Strong analytical skills and reporting skills."
+    ]
+  },
+  {
+    "slug": "business-development-executive",
+    "title": "Business Development-Executive",
+    "jobId": "007",
+    "location": "Noida",
+    "type": "Full Time",
+    "experience": "Exp. Fresher-2 Years",
+    "excerpt": "Designation- Business Development-Executive Experience- Fresher-2 Years Do you want to be a part of enabling the next wave of innovation in communication protocols, building sensors and cutting-edge hardware? Does working with IoT devices, sensors, wearables, controllers which can seamlessly merge the digital world with the physical world around us interests you? Who we are? We [\u2026]",
+    "whoWeAre": [
+      "We are Probus Smart Things and are working on IoT solutions that can be used to solve massive scale problems by connecting things to people.",
+      "At Probus we are digitizing the electricity distribution grids to bring down network losses and ensure that electricity reaches every household.",
+      "We do this by building sensors, controllers, low power edge devices, connect and manage multiple sensors with our ecosystem.",
+      "Probus Smart Things has been awarded as the Startup of the Year 2018 and our wireless technology in 2020, has been awarded by India Smart Grid Forum, Government of India.",
+      "Probus has also been mentored by Cisco and Qualcomm in their startup accelerators.",
+      "We are a Venture Capital funded company and have raised our pre-series-A round in 2021.",
+      "We are looking for passionate engineers and professionals to build the hardware and software that runs on edge computing, system on chips, communicates with cloud servers, server-less containers, and everything in between."
+    ],
+    "we": [
+      "Are a team of technologists from diverse backgrounds",
+      "Obsess over design and product journey",
+      "Obsess over our customer\u2019s needs and experience",
+      "Are owners. We love building new innovative technologies, and improving our existing ones",
+      "Wear multiple hats. We enjoy the prototyping and tinkering stages, as well as the rigor of making solutions production-ready.",
+      "Are fast-growing, agile and collaborative"
+    ],
+    "you": [
+      "Enjoy seeing the impact your work has on real customers",
+      "Enjoy being a part of a creation that can shape the future of the world as we know it",
+      "Enjoy working with the cofounders and the founding team of a growing startup",
+      "Are comfortable in an agile environment and create order from ambiguity",
+      "Are excited about the incredible opportunity connected products represent",
+      "Build strong teams with others as passionate as you about this mission",
+      "Take ownership and doing whatever it takes to get the job done",
+      "Want to create applications at a massive scale used by millions of people",
+      "Use data to make decisions and validate assumptions",
+      "Learn from others and help grow those in your team to achieve their best"
+    ],
+    "culture": [
+      {
+        "title": "Trust",
+        "description": "We trust our team to the core in all their actions they perform in day-to-day work."
+      },
+      {
+        "title": "Clear Communication",
+        "description": "We are direct and succinct. We share information efficiently, improving collaboration and productivity. We practice active listening."
+      },
+      {
+        "title": "Efficient execution",
+        "description": "We have a bias for action. We complete high quality work quickly. We focus on the 20% of work that will get us 80% of the impact."
+      },
+      {
+        "title": "Act like an owner",
+        "description": "We take 100% responsibility for achieving the mission. We seek to improve all aspects of our company even in ways that are not explicitly part of our job."
+      },
+      {
+        "title": "Continuous learning",
+        "description": "We\u2019re humble, and value learning over being right. We embrace delivering and receiving candid feedback, and see every setback as an opportunity to learn."
+      },
+      {
+        "title": "Championship team",
+        "description": "We are a winning team, not a family, and have high expectations for performance and delivering results. We\u2019re stronger together so we choose to focus on what unites us, and not on what divides us."
+      }
+    ],
+    "responsibilities": [
+      "Client Engagement: Assist in managing client relationships by ensuring clear and effective communication, address client expectations, resolve issues promptly and client satisfaction.",
+      "Team Coordination: Support the team lead and collaborate cross-functional team to ensure alignment with project goals and assisting with day-to-day operations.",
+      "Business Development Strategy: Assist in identifying new business opportunities and contribute to the creation of strategic plans. Support the preparation of proposals, presentations, and technical documentation to secure new business.",
+      "Data Analysis and Monitoring: Perform data analysis to evaluate market trends and opportunities. Prepare reports and presentations for internal and external stakeholders.",
+      "Customer Interaction: Provide support in handling customer interactions professionally, ensuring their needs are met and issues are resolved promptly",
+      "Technical Proficiency: Utilize knowledge of Python to support technical solutions and process automation as needed. Collaborate with IT teams to ensure seamless integration and management of technical systems",
+      "Documentation and Communication: Create professional PowerPoint presentations to effectively convey ideas and project updates. Maintain and utilize advanced Excel sheets for data tracking, analysis, and reporting."
+    ],
+    "qualificationsTitle": "Qualifications Required",
+    "qualifications": [
+      "Bachelor/Post Graduate degree in Engineering.",
+      "Basic understanding of Python and advance proficiency in Powerpoint.",
+      "Basic understanding of utilities, or distribution grid.",
+      "Experience in customer/client management and knowledge of market dynamics.",
+      "Leadership and team management capabilities.",
+      "Strong analytical skills and reporting skills."
+    ]
+  },
+  {
+    "slug": "finance-manager",
+    "title": "Finance Manager",
+    "jobId": "008",
+    "location": "Noida",
+    "type": "Full-time",
+    "experience": "Exp. 4-6 Yrs",
+    "excerpt": "Designation- Finance Manager Experience- 4-6 Yrs Do you want to be a part of enabling the next wave of innovation in communication protocols, building sensors and cutting-edge hardware? Does working with IoT devices, sensors, wearables, controllers which can seamlessly merge the digital world with the physical world around us interests you? Who we are? We [\u2026]",
+    "whoWeAre": [
+      "We are Probus Smart Things and are working on IoT solutions that can be used to solve massive scale problems by connecting things to people.",
+      "At Probus we are digitizing the electricity distribution grids to bring down network losses and ensure that electricity reaches every household.",
+      "We do this by building sensors, controllers, low power edge devices, connect and manage multiple sensors with our ecosystem.",
+      "Probus Smart Things has been awarded as the Startup of the Year 2018 and our wireless technology in 2020, has been awarded by India Smart Grid Forum, Government of India.",
+      "Probus has also been mentored by Cisco and Qualcomm in their startup accelerators.",
+      "We are a Venture Capital funded company and have raised our pre-series-A round in 2021.",
+      "We are looking for passionate engineers and professionals to build the hardware and software that runs on edge computing, system on chips, communicates with cloud servers, server-less containers, and everything in between."
+    ],
+    "we": [
+      "Are a team of technologists from diverse backgrounds",
+      "Obsess over design and product journey",
+      "Obsess over our customer\u2019s needs and experience",
+      "Are owners. We love building new innovative technologies, and improving our existing ones",
+      "Wear multiple hats. We enjoy the prototyping and tinkering stages, as well as the rigor of making solutions production-ready.",
+      "Are fast-growing, agile and collaborative"
+    ],
+    "you": [
+      "Enjoy seeing the impact your work has on real customers",
+      "Enjoy being a part of a creation that can shape the future of the world as we know it",
+      "Enjoy working with the cofounders and the founding team of a growing startup",
+      "Are comfortable in an agile environment and create order from ambiguity",
+      "Are excited about the incredible opportunity connected products represent",
+      "Build strong teams with others as passionate as you about this mission",
+      "Take ownership and doing whatever it takes to get the job done",
+      "Want to create applications at a massive scale used by millions of people",
+      "Use data to make decisions and validate assumptions",
+      "Learn from others and help grow those in your team to achieve their best"
+    ],
+    "culture": [
+      {
+        "title": "Trust",
+        "description": "We trust our team to the core in all their actions they perform in day-to-day work."
+      },
+      {
+        "title": "Clear Communication",
+        "description": "We are direct and succinct. We share information efficiently, improving collaboration and productivity. We practice active listening."
+      },
+      {
+        "title": "Efficient execution",
+        "description": "We have a bias for action. We complete high quality work quickly. We focus on the 20% of work that will get us 80% of the impact."
+      },
+      {
+        "title": "Act like an owner",
+        "description": "We take 100% responsibility for achieving the mission. We seek to improve all aspects of our company even in ways that are not explicitly part of our job."
+      },
+      {
+        "title": "Continuous learning",
+        "description": "We\u2019re humble, and value learning over being right. We embrace delivering and receiving candid feedback, and see every setback as an opportunity to learn."
+      },
+      {
+        "title": "Championship team",
+        "description": "We are a winning team, not a family, and have high expectations for performance and delivering results. We\u2019re stronger together so we choose to focus on what unites us, and not on what divides us."
+      }
+    ],
+    "responsibilities": [
+      "Financial Reporting & Analysis, Budgeting and Forecasting\u2013 Lead the financial reporting process, providing detailed analyses of key financial metrics to aid decision-making at the executive level.",
+      "Communication & collaboration- Partner with internal and external stakeholders to enhance financial reporting systems and ensure the effective dissemination of financial data.",
+      "Audits & accounts- Ensure the timely preparation and submission of financial statements and reports, oversee audit processes, both internal and external, to ensure compliance with regulatory standards and optimize financial reporting accuracy.",
+      "Compliance-Maintain compliance with all financial regulatory requirements, ensuring adherence to local and international accounting standards. Ensure the accuracy of financial records, protecting the organization from legal and financial risks.",
+      "Leadership and time management-Lead a high-performing finance team, providing direction, mentorship, and development opportunities to ensure excellence in financial operations."
+    ],
+    "qualificationsTitle": "Qualifications Required",
+    "qualifications": [
+      "Qualified/Pursuing CA.",
+      "Working experience of 4 to 6 years proven knowledge in accounting, finance, Business Administration.",
+      "Knowledge of TDS, GST, MIS, Yearly book closure and Zoho or SAP is mandatory.",
+      "Experience with company financial statements analysis and a strong understanding of corporate finance concepts.",
+      "Should be capable of implement financial policies and procedures to ensure compliance with laws and regulations, and to optimize financial performance."
+    ]
+  },
+  {
+    "slug": "program-manager",
+    "title": "Program Manager",
+    "jobId": "010",
+    "location": "Noida Sector 125",
+    "type": "Full-time",
+    "experience": "Exp. 5-7 Years",
+    "excerpt": "Job-Profile- Program Manager Experience- 5-6 Years Location- Noida Do you want to be a part of enabling the next wave of innovation in communication protocols, building sensors and cutting-edge hardware? Does working with IoT devices, sensors, wearables, and controllers that can seamlessly merge the digital world with the physical [\u2026]",
+    "whoWeAre": [
+      "We are Probus Smart Things and are working on IoT solutions that can be used to solve massive scale problems by connecting things to people.",
+      "At Probus we are digitizing the electricity distribution grids to bring down network losses and ensure that electricity reaches every household.",
+      "We do this by building sensors, controllers, low power edge devices, connect and manage multiple sensors with our ecosystem.",
+      "Probus Smart Things has been awarded as the Startup of the Year 2018 and our wireless technology in 2020, has been awarded by India Smart Grid Forum, Government of India.",
+      "Probus has also been mentored by Cisco and Qualcomm in their startup accelerators.",
+      "We are a Venture Capital funded company and have raised our pre-series-A round in 2021.",
+      "We are looking for passionate engineers and professionals to build the hardware and software that runs on edge computing, system on chips, communicates with cloud servers, server-less containers, and everything in between."
+    ],
+    "we": [
+      "Are a team of technologists from diverse backgrounds",
+      "Obsess over design and product journey",
+      "Obsess over our customer\u2019s needs and experience",
+      "Are owners. We love building new innovative technologies, and improving our existing ones",
+      "Wear multiple hats. We enjoy the prototyping and tinkering stages, as well as the rigor of making solutions production-ready.",
+      "Are fast-growing, agile and collaborative"
+    ],
+    "you": [
+      "Enjoy seeing the impact your work has on real customers",
+      "Enjoy being a part of a creation that can shape the future of the world as we know it",
+      "Enjoy working with the cofounders and the founding team of a growing startup",
+      "Are comfortable in an agile environment and create order from ambiguity",
+      "Are excited about the incredible opportunity connected products represent",
+      "Build strong teams with others as passionate as you about this mission",
+      "Take ownership and doing whatever it takes to get the job done",
+      "Want to create applications at a massive scale used by millions of people",
+      "Use data to make decisions and validate assumptions",
+      "Learn from others and help grow those in your team to achieve their best"
+    ],
+    "culture": [
+      {
+        "title": "Trust",
+        "description": "We trust our team to the core in all their actions they perform in day-to-day work."
+      },
+      {
+        "title": "Clear Communication",
+        "description": "We are direct and succinct. We share information efficiently, improving collaboration and productivity. We practice active listening."
+      },
+      {
+        "title": "Efficient execution",
+        "description": "We have a bias for action. We complete high quality work quickly. We focus on the 20% of work that will get us 80% of the impact."
+      },
+      {
+        "title": "Act like an owner",
+        "description": "We take 100% responsibility for achieving the mission. We seek to improve all aspects of our company even in ways that are not explicitly part of our job."
+      },
+      {
+        "title": "Continuous learning",
+        "description": "We\u2019re humble, and value learning over being right. We embrace delivering and receiving candid feedback, and see every setback as an opportunity to learn."
+      },
+      {
+        "title": "Championship team",
+        "description": "We are a winning team, not a family, and have high expectations for performance and delivering results. We\u2019re stronger together so we choose to focus on what unites us, and not on what divides us."
+      }
+    ],
+    "responsibilities": [
+      "Track, monitor, and manage engineering activities under various engineering development programs \u2013 parallelly across the organization",
+      "Track and lead various Integration activities that are required for product success \u2013 Hardware design, Firmware development, Software development, and Testing",
+      "Engage with customer success teams for efficient execution of project deliverables",
+      "Implementing new features and functionality for existing products"
+    ],
+    "qualificationsTitle": "Required Skills",
+    "qualifications": [
+      "Embedded product design lifecycle experience \u2013 should have a proven track record of completing projects that involve integration across Hardware, Embedded Software(firmware), and Software Components.",
+      "Relevant experience of 5-7 years.",
+      "Experience in working and managing cross-functional teams in an engineering manager role or scrum master role.",
+      "Graduate/Post-Graduate in Engineering."
+    ]
+  }
+]

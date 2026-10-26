@@ -1,20 +1,21 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
-export default function Preloader() {
+function PreloaderInstance() {
   const [loading, setLoading] = useState(true);
   const [rendered, setRendered] = useState(true);
 
   useEffect(() => {
-    // Smooth fade out after page hydration/ready
+    // Smooth fade out after page navigation/ready
     const timer = setTimeout(() => {
       setLoading(false);
       const removeTimer = setTimeout(() => {
         setRendered(false);
-      }, 500);
+      }, 400);
       return () => clearTimeout(removeTimer);
-    }, 400);
+    }, 350);
 
     return () => clearTimeout(timer);
   }, []);
@@ -26,14 +27,14 @@ export default function Preloader() {
       id="preloader-wrapper"
       style={{
         backgroundColor: "#fff",
-        zIndex: 10000,
+        zIndex: 100000,
         position: "fixed",
         inset: 0,
         width: "100%",
         height: "100%",
         opacity: loading ? 1 : 0,
         visibility: loading ? "visible" : "hidden",
-        transition: "opacity 0.5s ease-out, visibility 0.5s ease-out",
+        transition: "opacity 0.4s ease-out, visibility 0.4s ease-out",
         pointerEvents: loading ? "all" : "none",
       }}
     >
@@ -128,4 +129,9 @@ export default function Preloader() {
       `}</style>
     </div>
   );
+}
+
+export default function Preloader() {
+  const pathname = usePathname();
+  return <PreloaderInstance key={pathname} />;
 }

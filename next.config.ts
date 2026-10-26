@@ -26,11 +26,6 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: '/empowering-the-future-probus-smart-things-journey-in-smart-grid-innovation',
-        destination: '/blogs/empowering-the-future-probus-smart-things-journey-in-smart-grid-innovation',
-        permanent: true,
-      },
-      {
         source: '/from-amr-to-grid-intelligence-how-4g-amr-devices-become-distribution-sensors',
         destination: '/blogs/from-amr-to-grid-intelligence-how-4g-amr-devices-become-distribution-sensors',
         permanent: true,
