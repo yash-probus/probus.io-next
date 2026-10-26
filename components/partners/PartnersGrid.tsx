@@ -90,14 +90,13 @@ export default function PartnersGrid() {
           <div className="min-h-[200px]">
             <div className="flex flex-wrap justify-center items-center gap-x-[50px] gap-y-[40px] max-w-[1000px] mx-auto">
               {tabData[activeTab as keyof typeof tabData].map((logo, index) => (
-                <div key={index} className="relative flex justify-center items-center h-[50px] md:h-[60px]">
+                <div key={index} className="relative flex justify-center items-center h-[50px] md:h-[60px] w-[140px] md:w-[160px]">
                   <Image 
                     src={logo} 
                     alt="Partner Logo" 
-                    width={180}
-                    height={60}
-                    className="max-h-[50px] md:max-h-[60px] w-auto max-w-[180px] object-contain mix-blend-multiply"
-                    style={{ width: "auto", height: "auto" }}
+                    fill
+                    sizes="(max-width: 768px) 140px, 160px"
+                    className="object-contain mix-blend-multiply"
                   />
                 </div>
               ))}

@@ -24,10 +24,44 @@ export default function ContactMap() {
     "AIzaSyDrfXPptz9MDwanCiLa-YzfsG5hmNAaJxI";
 
   useEffect(() => {
-    function initMap() {
+    async function initMap() {
       if (!mapRef.current || !window.google || !window.google.maps) return;
 
       try {
+        let MapClass = window.google.maps.Map;
+        let InfoWindowClass = window.google.maps.InfoWindow;
+        let AdvancedMarkerClass =
+          window.google.maps.marker?.AdvancedMarkerElement;
+        let MarkerClass = window.google.maps.Marker;
+
+        // When loading=async is used, Google Maps loads components via importLibrary
+        if (typeof window.google.maps.importLibrary === "function") {
+          try {
+            const mapsLib = await window.google.maps.importLibrary("maps");
+            if (mapsLib && mapsLib.Map) MapClass = mapsLib.Map;
+            if (mapsLib && mapsLib.InfoWindow) InfoWindowClass = mapsLib.InfoWindow;
+          } catch (err) {
+            console.warn("Could not import maps library:", err);
+          }
+
+          try {
+            const markerLib = await window.google.maps.importLibrary("marker");
+            if (markerLib && markerLib.AdvancedMarkerElement) {
+              AdvancedMarkerClass = markerLib.AdvancedMarkerElement;
+            }
+            if (markerLib && markerLib.Marker) {
+              MarkerClass = markerLib.Marker;
+            }
+          } catch (err) {
+            console.warn("Could not import marker library:", err);
+          }
+        }
+
+        if (!MapClass) {
+          setMapError(true);
+          return;
+        }
+
         const mapOptions = {
           center: PROBUS_COORDINATES,
           zoom: 14,
@@ -40,9 +74,9 @@ export default function ContactMap() {
           mapId: "probus_contact_map",
         };
 
-        const map = new window.google.maps.Map(mapRef.current, mapOptions);
+        const map = new MapClass(mapRef.current, mapOptions);
 
-        const infoWindow = new window.google.maps.InfoWindow({
+        const infoWindow = new InfoWindowClass({
           content: `
             <div style="font-family: sans-serif; padding: 8px; max-width: 220px;">
               <h5 style="margin: 0 0 4px 0; font-size: 14px; font-weight: bold; color: #033361;">Probus Smart Things Pvt. Ltd.</h5>
@@ -56,11 +90,8 @@ export default function ContactMap() {
           `,
         });
 
-        // Use modern AdvancedMarkerElement to eliminate deprecation warning
-        if (
-          window.google.maps.marker &&
-          window.google.maps.marker.AdvancedMarkerElement
-        ) {
+        // Use modern AdvancedMarkerElement if available
+        if (AdvancedMarkerClass) {
           const pinImg = document.createElement("img");
           pinImg.src = "/images/markermap.png";
           pinImg.alt = "Probus Location";
@@ -68,13 +99,12 @@ export default function ContactMap() {
           pinImg.style.height = "auto";
           pinImg.style.cursor = "pointer";
 
-          const advancedMarker =
-            new window.google.maps.marker.AdvancedMarkerElement({
-              position: PROBUS_COORDINATES,
-              map: map,
-              title: "Probus Smart Things Pvt. Ltd.",
-              content: pinImg,
-            });
+          const advancedMarker = new AdvancedMarkerClass({
+            position: PROBUS_COORDINATES,
+            map: map,
+            title: "Probus Smart Things Pvt. Ltd.",
+            content: pinImg,
+          });
 
           advancedMarker.addListener("click", () => {
             infoWindow.open({
@@ -82,13 +112,13 @@ export default function ContactMap() {
               map: map,
             });
           });
-        } else {
+        } else if (MarkerClass) {
           // Fallback to classic Marker
-          const marker = new window.google.maps.Marker({
+          const marker = new MarkerClass({
             position: PROBUS_COORDINATES,
             map: map,
             title: "Probus Smart Things Pvt. Ltd.",
-            animation: window.google.maps.Animation.DROP,
+            animation: window.google.maps?.Animation?.DROP,
             icon: "/images/markermap.png",
           });
 
@@ -113,7 +143,6 @@ export default function ContactMap() {
     if (!existingScript) {
       const script = document.createElement("script");
       script.id = "google-maps-script";
-      // loading=async and libraries=marker satisfy Google Maps best practice guidelines
       script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places,marker&loading=async`;
       script.async = true;
       script.defer = true;

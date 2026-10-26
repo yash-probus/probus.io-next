@@ -62,13 +62,13 @@ export default function CompanyJourney() {
           <div className="flex justify-between relative z-20">
             {journeys.map((journey, idx) => (
               <div key={idx} className="w-[22%]">
-                <div className="h-[160px] mb-[25px] w-[90%] overflow-hidden rounded-[8px] mx-auto shadow-sm">
+                <div className="relative h-[160px] mb-[25px] w-[90%] overflow-hidden rounded-[8px] mx-auto shadow-sm">
                   <Image 
                     src={journey.image} 
                     alt={journey.year} 
-                    width={250} 
-                    height={160} 
-                    className="w-full h-full object-cover"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 250px"
+                    className="object-cover"
                   />
                 </div>
                 
@@ -101,13 +101,13 @@ export default function CompanyJourney() {
               <h3 className="text-[#033361] text-[26px] leading-[36px] font-medium font-sans mb-4">
                 {journey.year}
               </h3>
-              <div className="h-[160px] mb-[20px] w-full overflow-hidden rounded-[8px] shadow-sm">
+              <div className="relative h-[160px] mb-[20px] w-full overflow-hidden rounded-[8px] shadow-sm">
                 <Image 
                   src={journey.image} 
                   alt={journey.year} 
-                  width={300} 
-                  height={160} 
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 300px"
+                  className="object-cover"
                 />
               </div>
               <ul className="list-none p-0 m-0">

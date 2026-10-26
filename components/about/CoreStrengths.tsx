@@ -46,6 +46,7 @@ export default function CoreStrengths() {
                     alt={val.title} 
                     width={140} 
                     height={140} 
+                    style={{ width: "100%", height: "auto" }}
                     className="w-full h-auto rounded-[10px]"
                   />
                 </div>
